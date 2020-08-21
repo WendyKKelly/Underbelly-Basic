@@ -27,7 +27,7 @@ export const data = {
   navItems: [
     {
       label: 'Home',
-      path: '#home',
+      path: '#',
       offset: '70',
     },
     {
@@ -58,7 +58,7 @@ export const data = {
       title: '',
       desc:
         'Curious about your emotional wellness? Assessments are a great way to learn more about yourself, what makes you tick, and how you can best take good care of your beautiful self.',
-      link: '#check-in',
+      link: '#',
     },
     {
       id: 2,
@@ -66,7 +66,7 @@ export const data = {
       title: '',
       desc:
         'You can (and should) train your emotional self as much as you train your physcial body. If you take steps each day to get emotionally stronger and more flexible, when storms come, you will be ready',
-      link: '#train',
+      link: '#',
     },
     {
       id: 3,
@@ -82,7 +82,7 @@ export const data = {
       title: '',
       desc:
         'Everybody hurts sometimes. It happens to all of us. If you are suffering now, take needed next steps to care for yourself — Now.',
-      link: '#sad',
+      link: '#',
     },
   ],
   services: [
@@ -147,14 +147,14 @@ export const data = {
       title: 'First Aid for Grief',
       thumbnail_url: BlogImage2,
       date: 'April 8, 2020',
-      postLink: '#2',
+      postLink: '#',
     },
     {
       id: 3,
       title: 'Provocation: How to Use it for Good',
       thumbnail_url: BlogImage3,
       date: 'January 4, 2020',
-      postLink: '#3',
+      postLink: '#',
     },
   ],
   blog1: [
@@ -163,42 +163,42 @@ export const data = {
       title: 'Train for Joy',
       thumbnail_url: Joy1,
       date: 'March 13, 2020',
-      postLink: '#1',
+      postLink: '#',
     },
     {
       id: 2,
       title: 'First Aid for Grief',
       thumbnail_url: Joy2,
       date: 'April 8, 2020',
-      postLink: '#2',
+      postLink: '#',
     },
     {
       id: 3,
       title: 'Provocation: How to Use it for Good',
       thumbnail_url: Joy3,
       date: 'January 4, 2020',
-      postLink: '#3',
+      postLink: '#',
     },
     {
       id: 4,
       title: 'Train for Joy',
       thumbnail_url: Joy4,
       date: 'March 13, 2020',
-      postLink: '#1',
+      postLink: '#',
     },
     {
       id: 5,
       title: 'First Aid for Grief',
       thumbnail_url: Joy5,
       date: 'April 8, 2020',
-      postLink: '#2',
+      postLink: '#',
     },
     {
       id: 6,
       title: 'Provocation: How to Use it for Good',
       thumbnail_url: Joy6,
       date: 'January 4, 2020',
-      postLink: '#3',
+      postLink: '#',
     },
   ],
 
