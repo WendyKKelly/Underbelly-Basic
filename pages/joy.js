@@ -9,7 +9,7 @@ import {
   ContentWrapper,
 } from '../components/AgencyDigital/agencyDigital.style';
 import { DrawerProvider } from '../src/contexts/DrawerContext';
-import Navbar from '../components/Navbar';
+import NavBar from '../components/NavBar';
 import BlogSection1 from '../components/BlogSection1';
 import Footer from '../components/Footer';
 
@@ -35,10 +35,10 @@ export default function Joy() {
         <ContentWrapper>
           <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
             <DrawerProvider>
-              <Navbar />
+              <NavBar />
             </DrawerProvider>
           </Sticky>
-        
+
           <BlogSection1 />
           <Footer />
             </ContentWrapper>

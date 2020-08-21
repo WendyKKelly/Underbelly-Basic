@@ -21,7 +21,7 @@ import LogoImage from '../../public/image/logo.png';
 
 import { data } from '../data';
 
-const Navbar = () => {
+const NavBar = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
 
   const scrollItems = [];
@@ -129,4 +129,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavBar;

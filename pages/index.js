@@ -9,7 +9,7 @@ import {
   ContentWrapper,
 } from '../components/AgencyDigital/agencyDigital.style';
 import { DrawerProvider } from '../src/contexts/DrawerContext';
-import Navbar from '../components/Navbar';
+import NavBar from '../components/NavBar';
 import Banner from '../components/Banner';
 import News from '../components/News';
 import Service from '../components/Service';
@@ -43,13 +43,13 @@ export default function Home() {
         <ContentWrapper>
           <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
             <DrawerProvider>
-              <Navbar />
+              <NavBar />
             </DrawerProvider>
           </Sticky>
           <Banner />
           <News />
           <Service />
-        
+
           <BlogSection />
           <FeatureSection />
           <Sad />

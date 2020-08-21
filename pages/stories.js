@@ -14,7 +14,7 @@ import { getSortedPostsData } from '../lib/posts';
 import Link from 'next/link';
 
 import Image from '../components/Image';
-import Navbar from '../components/Navbar';
+import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 
 
@@ -40,7 +40,7 @@ export default function Blog({ allPostsData }) {
         <ContentWrapper>
           <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
             <DrawerProvider>
-              <Navbar />
+              <NavBar />
             </DrawerProvider>
           </Sticky>
 
