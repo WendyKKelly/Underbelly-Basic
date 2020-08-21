@@ -1,6 +1,6 @@
 ---
 title: 'Two Forms of Pre-rendering'
-date: '2020-09-09'
+
 thumbnail: '../../public/image/banner.png'
 ---
 

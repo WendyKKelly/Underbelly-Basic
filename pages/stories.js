@@ -48,7 +48,7 @@ export default function Blog({ allPostsData }) {
 
          <h2>Blog</h2>
          <ul>
-           {allPostsData.map(({ id, date, title, thumbnail }) => (
+           {allPostsData.map(({ id, title, thumbnail }) => (
              <li  key={id}>
              <Image src={thumbnail} alt='image'/>
         <Link href="/posts/[id]" as={`/posts/${id}`}>

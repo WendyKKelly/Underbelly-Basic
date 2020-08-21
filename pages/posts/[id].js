@@ -11,7 +11,7 @@ import {
 } from '../../components/AgencyDigital/agencyDigital.style';
 import { getAllPostIds, getPostData } from '../../lib/posts'
 
-import Date from '../../components/date'
+
 
 
 export default function Post({ postData }) {
@@ -24,11 +24,7 @@ export default function Post({ postData }) {
       <article>
       <Image src={postData.thumbnail} alt="image" />
       <h1 >{postData.title}</h1>
-      <div>
 
-
-    <Date dateString={postData.date} />
-    </div>
     <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
     </article>
     </Fragment>
