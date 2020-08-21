@@ -57,12 +57,12 @@ const Navbar = () => {
           />
           <NavbarRight>
             <li>
-              <Link href="/blog" replace>
-              <a>  Login </a>
+              <Link href="/stories" replace>
+              <a>  Stories </a>
               </Link>
             </li>
             <li>
-              <Link href="#"><a>Get Started</a></Link>
+              <Link href="/about"><a>About</a></Link>
             </li>
           </NavbarRight>
           {/* end of main menu */}
@@ -116,10 +116,10 @@ const Navbar = () => {
               </li>
             ))}
             <li>
-              <Link href="/about"><a>Login</a></Link>
+              <Link href="/about"><a>About</a></Link>
             </li>
             <li>
-              <Link href="/about"><a>Get Started</a></Link>
+              <Link href="/stories"><a>Stories</a></Link>
             </li>
           </Scrollspy>
         </Container>

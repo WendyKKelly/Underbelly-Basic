@@ -15,6 +15,12 @@ import serviceIcon6 from '../../public/image/services/6.png';
 import BlogImage1 from '../../public/image/blog/blog-img1.png';
 import BlogImage2 from '../../public/image/blog/blog-img2.png';
 import BlogImage3 from '../../public/image/blog/blog-img3.png';
+import Joy1 from '../../public/image/blog1/joy1.png';
+import Joy2 from '../../public/image/blog1/joy2.png';
+import Joy3 from '../../public/image/blog1/joy3.png';
+import Joy4 from '../../public/image/blog1/joy4.png';
+import Joy5 from '../../public/image/blog1/joy5.png';
+import Joy6 from '../../public/image/blog1/joy6.png';
 
 
 export const data = {
@@ -36,12 +42,12 @@ export const data = {
     },
     {
       label: 'Grow',
-      path: '#service',
+      path: '#',
       offset: '70',
     },
     {
       label: 'Media',
-      path: '#blog',
+      path: '#',
       offset: '70',
     },
   ],
@@ -68,7 +74,7 @@ export const data = {
       title: '',
       desc:
         'Are you feeling pretty good but want to learn more about how your emotional self ticks? Start here to read, listen, and learn about how to care for your wild and precious self.',
-      link: '#learn',
+      link: '/joy',
     },
     {
       id: 4,
@@ -134,7 +140,7 @@ export const data = {
       title: 'Train for Joy',
       thumbnail_url: BlogImage1,
       date: 'March 13, 2020',
-      postLink: '#1',
+      postLink: '/stories',
     },
     {
       id: 2,
@@ -151,6 +157,51 @@ export const data = {
       postLink: '#3',
     },
   ],
+  blog1: [
+    {
+      id: 1,
+      title: 'Train for Joy',
+      thumbnail_url: Joy1,
+      date: 'March 13, 2020',
+      postLink: '#1',
+    },
+    {
+      id: 2,
+      title: 'First Aid for Grief',
+      thumbnail_url: Joy2,
+      date: 'April 8, 2020',
+      postLink: '#2',
+    },
+    {
+      id: 3,
+      title: 'Provocation: How to Use it for Good',
+      thumbnail_url: Joy3,
+      date: 'January 4, 2020',
+      postLink: '#3',
+    },
+    {
+      id: 4,
+      title: 'Train for Joy',
+      thumbnail_url: Joy4,
+      date: 'March 13, 2020',
+      postLink: '#1',
+    },
+    {
+      id: 5,
+      title: 'First Aid for Grief',
+      thumbnail_url: Joy5,
+      date: 'April 8, 2020',
+      postLink: '#2',
+    },
+    {
+      id: 6,
+      title: 'Provocation: How to Use it for Good',
+      thumbnail_url: Joy6,
+      date: 'January 4, 2020',
+      postLink: '#3',
+    },
+  ],
+
   features: [
     {
       id: 1,
@@ -213,12 +264,12 @@ export const data = {
     {
       id: 2,
       title: 'About',
-      link: '/about/about',
+      link: '/about',
     },
     {
       id: 3,
-      title: '',
-      link: '#',
+      title: 'Stories',
+      link: '/stories',
     },
     {
       id: 4,

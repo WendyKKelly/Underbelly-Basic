@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { themeGet } from '@styled-system/theme-get';
+import navBg from '../../public/image/nav-bg.png'
 
 
 const NavbarWrapper = styled.header`
@@ -76,7 +77,10 @@ export const MenuArea = styled.nav`
         }
       }
       &.is-current {
-
+        background: transparent url(${navBg}) no-repeat center bottom / contain;
+        a {
+          color: ${themeGet('colors.menu', '#FF825C')};
+        }
       }
       @media only screen and (max-width: 1366px) {
         margin: 0 17px;

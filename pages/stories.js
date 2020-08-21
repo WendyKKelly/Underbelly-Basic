@@ -2,16 +2,20 @@
 import React, { Fragment } from 'react';
 
 import Head from 'next/head'
+import Sticky from 'react-stickynode';
 import { ThemeProvider } from 'styled-components';
 import { theme } from '../styles/theme/agencyDigital';
 import {
   GlobalStyle,
   ContentWrapper,
 } from '../components/AgencyDigital/agencyDigital.style';
+import { DrawerProvider } from '../src/contexts/DrawerContext';
 import { getSortedPostsData } from '../lib/posts';
 import Link from 'next/link';
-import Date from '../components/date';
+
 import Image from '../components/Image';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 
 
@@ -31,24 +35,35 @@ export default function Blog({ allPostsData }) {
             rel="stylesheet"
           />
         </Head>
+        <GlobalStyle />
+
+        <ContentWrapper>
+          <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
+            <DrawerProvider>
+              <Navbar />
+            </DrawerProvider>
+          </Sticky>
+
         <section >
-        
+
          <h2>Blog</h2>
          <ul>
-           {allPostsData.map(({ id, date, title }) => (
+           {allPostsData.map(({ id, date, title, thumbnail }) => (
              <li  key={id}>
+             <Image src={thumbnail} alt='image'/>
         <Link href="/posts/[id]" as={`/posts/${id}`}>
         <a>{title}</a>
         </Link>
         <br />
-        <small>
-        <Date dateString={date} />
-        </small>
+
         </li>
 
            ))}
          </ul>
         </section>
+        <Footer />
+          </ContentWrapper>
+
       </Fragment>
     </ThemeProvider>
   )

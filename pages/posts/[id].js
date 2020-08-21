@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import Head from 'next/head'
 import Link from 'next/link';
+import Image from '../../components/Image';
 
 import { ThemeProvider } from 'styled-components';
 import { theme } from '../../styles/theme/agencyDigital';
@@ -21,6 +22,7 @@ export default function Post({ postData }) {
         <title>{postData.title}</title>
       </Head>
       <article>
+      <Image src={postData.thumbnail} alt="image" />
       <h1 >{postData.title}</h1>
       <div>
 
