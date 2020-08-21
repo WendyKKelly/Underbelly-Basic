@@ -1,4 +1,35 @@
 ---
 label: Blog Post
 hide_body: false
-fields: []
+fields:
+- name: headline
+  type: text
+  config:
+    required: false
+  label: Headline
+  description: Title of Post
+- name: date_
+  type: datetime
+  label: 'date '
+  description: August 21, 2020
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+- name: hero
+  type: file
+  config:
+    maxSize: 64
+  label: Hero
+  description: image
+- name: main_content
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: main content
+  description: article
