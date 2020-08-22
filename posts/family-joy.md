@@ -1,6 +1,5 @@
 ---
 tags:
-- family
 - joy
 header: New Post
 hero: "/uploads/bruno-nascimento-eo11ms0fsnk-unsplash.jpg"
