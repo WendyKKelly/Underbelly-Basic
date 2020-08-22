@@ -10,6 +10,10 @@ const nextConfigs = {
         config.node = {
             fs: "empty"
         };
+        config.module.rules.push({
+          test: /\.md$/,
+          use: 'raw-loader',
+        }),
         config.plugins = [
             ...config.plugins,
         ]
@@ -43,11 +47,4 @@ module.exports = withPlugins(
     withCSS,
   ],
 
-)
-  webpack: function(config) {
-    config.module.rules.push({
-      test: /\.md$/,
-      use: 'raw-loader',
-    })
-    return config
-  };
+);
