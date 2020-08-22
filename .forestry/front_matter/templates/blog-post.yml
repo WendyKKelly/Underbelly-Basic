@@ -8,17 +8,6 @@ fields:
     required: false
   label: Header
   description: 'Title '
-- name: date_
-  type: datetime
-  label: 'Date '
-  description: date for post
-  config:
-    required: false
-    date_format: 
-    time_format: 
-    display_utc: false
-    export_format: '"MM/DD/YYYY"'
-  hidden: true
 - name: hero
   type: file
   config:
