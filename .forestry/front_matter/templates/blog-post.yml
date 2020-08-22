@@ -30,5 +30,3 @@ fields:
     required: false
   label: author
   description: author
-pages:
-- posts/trying-anotherpost.md
