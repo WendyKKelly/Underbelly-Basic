@@ -10,7 +10,7 @@ sections:
   create: all
   match: "**/*"
   new_doc_ext: md
-upload_dir: uploads
+upload_dir: public/image
 public_path: "/public/image"
 front_matter_path: ''
 use_front_matter_path: false
