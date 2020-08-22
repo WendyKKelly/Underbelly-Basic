@@ -192,7 +192,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({ ...ctx }) {
   const { id } = ctx.params
   const content = await import(`../../posts/${id}.md`)
-  const config = await import(`../../data/config.json`)
+  const config = await import(`../../components/data/config.json`)
   const data = matter(content.default)
 
   return {
