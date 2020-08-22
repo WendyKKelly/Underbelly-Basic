@@ -17,7 +17,7 @@ import Section, {
   ContentWrapper,
   BannerContent,
   ImageGroup,
-} from '../../Banner/banner.style';
+} from './post.style';
 import NavBar from '../../components/NavBar';
 import Footer from '../../components/Footer';
 
