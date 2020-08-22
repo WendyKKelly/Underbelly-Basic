@@ -56,7 +56,7 @@ export default function Blog({ allPostsData }) {
 }
 
 export async function getStaticProps() {
-  const siteConfig = await import(`../data/config.json`)
+  const siteConfig = await import(`../components/data/config.json`)
   //get posts & context from folder
   const posts = (context => {
     const keys = context.keys()
