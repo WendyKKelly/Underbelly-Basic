@@ -29,3 +29,5 @@ fields:
     time_format: 
     display_utc: false
     export_format: MM/DD/YYYY
+pages:
+- posts/trying-anotherpost.md
