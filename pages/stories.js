@@ -12,7 +12,7 @@ import {
 import { DrawerProvider } from '../src/contexts/DrawerContext';
 import { getSortedPostsData } from '../lib/posts';
 import Link from 'next/link';
-
+import Date from '../components/date'
 import Image from '../components/Image';
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
@@ -48,14 +48,16 @@ export default function Blog({ allPostsData }) {
 
          <h2>Blog</h2>
          <ul>
-           {allPostsData.map(({ id, title, thumbnail }) => (
+           {allPostsData.map(({ id, date, title, thumbnail }) => (
              <li  key={id}>
              <Image src={thumbnail} alt='image'/>
         <Link href="/posts/[id]" as={`/posts/${id}`}>
         <a>{title}</a>
         </Link>
         <br />
-
+                   <small className={utilStyles.lightText}>
+                     <Date dateString={date} />
+                   </small>
         </li>
 
            ))}

@@ -1,69 +1,203 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import Head from 'next/head'
 import Link from 'next/link';
-import Sticky from 'react-stickynode';
+import matter from 'gray-matter'
+import ReactMarkdown from 'react-markdown'
+const glob = require('glob')
 import Image from '../../components/Image';
 
-import { ThemeProvider } from 'styled-components';
-import { theme } from '../../styles/theme/agencyDigital';
-import {
-  GlobalStyle,
 
-} from '../../components/AgencyDigital/agencyDigital.style';
-import { getAllPostIds, getPostData } from '../../lib/posts'
-import { DrawerProvider } from '../../src/contexts/DrawerContext';
-import Container from '../../components/UI/Container';
-import Section, {
-  ContentWrapper,
-  BannerContent,
-  ImageGroup,
-} from './post.style';
-import NavBar from '../../components/NavBar';
-import Footer from '../../components/Footer';
 
-export default function Post({ postData }) {
+
+
+
+
+export default function Post({ fromtmatter, markdownBody}) {
+  function reformatDate(fullDate) {
+    const date = new Date(fullDate)
+    return date.toDateString().slice(4)
+  }
+
+  if (!frontmatter) return <></>
+
   return (
-    <ThemeProvider theme={theme}>
-      <Fragment>
     <Head>
-        <title>{postData.title}</title>
+        <title>{frontmatter.title}</title>
       </Head>
-      <GlobalStyle />
-
-      <ContentWrapper>
-        <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
-          <DrawerProvider>
-            <NavBar />
-          </DrawerProvider>
-        </Sticky>
-      <article>
-        <Container>
-
-      <h1 >{postData.title}</h1>
-
-    <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-  </Container>
+      <article className="blog">
+      <Image className="blog_hero"
+      img
+      src={frontmatter.hero}alt={'blog_hero_${frontmatter.title}'}
+      />
+      />
+<div className="blog_info">
+      <h1 >{frontmatter.title}</h1>
+<h3>{reformatDate(frontmatter.date)}</h3>
+</div>
+<div className="blog__body">
+      <ReactMarkdown source={markdownBody} />
+    </div>
+<h2 className="blog__footer">Written By: {frontmatter.author}</h2>
     </article>
-    <Footer />
-      </ContentWrapper>
+    <style jsx>
+       {`
+         .blog h1 {
+           margin-bottom: 0.7rem;
+         }
+         .blog__hero {
+           min-height: 300px;
+           height: 60vh;
+           width: 100%;
+           margin: 0;
+           overflow: hidden;
+         }
+         .blog__hero img {
+           margin-bottom: 0;
+           object-fit: cover;
+           min-height: 100%;
+           min-width: 100%;
+           object-position: center;
+         }
+         .blog__info {
+           padding: 1.5rem 1.25rem;
+           width: 100%;
+           max-width: 768px;
+           margin: 0 auto;
+         }
+         .blog__info h1 {
+           margin-bottom: 0.66rem;
+         }
+         .blog__info h3 {
+           margin-bottom: 0;
+         }
+         .blog__body {
+           width: 100%;
+           padding: 0 1.25rem;
+           margin: 0 auto;
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+         }
+         .blog__body a {
+           padding-bottom: 1.5rem;
+         }
+         .blog__body:last-child {
+           margin-bottom: 0;
+         }
+         .blog__body h1 h2 h3 h4 h5 h6 p {
+           font-weight: normal;
+         }
+         .blog__body p {
+           color: inherit;
+         }
+         .blog__body ul {
+           list-style: initial;
+         }
+         .blog__body ul ol {
+           margin-left: 1.25rem;
+           margin-bottom: 1.25rem;
+           padding-left: 1.45rem;
+         }
+         .blog__footer {
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           padding: 1.5rem 1.25rem;
+           width: 100%;
+           max-width: 800px;
+           margin: 0 auto;
+         }
+         .blog__footer h2 {
+           margin-bottom: 0;
+         }
+         .blog__footer a {
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+         }
+         .blog__footer a svg {
+           width: 20px;
+         }
+         @media (min-width: 768px) {
+           .blog {
+             display: flex;
+             flex-direction: column;
+           }
+           .blog__body {
+             max-width: 800px;
+             padding: 0 2rem;
+           }
+           .blog__body span {
+             width: 100%;
+             margin: 1.5rem auto;
+           }
+           .blog__body ul ol {
+             margin-left: 1.5rem;
+             margin-bottom: 1.5rem;
+           }
+           .blog__hero {
+             min-height: 600px;
+             height: 75vh;
+           }
+           .blog__info {
+             text-align: center;
+             padding: 2rem 0;
+           }
+           .blog__info h1 {
+             max-width: 500px;
+             margin: 0 auto 0.66rem auto;
+           }
+           .blog__footer {
+             padding: 2.25rem;
+           }
+         }
+         @media (min-width: 1440px) {
+           .blog__hero {
+             height: 70vh;
+           }
+           .blog__info {
+             padding: 3rem 0;
+           }
+           .blog__footer {
+             padding: 2rem 2rem 3rem 2rem;
+           }
+         }
+       `}
+     </style>
 
-    </Fragment>
-  </ThemeProvider>
   )
 }
 
 export async function getStaticPaths() {
-  const paths = getAllPostIds()
+  //get all .md files in the posts dir
+   const blogs = glob.sync('posts/**/*.md')
+
+   //remove path and extension to leave filename only
+   const blogSlugs = blogs.map(file =>
+     file
+       .split('/')[1]
+       .replace(/ /g, '-')
+       .slice(0, -3)
+       .trim()
+   )
+   // create paths with `slug` param
+  const paths = blogSlugs.map(id => `/blog/${id}`)
   return {
     paths,
-    fallback: false
+    fallback: false,
   }
 }
-export async function getStaticProps({ params }) {
-  const postData = await getPostData(params.id)
+export async function getStaticProps({ ...ctx }) {
+  const { id } = ctx.params
+  const content = await import(`../../posts/${id}.md`)
+  const config = await import(`../../data/config.json`)
+  const data = matter(content.default)
+
   return {
     props: {
-      postData
-    }
+      siteTitle: config.title,
+      frontmatter: data.data,
+      markdownBody: data.content,
+    },
   }
 }
