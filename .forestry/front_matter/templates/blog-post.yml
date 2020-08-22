@@ -29,6 +29,16 @@ fields:
       format: markdown
   label: Main Content Area
   description: Text
+- name: date
+  type: datetime
+  label: date
+  description: date
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+    export_format: '"MM/DD/YYYY"'
 pages:
 - posts/Another Post.md
-- posts/family-joy.md
+- posts/family.md
