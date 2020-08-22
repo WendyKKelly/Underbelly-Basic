@@ -8,17 +8,6 @@ fields:
     required: false
   label: Title
   description: 'Title '
-- name: thumbnail
-  type: file
-  config:
-    maxSize: 64
-  description: thumbnail
-  label: thumbnail
-- name: tags
-  type: tag_list
-  default: []
-  label: Tags
-  description: tags
 - name: date
   type: datetime
   label: date
@@ -29,5 +18,17 @@ fields:
     time_format: 
     display_utc: false
     export_format: MM/DD/YYYY
+- name: hero_image
+  type: file
+  config:
+    maxSize: 64
+  label: hero
+  description: Hero
+- name: author
+  type: text
+  config:
+    required: false
+  label: author
+  description: author
 pages:
-- posts/trying-anotherpost.md
+- posts/yet-another-try.md
