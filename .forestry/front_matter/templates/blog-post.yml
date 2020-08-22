@@ -30,4 +30,5 @@ fields:
   label: Main Content Area
   description: Text
 pages:
+- posts/Another Post.md
 - posts/family-joy.md
