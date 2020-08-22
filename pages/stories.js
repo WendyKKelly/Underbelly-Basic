@@ -12,7 +12,7 @@ import {
 import { DrawerProvider } from '../src/contexts/DrawerContext';
 import { getSortedPostsData } from '../lib/posts';
 import Link from 'next/link';
-
+import Container from '../../UI/Container';
 import Image from '../components/Image';
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';

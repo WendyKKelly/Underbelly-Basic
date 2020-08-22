@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import Head from 'next/head'
 import Link from 'next/link';
+import Sticky from 'react-stickynode';
 import Image from '../../components/Image';
 
 import { ThemeProvider } from 'styled-components';
