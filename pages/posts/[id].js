@@ -12,7 +12,7 @@ import {
 } from '../../components/AgencyDigital/agencyDigital.style';
 import { getAllPostIds, getPostData } from '../../lib/posts'
 import { DrawerProvider } from '../../src/contexts/DrawerContext';
-import Container from '../../UI/Container';
+import Container from '../../components/UI/Container';
 import NavBar from '../../components/NavBar';
 import Footer from '../../components/Footer';
 
