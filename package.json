@@ -24,6 +24,7 @@
     "next-optimized-images": "^2.6.1",
     "next-transpile-modules": "^3.3.0",
     "prop-types": "^15.7.2",
+    "raw-loader": "^4.0.1",
     "rc-drawer": "^4.1.0",
     "rc-progress": "^3.0.0",
     "rc-tabs": "9.7.0",
