@@ -39,3 +39,13 @@ fields:
     time_format: 
     display_utc: false
     export_format: '"MM/DD/YYYY"'
+- name: id
+  type: number
+  label: id
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+  description: id
