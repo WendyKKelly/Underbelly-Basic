@@ -41,3 +41,4 @@ fields:
     export_format: '"MM/DD/YYYY"'
 pages:
 - posts/Another Post.md
+- posts/family.md
