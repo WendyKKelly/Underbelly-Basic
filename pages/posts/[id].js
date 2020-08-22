@@ -8,7 +8,7 @@ import { ThemeProvider } from 'styled-components';
 import { theme } from '../../styles/theme/agencyDigital';
 import {
   GlobalStyle,
-  ContentWrapper,
+
 } from '../../components/AgencyDigital/agencyDigital.style';
 import { getAllPostIds, getPostData } from '../../lib/posts'
 import { DrawerProvider } from '../../src/contexts/DrawerContext';
@@ -38,7 +38,7 @@ export default function Post({ postData }) {
         </Sticky>
       <article>
         <Container>
-      
+
       <h1 >{postData.title}</h1>
 
     <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
