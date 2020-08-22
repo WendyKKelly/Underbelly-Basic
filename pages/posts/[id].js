@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Head from 'next/head'
 import Link from 'next/link';
 import matter from 'gray-matter'
@@ -21,6 +21,7 @@ export default function Post({ fromtmatter, markdownBody}) {
   if (!frontmatter) return <></>
 
   return (
+    <Fragment>
     <article className="blog">
         <title>{frontmatter.title}</title>
 
@@ -39,6 +40,7 @@ export default function Post({ fromtmatter, markdownBody}) {
     </div>
 <h2 className="blog__footer">Written By: {frontmatter.author}</h2>
     </article>
+    </Fragment>
     <style jsx>
        {`
          .blog h1 {
