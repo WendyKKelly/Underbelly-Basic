@@ -183,15 +183,15 @@ export async function getStaticPaths() {
        .trim()
    )
    // create paths with `slug` param
-  const paths = blogSlugs.map(id => `/blog/${id}`)
+  const paths = blogSlugs.mapslug => `/blog/${slug}`)
   return {
     paths,
     fallback: false,
   }
 }
 export async function getStaticProps({ ...ctx }) {
-  const { id } = ctx.params
-  const content = await import(`../../posts/${id}.md`)
+  const { slug } = ctx.params
+  const content = await import(`../../posts/${slug}.md`)
   const config = await import(`../../components/data/config.json`)
   const data = matter(content.default)
 

@@ -10,10 +10,10 @@ import {
   ContentWrapper,
 } from '../components/AgencyDigital/agencyDigital.style';
 import { DrawerProvider } from '../src/contexts/DrawerContext';
-import { getSortedPostsData } from '../lib/posts';
+import BlogList from '../components/BlogList'
 import Link from 'next/link';
-import Date from '../components/date'
-import Image from '../components/Image';
+
+
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 
@@ -44,25 +44,9 @@ export default function Blog({ allPostsData }) {
             </DrawerProvider>
           </Sticky>
 
-        <section >
-
-         <h2>Blog</h2>
-         <ul>
-           {allPostsData.map(({ id, date, title, thumbnail }) => (
-             <li  key={id}>
-             <Image src={thumbnail} alt='image'/>
-        <Link href="/posts/[id]" as={`/posts/${id}`}>
-        <a>{title}</a>
-        </Link>
-        <br />
-                   <small className={utilStyles.lightText}>
-                     <Date dateString={date} />
-                   </small>
-        </li>
-
-           ))}
-         </ul>
-        </section>
+          <section>
+            <BlogList allBlogs={props.allBlogs} />
+          </section>
         <Footer />
           </ContentWrapper>
 
@@ -72,10 +56,36 @@ export default function Blog({ allPostsData }) {
 }
 
 export async function getStaticProps() {
-  const allPostsData = getSortedPostsData()
+  const siteConfig = await import(`../data/config.json`)
+  //get posts & context from folder
+  const posts = (context => {
+    const keys = context.keys()
+    const values = keys.map(context)
+
+    const data = keys.map((key, index) => {
+      // Create slug from filename
+      const slug = key
+        .replace(/^.*[\\\/]/, '')
+        .split('.')
+        .slice(0, -1)
+        .join('.')
+      const value = values[index]
+      // Parse yaml metadata & markdownbody in document
+      const document = matter(value.default)
+      return {
+        frontmatter: document.data,
+        markdownBody: document.content,
+        slug,
+      }
+    })
+    return data
+  })(require.context('../posts', true, /\.md$/))
+
   return {
     props: {
-      allPostsData
-    }
+      allBlogs: posts,
+      title: siteConfig.default.title,
+      description: siteConfig.default.description,
+    },
   }
 }
