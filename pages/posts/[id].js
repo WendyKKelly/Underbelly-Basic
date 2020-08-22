@@ -21,10 +21,10 @@ export default function Post({ fromtmatter, markdownBody}) {
   if (!frontmatter) return <></>
 
   return (
-    <Head>
+    <article className="blog">
         <title>{frontmatter.title}</title>
-      </Head>
-      <article className="blog">
+
+
       <Image className="blog_hero"
       img
       src={frontmatter.hero}alt={'blog_hero_${frontmatter.title}'}
