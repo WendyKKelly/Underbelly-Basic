@@ -10,9 +10,9 @@ import {
   ContentWrapper,
 } from '../../components/AgencyDigital/agencyDigital.style';
 import { getAllPostIds, getPostData } from '../../lib/posts'
-
-
-
+import { DrawerProvider } from '../../src/contexts/DrawerContext';
+import NavBar from '../../components/NavBar';
+import Footer from '../../components/Footer';
 
 export default function Post({ postData }) {
   return (
@@ -21,12 +21,25 @@ export default function Post({ postData }) {
     <Head>
         <title>{postData.title}</title>
       </Head>
+      <GlobalStyle />
+
+      <ContentWrapper>
+        <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
+          <DrawerProvider>
+            <NavBar />
+          </DrawerProvider>
+        </Sticky>
       <article>
-      <Image src={postData.hero} alt="image" />
+        <Container>
+      <Image src={postData.hero} alt="image" className="blog__image"/>
       <h1 >{postData.title}</h1>
 
     <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+  </Container>
     </article>
+    <Footer />
+      </ContentWrapper>
+
     </Fragment>
   </ThemeProvider>
   )
