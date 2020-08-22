@@ -13,6 +13,11 @@ import {
 import { getAllPostIds, getPostData } from '../../lib/posts'
 import { DrawerProvider } from '../../src/contexts/DrawerContext';
 import Container from '../../components/UI/Container';
+import Section, {
+  ContentWrapper,
+  BannerContent,
+  ImageGroup,
+} from '../../Banner/banner.style';
 import NavBar from '../../components/NavBar';
 import Footer from '../../components/Footer';
 
@@ -33,7 +38,7 @@ export default function Post({ postData }) {
         </Sticky>
       <article>
         <Container>
-      <Image src={postData.hero} alt="image" className="blog__image"/>
+      
       <h1 >{postData.title}</h1>
 
     <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
