@@ -39,3 +39,5 @@ fields:
     time_format: 
     display_utc: false
     export_format: '"MM/DD/YYYY"'
+pages:
+- posts/Another Post.md
