@@ -2,11 +2,11 @@
 label: Blog Post
 hide_body: false
 fields:
-- name: header
+- name: title
   type: text
   config:
     required: false
-  label: Header
+  label: Title
   description: 'Title '
 - name: hero
   type: file
