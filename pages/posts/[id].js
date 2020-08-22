@@ -40,7 +40,7 @@ export default function Post({ fromtmatter, markdownBody}) {
     </div>
 <h2 className="blog__footer">Written By: {frontmatter.author}</h2>
     </article>
-    </Fragment>
+
     <style jsx>
        {`
          .blog h1 {
@@ -166,7 +166,7 @@ export default function Post({ fromtmatter, markdownBody}) {
          }
        `}
      </style>
-
+  </Fragment>
   )
 }
 
