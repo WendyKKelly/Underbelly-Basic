@@ -1,0 +1,33 @@
+---
+label: Blog Post
+hide_body: false
+fields:
+- name: header
+  type: text
+  config:
+    required: false
+  label: Header
+  description: 'Title '
+- name: hero
+  type: file
+  config:
+    maxSize: 64
+  label: Hero
+  description: Hero Image for blog post
+- name: tags
+  type: tag_list
+  default: []
+  label: Tags
+  description: tags
+- name: main_content_area
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Main Content Area
+  description: Text
+pages:
+- posts/family.md
