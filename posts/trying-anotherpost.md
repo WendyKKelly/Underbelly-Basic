@@ -1,7 +1,7 @@
 ---
 tags: []
 title: Trying AnotherPost
-thumbnail: public/image/blog1/joy2.png
+thumbnail: public/image/banner.png
 date: 08/22/2020
 
 ---
@@ -21,4 +21,4 @@ Okay! Now trying an imageAt first I thought this image was really heartwarming a
 
 Image:
 
-![](public/image/blog1/joy4.png)
+![banner](public/image/banner.png "banner")
