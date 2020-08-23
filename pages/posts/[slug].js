@@ -12,6 +12,9 @@ import { CMS_NAME } from '../../lib/constants'
 import markdownToHtml from '../../lib/markdownToHtml'
 import { useState, useEffect, useMemo } from 'react'
 import { useForm, usePlugin } from 'tinacms'
+import { InlineForm } from 'react-tinacms-inline'
+import { InlineWysiwyg } from 'react-tinacms-editor'
+
 
 export default function Post({ post: initialPost, morePosts, preview }) {
   const router = useRouter()
@@ -19,38 +22,14 @@ export default function Post({ post: initialPost, morePosts, preview }) {
     return <ErrorPage statusCode={404} />
   }
 
-  const formConfig = {
-    id: initialPost.slug,
-    label: 'Blog Post',
-    initialValues: initialPost,
-    onSubmit: (values) => {
-      alert(`Submitting ${values.title}`)
-    },
-    fields: [
-      {
-        name: 'title',
-        label: 'Post Title',
-        component: 'text',
-      },
-      {
-        name: 'rawMarkdownBody',
-        label: 'Content',
-        component: 'markdown',
-      },
-    ],
-  }
+  const [data, form] = useForm()
 
-  const [post, form] = useForm(formConfig)
-  usePlugin(form)
-
-  const [htmlContent, setHtmlContent] = useState(post.content)
-  const initialContent = useMemo(() => post.rawMarkdownBody, [])
-  useEffect(() => {
-    if (initialContent == post.rawMarkdownBody) return
-    markdownToHtml(post.rawMarkdownBody).then(setHtmlContent)
-  }, [post.rawMarkdownBody])
+usePlugin(form)
 
   return (
+    <InlineForm form={form}>
+     <InlineWysiwyg name="markdownBody" format="markdown">
+       <ReactMarkdown source={data.markdownBody} />
     <Layout preview={preview}>
       <Container>
         <Header />
@@ -77,6 +56,8 @@ export default function Post({ post: initialPost, morePosts, preview }) {
         )}
       </Container>
     </Layout>
+    </InlineWysiwyg>
+ </InlineForm>
   )
 }
 
