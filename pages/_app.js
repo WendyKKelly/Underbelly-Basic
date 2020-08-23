@@ -1,14 +1,17 @@
 
 import React, { Fragment } from 'react';
-import { Modal } from '@redq/reuse-modal';
-import '@redq/reuse-modal/es/index.css';
-import 'rc-tabs/assets/index.css';
-export default ({ Component, pageProps }) => {
+import App from 'next/app'
+import { Tina, TinaCMS } from 'tinacms'
+
+import { withTina } from 'tinacms'
+function MyApp ({ Component, pageProps }) {
   return (
     <Fragment>
-      <Modal />
+  
 
       <Component {...pageProps} />
     </Fragment>
   );
 };
+
+export default withTina(MyApp)

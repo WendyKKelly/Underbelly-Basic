@@ -74,7 +74,7 @@ export const data = {
       title: '',
       desc:
         'Are you feeling pretty good but want to learn more about how your emotional self ticks? Start here to read, listen, and learn about how to care for your wild and precious self.',
-      link: '/joy',
+      link: '/stories',
     },
     {
       id: 4,

@@ -10,7 +10,7 @@ import { data } from '../data';
 import Container from '../UI/Container';
 import BlogSectionWrapper from './blogSection.style';
 
-const BlogSection1 = ({
+const Joy = ({
   row,
   sectionHeader,
   sectionTitle,
@@ -22,14 +22,14 @@ const BlogSection1 = ({
     <BlogSectionWrapper id="blogSection">
       <Container>
         <Box {...sectionHeader}>
-          <Text content="So it's JOY You're after?" {...sectionSubTitle} />
+          <Text content="Looking for Joy" {...sectionSubTitle} />
           <Heading
-            content="Joy — A state of being that can infuse your entire being. Sustaining joy is as simple as practicing and practicing is as simple as taking that first step. It's free, it's simple, and it's yours for the taking."
+            content="You are the hero of your own wild and precious story. Start learning today about how you can get super strong and flexible and begin to make choices that are worthy of the hero that you are."
             {...sectionTitle}
           />
         </Box>
         <Box className="row" {...row}>
-          {data.blog1.map((post, index) => (
+          {data.blog.map((post, index) => (
             <FeatureBlock
               key={`post_key-${index}`}
               id={`post_id-${post.id}`}
@@ -56,7 +56,7 @@ const BlogSection1 = ({
 };
 
 // BlogSection style props
-BlogSection1.propTypes = {
+BlogSection.propTypes = {
   sectionHeader: PropTypes.object,
   row: PropTypes.object,
   col: PropTypes.object,
@@ -67,7 +67,7 @@ BlogSection1.propTypes = {
 };
 
 // BlogSection default style
-BlogSection1.defaultProps = {
+BlogSection.defaultProps = {
   // section header default style
   sectionHeader: {
     mb: ['40px', '56px'],
@@ -117,4 +117,4 @@ BlogSection1.defaultProps = {
   },
 };
 
-export default BlogSection1;
+export default Joy;
