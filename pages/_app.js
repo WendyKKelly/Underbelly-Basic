@@ -1,9 +1,7 @@
 
 import React, { Fragment } from 'react';
-import App from 'next/app'
-import { Tina, TinaCMS } from 'tinacms'
-
-import { withTina } from 'tinacms'
+import App from 'next/app';
+import { withTina } from 'tinacms';
 function MyApp ({ Component, pageProps }) {
   return (
     <Fragment>

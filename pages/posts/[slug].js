@@ -12,9 +12,12 @@ import { CMS_NAME } from '../../lib/constants'
 import markdownToHtml from '../../lib/markdownToHtml'
 import { useState, useEffect, useMemo } from 'react'
 import { useForm, usePlugin } from 'tinacms'
-import { InlineForm } from 'react-tinacms-inline'
-import { InlineWysiwyg } from 'react-tinacms-editor'
-
+import("react-tinacms-editor").then(
+  ({ MarkdownFieldPlugin, HtmlFieldPlugin }) => {
+    cms.plugins.add(MarkdownFieldPlugin)
+    cms.plugins.add(HtmlFieldplugin)
+  }
+)
 
 export default function Post({ post: initialPost, morePosts, preview }) {
   const router = useRouter()
@@ -22,15 +25,29 @@ export default function Post({ post: initialPost, morePosts, preview }) {
     return <ErrorPage statusCode={404} />
   }
 
-  const [data, form] = useForm()
-
+  const formConfig = {
+  fields: [
+    {
+      name: "description",
+      label: "Description",
+      component: "html",
+    },
+    {
+      name: "body",
+      label: "Blog Body",
+      component: "markdown",
+    }
+  ]
+}
+const [post, form] = useForm(formConfig)
 usePlugin(form)
 
   return (
-    <InlineForm form={form}>
-     <InlineWysiwyg name="markdownBody" format="markdown">
-       <ReactMarkdown source={data.markdownBody} />
+
+      
+
     <Layout preview={preview}>
+      <>
       <Container>
         <Header />
         {router.isFallback ? (
@@ -55,9 +72,9 @@ usePlugin(form)
           </>
         )}
       </Container>
+      </>
     </Layout>
-    </InlineWysiwyg>
- </InlineForm>
+
   )
 }
 
