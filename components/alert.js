@@ -1,9 +1,12 @@
 import Container from './container'
 import cn from 'classnames'
 import { EXAMPLE_PATH } from '../lib/constants'
+import Logo from './UIElements/Logo';
+import LogoImage from '../public/image/logo.png';
 
 export default function Alert({ preview }) {
   return (
+    <>
     <div
       className={cn('border-b', {
         'bg-accent-7 border-accent-7 text-white': preview,
@@ -25,18 +28,29 @@ export default function Alert({ preview }) {
             </>
           ) : (
             <>
-              The source code for this blog is{' '}
-              <a
-                href={`https://github.com/zeit/next.js/tree/canary/examples/${EXAMPLE_PATH}`}
-                className="underline hover:text-success duration-200 transition-colors"
-              >
-                available on GitHub
-              </a>
+
+
+                <Logo
+                    href="/"
+                    logoSrc={LogoImage}
+                    title="Agency Digital"
+                    className="main-logo"
+                  />
+
               .
             </>
           )}
         </div>
       </Container>
     </div>
+    <style jsx>
+      {`
+    .main-logo {
+      min-width: 145px;
+      max-width: 145px;
+    }
+    `}
+  </style>
+</>
   )
 }

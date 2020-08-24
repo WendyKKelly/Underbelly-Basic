@@ -12,6 +12,7 @@ export default function PostPreview({
   slug,
 }) {
   return (
+    <>
     <div>
       <div className="mb-5">
         <CoverImage slug={slug} title={title} src={coverImage} />
@@ -27,5 +28,27 @@ export default function PostPreview({
       <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
       <Avatar name={author.name} picture={author.picture} />
     </div>
+    <style jsx>
+    {`
+      body {
+        font-family: 'Raleway', sans-serif;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: 'Alice', serif;
+        margin-top: 0;
+      }
+      p{
+        font-family: 'Raleway', sans-serif;
+      }
+
+      `}
+    </style>
+  </>
   )
 }

@@ -2,6 +2,7 @@ import PostPreview from '../components/post-preview'
 
 export default function MoreStories({ posts }) {
   return (
+    <>
     <section>
       <h2 className="mb-8 text-6xl md:text-7xl font-bold tracking-tighter leading-tight">
         More Stories
@@ -20,5 +21,27 @@ export default function MoreStories({ posts }) {
         ))}
       </div>
     </section>
+    <style jsx>
+    {`
+      body {
+        font-family: 'Raleway', sans-serif;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: 'Alice', serif;
+        margin-top: 0;
+      }
+      p{
+        font-family: 'Raleway', sans-serif;
+      }
+
+      `}
+    </style>
+  </>
   )
 }

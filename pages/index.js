@@ -29,8 +29,6 @@ export default function Home() {
           <title>Underbelly Project</title>
           <meta name="theme-color" content="#FF825C" />
           <meta name="Description" content="Underbelly project" />
-
-          {/* Load google fonts */}
           <link
             rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Alice&family=Raleway&display=swap"

@@ -12,6 +12,7 @@ export default function HeroPost({
   slug,
 }) {
   return (
+    <>
     <section>
       <div className="mb-8 md:mb-16">
         <CoverImage title={title} src={coverImage} slug={slug} />
@@ -33,5 +34,28 @@ export default function HeroPost({
         </div>
       </div>
     </section>
-  )
+    <style jsx>
+    {`
+      body {
+        font-family: 'Raleway', sans-serif;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: 'Alice', serif;
+        margin-top: 0;
+      }
+      p{
+        font-family: 'Raleway', sans-serif;
+      }
+
+      `}
+    </style>
+  </>
+    
+  );
 }

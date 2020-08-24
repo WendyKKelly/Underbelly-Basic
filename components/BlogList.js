@@ -16,7 +16,7 @@ const BlogList = ({ allBlogs }) => {
       <ul className="list">
         {allBlogs.length > 1 &&
           allBlogs.map(post => (
-            <Link key={post.slug} href={{ pathname: `/blog/${post.slug}` }}>
+            <Link key={post.slug} href={{ pathname: `/posts/${post.slug}` }}>
               <a>
                 <li>
                   <div className="hero_image">
@@ -41,6 +41,23 @@ const BlogList = ({ allBlogs }) => {
       </ul>
       <style jsx>
         {`
+          body {
+            font-family: 'Raleway', sans-serif;
+          }
+
+          h1,
+          h2,
+          h3,
+          h4,
+          h5,
+          h6 {
+            font-family: 'Alice', serif;
+            margin-top: 0;
+          }
+          p{
+            font-family: 'Raleway', sans-serif;
+          }
+
           margin-bottom: 0;
           a:hover {
             opacity: 1;
