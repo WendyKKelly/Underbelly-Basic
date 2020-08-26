@@ -1,7 +1,7 @@
-import Avatar from '../components/avatar'
-import DateFormater from '../components/date-formater'
-import CoverImage from '../components/cover-image'
-import PostTitle from '../components/post-title'
+import Avatar from '../components/avatar';
+import DateFormater from '../components/date-formater';
+import CoverImage from '../components/cover-image';
+import PostTitle from '../components/post-title';
 
 export default function PostHeader({ title, coverImage, date, author }) {
   return (
@@ -22,27 +22,25 @@ export default function PostHeader({ title, coverImage, date, author }) {
         </div>
       </div>
 
-    <style jsx>
-    {`
-      body {
-        font-family: 'Raleway', sans-serif;
-      }
-
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        font-family: 'Alice', serif;
-        margin-top: 0;
-      }
-      p{
-        font-family: 'Raleway', sans-serif;
-      }
-
-      `}
-    </style>
-  </>
-  )
+      <style jsx>
+        {`
+          body {
+            font-family: 'Raleway', sans-serif;
+          }
+          h1,
+          h2,
+          h3,
+          h4,
+          h5,
+          h6 {
+            font-family: 'Alice', serif;
+            margin-top: 0;
+          }
+          p {
+            font-family: 'Raleway', sans-serif;
+          }
+        `}
+      </style>
+    </>
+  );
 }

@@ -20,7 +20,6 @@ import Sad from '../components/Sad';
 import AboutCopy from '../components/AboutCopy';
 import Footer from '../components/Footer';
 
-
 export default function Home() {
   return (
     <ThemeProvider theme={theme}>
@@ -31,7 +30,7 @@ export default function Home() {
           <meta name="Description" content="Underbelly project" />
           <link
             rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Alice&family=Raleway&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Alice&family=Raleway&display=swap"
             rel="stylesheet"
           />
         </Head>
@@ -53,9 +52,8 @@ export default function Home() {
           <Sad />
           <AboutCopy />
           <Footer />
-            </ContentWrapper>
-
+        </ContentWrapper>
       </Fragment>
     </ThemeProvider>
-  )
+  );
 }

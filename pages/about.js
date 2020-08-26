@@ -14,7 +14,6 @@ import NavBar from '../components/NavBar';
 import AboutCopy from '../components/AboutCopy';
 import Footer from '../components/Footer';
 
-
 export default function About() {
   return (
     <ThemeProvider theme={theme}>
@@ -27,8 +26,7 @@ export default function About() {
           {/* Load google fonts */}
           <link
             rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Alice&family=Raleway&display=swap"
-            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Alice&family=Raleway&display=swap"
           />
         </Head>
 
@@ -43,9 +41,8 @@ export default function About() {
 
           <AboutCopy />
           <Footer />
-            </ContentWrapper>
-
+        </ContentWrapper>
       </Fragment>
     </ThemeProvider>
-  )
+  );
 }
