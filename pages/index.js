@@ -11,7 +11,7 @@ import {
 import { DrawerProvider } from '../components/DrawerContext';
 import NavBar from '../components/NavBar';
 import Banner from '../components/Banner';
-import News from '../components/News';
+import BlogSection from '../components/BlogSection';
 import Service from '../components/Service';
 
 import Footer from '../components/Footer';
