@@ -4,7 +4,9 @@ export default function MoreStories({ posts }) {
   return (
     <>
       <section>
-        <h2>More Stories</h2>
+        <div className="stories">
+          <h2>More Stories</h2>
+        </div>
         <div className="post">
           {posts.map((post) => (
             <PostPreview
@@ -21,6 +23,11 @@ export default function MoreStories({ posts }) {
       </section>
       <style jsx>
         {`
+          .stories {
+            font-family: 'Alice', serif;
+            font-size: 2.5em;
+            color: #8dbb85;
+          }
           body {
             font-family: 'Raleway', sans-serif;
           }

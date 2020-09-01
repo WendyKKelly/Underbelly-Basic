@@ -1,18 +1,21 @@
-.title {
-  font-family: 'Alice', serif;
-  font-size: 2.5em;
-  color: #ec6f48;
+.stories {
   text-align: center;
   margin-left: 2vh;
 }
-a {
+
+.wild {
+  font-family: 'Alice', serif;
+  font-size: 2.5em;
+  color: #ec6f48;
+}
+a.wild {
   border-bottom: 1px solid #545454;
   color: #ec6f48;
   padding-bottom: 0.25em;
   text-decoration: none;
 }
 
-a:hover {
+a.wild:hover {
   background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/squiggle.svg');
   background-position: bottom;
   background-repeat: repeat-x;

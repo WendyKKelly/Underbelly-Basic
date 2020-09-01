@@ -13,7 +13,7 @@ export default function HeroPost({
 }) {
   return (
     <>
-      <div>
+      <div className="hero-image">
         <CoverImage title={title} src={coverImage} slug={slug} />
       </div>
 
@@ -21,7 +21,7 @@ export default function HeroPost({
         <div>
           <h3>
             <Link as={`/posts/${slug}`} href="/posts/[slug]">
-              <a className="hover">{title}</a>
+              <a className="title">{title}</a>
             </Link>
           </h3>
           <div>
@@ -35,7 +35,11 @@ export default function HeroPost({
       </div>
       <style jsx>
         {`
-          .hover {
+          .hero-image {
+            text-align: center;
+          }
+
+          .title {
             font-family: 'Alice', serif;
             font-size: 2.5em;
             color: #ec6f48;
@@ -43,21 +47,14 @@ export default function HeroPost({
             margin-left: 2vh;
           }
           a {
-            border-bottom: 0px solid #white;
-            color: white;
-            padding-bottom: 0em;
+            border-bottom: 0px solid white;
+            color: #ec6f48;
+            text-align: center;
+            margin-left: 2vh;
+            padding-bottom: 0.25em;
             text-decoration: none;
           }
 
-          a:hover {
-            background-image: none;
-            background-position: bottom;
-            background-repeat: repeat-x;
-            background-size: 0%;
-            border-bottom: 0;
-            padding-bottom: 0em;
-            text-decoration: none;
-          }
           .body {
             font-family: 'Raleway', sans-serif;
             color: #545454;

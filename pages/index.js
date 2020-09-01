@@ -14,9 +14,6 @@ import Banner from '../components/Banner';
 import News from '../components/News';
 import Service from '../components/Service';
 
-import BlogSection from '../components/BlogSection';
-
-import Sad from '../components/Sad';
 import Footer from '../components/Footer';
 
 export default function Home() {
@@ -47,9 +44,6 @@ export default function Home() {
           <Service />
 
           <BlogSection />
-          <News />
-
-          <Sad />
 
           <Footer />
         </ContentWrapper>

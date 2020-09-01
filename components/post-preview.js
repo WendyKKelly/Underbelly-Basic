@@ -42,6 +42,8 @@ export default function PostPreview({
           a {
             border-bottom: 0px solid white;
             color: #ec6f48;
+            text-align: center;
+            margin-left: 2vh;
             padding-bottom: 0.25em;
             text-decoration: none;
           }

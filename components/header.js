@@ -1,11 +1,10 @@
 import Link from 'next/link';
 import '../components/header.style.css';
-
 export default function Header() {
   return (
-    <div className="title">
+    <div className="stories">
       <Link href="/stories">
-        <a>Wild & Precious Stories</a>
+        <a className="wild">Wild & Precious Stories</a>
       </Link>
     </div>
   );
