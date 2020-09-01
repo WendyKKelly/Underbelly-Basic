@@ -1,4 +1,3 @@
-
 import Image from '../Image';
 import news1 from '../../public/image/news/1.png';
 import news2 from '../../public/image/news/2.png';
@@ -22,11 +21,15 @@ import Joy4 from '../../public/image/blog1/joy4.png';
 import Joy5 from '../../public/image/blog1/joy5.png';
 import Joy6 from '../../public/image/blog1/joy6.png';
 
-
 export const data = {
   navItems: [
     {
-      label: 'Home',
+      label: '',
+      path: '#',
+      offset: '70',
+    },
+    {
+      label: '',
       path: '#',
       offset: '70',
     },
@@ -41,12 +44,7 @@ export const data = {
       offset: '70',
     },
     {
-      label: 'Grow',
-      path: '#',
-      offset: '70',
-    },
-    {
-      label: 'Media',
+      label: '',
       path: '#',
       offset: '70',
     },
@@ -92,14 +90,14 @@ export const data = {
       title: '10 Wild and precious things',
       desc:
         'A free weekly newsletter every Monday morning to start your week off right.',
-      link: '#',
+      link: 'https://underbelly.substack.com/',
     },
     {
       id: 2,
       icon: serviceIcon2,
       title: 'Stories from my underbelly',
       desc: 'An every so often blog hosted on Medium.',
-      link: '#',
+      link: 'https://medium.com/our-underbelly',
     },
     {
       id: 3,
@@ -107,7 +105,8 @@ export const data = {
       title: 'Wild and precious conversations',
       desc:
         'A podcast every Thursday with guests who speak freely with me on topics related to your emotional health.',
-      link: 'https://wildprecious.thinkific.com/',
+      link:
+        'https://podcasts.apple.com/ca/podcast/wild-and-precious-conversations/id1491090272',
     },
     {
       id: 4,
@@ -147,14 +146,14 @@ export const data = {
       title: 'First Aid for Grief',
       thumbnail_url: BlogImage2,
       date: 'April 8, 2020',
-      postLink: '#',
+      postLink: '/posts/blog2',
     },
     {
       id: 3,
-      title: 'Provocation: How to Use it for Good',
+      title: 'Authenic Vulnerability',
       thumbnail_url: BlogImage3,
       date: 'January 4, 2020',
-      postLink: '#',
+      postLink: '/posts/blog3',
     },
   ],
   blog1: [
@@ -276,11 +275,5 @@ export const data = {
       title: 'Support Our Mission',
       link: 'https://www.patreon.com/underbellyproject',
     },
-    {
-      id: 5,
-      title: '',
-      link: '#',
-    },
   ],
-
-}
+};
