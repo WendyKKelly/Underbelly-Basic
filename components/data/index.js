@@ -11,7 +11,7 @@ import serviceIcon3 from '../../public/image/services/3.png';
 import serviceIcon4 from '../../public/image/services/4.png';
 import serviceIcon5 from '../../public/image/services/5.png';
 import serviceIcon6 from '../../public/image/services/6.png';
-import BlogImage1 from '../../public/image/blog/blog-img1.png';
+import BlogImage4 from '../../public/image/blog/blog-img4.png';
 import BlogImage2 from '../../public/image/blog/blog-img2.png';
 import BlogImage3 from '../../public/image/blog/blog-img3.png';
 import Joy1 from '../../public/image/blog1/joy1.png';
@@ -136,10 +136,10 @@ export const data = {
   blog: [
     {
       id: 1,
-      title: 'Train for Joy',
-      thumbnail_url: BlogImage1,
+      title: 'Perfectly Imperfect Family',
+      thumbnail_url: BlogImage4,
       date: 'March 13, 2020',
-      postLink: '/stories',
+      postLink: '/posts/blog4',
     },
     {
       id: 2,
