@@ -1,4 +1,3 @@
-import Avatar from '../components/avatar';
 import DateFormater from '../components/date-formater';
 import CoverImage from '../components/cover-image';
 import Link from 'next/link';
@@ -7,8 +6,8 @@ export default function HeroPost({
   title,
   coverImage,
   date,
-  excerpt,
-  author,
+  description,
+
   slug,
 }) {
   return (
@@ -29,8 +28,7 @@ export default function HeroPost({
           </div>
         </div>
         <div>
-          <p>{excerpt}</p>
-          <Avatar name={author.name} picture={author.picture} />
+          <p>{description}</p>
         </div>
       </div>
       <style jsx>

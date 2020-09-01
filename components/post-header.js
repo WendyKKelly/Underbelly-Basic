@@ -13,9 +13,6 @@ export default function PostHeader({ title, coverImage, date, author }) {
       </div>
       <div>
         <div>
-          <Avatar name={author.name} picture={author.picture} />
-        </div>
-        <div>
           <DateFormater dateString={date} />
         </div>
       </div>

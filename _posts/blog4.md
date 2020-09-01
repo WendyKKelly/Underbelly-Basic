@@ -1,6 +1,7 @@
 ---
 title: 'Perfectly Imperfect Family'
-description: 'I want a world not where every family looks the same. I don't want a world (God help us!) where everyone uses my proven techniques to achieve a happy family. I want a world where we aren't striving for happy families. I want healthy families.'
+description: 'How do you feel about your story? Would you feel comfortable telling a version of your story where you show up as the hero? And not some post modern dystopian anti-hero, but a solid, old-school, Joan of Arc or Lancelot kind?
+I don’t know how that feels for you, but I know that for many of us, it’s not easy to see ourselves as the gorgeous hero of our “one wild and precious life”.'
 coverImage: '/image/blog/blog-img4.png'
 date: '2020-03-16T05:35:07.322Z'
 author:
