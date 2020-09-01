@@ -8,9 +8,9 @@ import {
   GlobalStyle,
   ContentWrapper,
 } from '../components/AgencyDigital/agencyDigital.style';
-import { DrawerProvider } from '../src/contexts/DrawerContext';
+import { DrawerProvider } from '../components/DrawerContext';
 import NavBar from '../components/NavBar';
-
+import FeatureSection from '../components/FeatureSection';
 import AboutCopy from '../components/AboutCopy';
 import Footer from '../components/Footer';
 
@@ -38,7 +38,7 @@ export default function About() {
               <NavBar />
             </DrawerProvider>
           </Sticky>
-
+          <FeatureSection />
           <AboutCopy />
           <Footer />
         </ContentWrapper>

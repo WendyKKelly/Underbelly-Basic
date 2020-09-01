@@ -1,28 +1,18 @@
-
-const purgecss = require('@fullhuman/postcss-purgecss')
-const postcssPresetEnv = require('postcss-preset-env')
-const tailwindcss = require('tailwindcss')
-
 module.exports = {
-  plugins: [
-    tailwindcss ({
-     ...(process.env.NODE_ENV === 'production'
-      ? [
-          [
-            purgecss ({
-              content: [
-                './pages/**/*.{js,jsx,ts,tsx}',
-                './components/**/*.{js,jsx,ts,tsx,css}',
-              ],
-
-              defaultExtractor: content =>
-                content.match(/[\w-/:]+(?<!:)/g) || [],
-            }),
-          ],
-        ]
-      : [])}),
-    postcssPresetEnv({
-      stage: 0
-    }),
-  ],
-}
+  plugins: {
+    tailwindcss: {},
+    ...(process.env.NODE_ENV === 'production'
+      ? {
+          '@fullhuman/postcss-purgecss': {
+            content: [
+              './pages/**/*.{js,jsx,ts,tsx}',
+              './components/**/*.{js,jsx,ts,tsx}',
+            ],
+            defaultExtractor: (content) =>
+              content.match(/[A-Za-z0-9-_:/]+/g) || [],
+          },
+        }
+      : {}),
+    'postcss-preset-env': { stage: 2 },
+  },
+};

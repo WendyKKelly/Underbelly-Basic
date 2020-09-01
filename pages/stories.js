@@ -10,6 +10,8 @@ import {
 import { getAllPosts } from '../lib/api';
 import Head from 'next/head';
 import { CMS_NAME } from '../lib/constants';
+import { ThemeProvider } from 'styled-components';
+import { theme } from '../styles/theme/agencyDigital';
 
 export default function Stories({ allPosts }) {
   const heroPost = allPosts[0];
@@ -27,20 +29,25 @@ export default function Stories({ allPosts }) {
             rel="stylesheet"
           />
         </Head>
-        <Container>
-          <Intro />
-          {heroPost && (
-            <HeroPost
-              title={heroPost.title}
-              coverImage={heroPost.coverImage}
-              date={heroPost.date}
-              author={heroPost.author}
-              slug={heroPost.slug}
-              excerpt={heroPost.excerpt}
-            />
-          )}
-          {morePosts.length > 0 && <MoreStories posts={morePosts} />}
-        </Container>
+
+        <GlobalStyle />
+
+        <ContentWrapper>
+          <Container>
+            <Intro />
+            {heroPost && (
+              <HeroPost
+                title={heroPost.title}
+                coverImage={heroPost.coverImage}
+                date={heroPost.date}
+                author={heroPost.author}
+                slug={heroPost.slug}
+                excerpt={heroPost.excerpt}
+              />
+            )}
+            {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+          </Container>
+        </ContentWrapper>
       </Layout>
     </>
   );
@@ -53,7 +60,7 @@ export async function getStaticProps() {
     'slug',
     'author',
     'coverImage',
-    'excerpt',
+    'description',
   ]);
 
   return {

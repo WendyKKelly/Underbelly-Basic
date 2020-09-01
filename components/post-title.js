@@ -1,11 +1,17 @@
 export default function PostTitle({ children }) {
   return (
     <>
-      <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold tracking-tighter leading-tight md:leading-none mb-12 text-center md:text-left">
-        {children}
-      </h1>
+      <h1 className="post-title">{children}</h1>
       <style jsx>
         {`
+          .post-title {
+            font-family: 'Raleway', sans-serif;
+            font-size: 2.5em;
+            color: #8dbb85;
+            text-align: center;
+            margin-left: 2vh;
+            padding-top: 0.8vh;
+          }
           body {
             font-family: 'Raleway', sans-serif;
           }

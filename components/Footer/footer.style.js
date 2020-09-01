@@ -92,6 +92,7 @@ export const FooterNav = styled.ul`
     flex-wrap: wrap;
   }
   li {
+    list-style: none;
     margin-right: 15px;
     @media screen and (max-width: 360px) {
       margin-top: 10px;
@@ -102,7 +103,7 @@ export const FooterNav = styled.ul`
     a {
       font-size: 15px;
       line-height: 33px;
-      color: #02073e;
+      color: #545454;
     }
   }
 `;

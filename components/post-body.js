@@ -3,7 +3,7 @@ import markdownStyles from './markdown-styles.module.css';
 export default function PostBody({ content }) {
   return (
     <>
-      <div className="max-w-2xl mx-auto">
+      <div className="body">
         <div
           className={markdownStyles['markdown']}
           dangerouslySetInnerHTML={{ __html: content }}
@@ -11,9 +11,15 @@ export default function PostBody({ content }) {
       </div>
       <style jsx>
         {`
+          .body {
+            font-family: 'Raleway', sans-serif;
+            color: #545454;
+            line-height: 170%;
+          }
           body {
             font-family: 'Raleway', sans-serif;
           }
+
           h1,
           h2,
           h3,

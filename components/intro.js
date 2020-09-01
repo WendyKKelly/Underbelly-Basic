@@ -1,21 +1,39 @@
-import { CMS_NAME } from '../lib/constants'
+import { CMS_NAME } from '../lib/constants';
 
 export default function Intro() {
   return (
-    <section className="flex-col md:flex-row flex items-center md:justify-between mt-16 mb-16 md:mb-12">
-      <h1 className="text-6xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8">
-        Love Your Whole Self
-      </h1>
-      <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">
-        The Underbelly  {''}
-        <a
-          href="https://nextjs.org/"
-          className="underline hover:text-success duration-200 transition-colors"
-        >
-
-        </a>{' '}
-        {CMS_NAME}.
-      </h4>
-    </section>
-  )
+    <>
+      <section className="">
+        <h1 className="post-title">Love Your Whole Self</h1>
+        <h4 className="title">Wild & Precious Stories</h4>
+      </section>
+      <style jsx>
+        {`
+          .post-title {
+            font-family: 'Raleway', sans-serif;
+            font-size: 2.5em;
+            color: #8dbb85;
+            text-align: center;
+            margin-left: 2vh;
+            padding-top: 0.8vh;
+          }
+          body {
+            font-family: 'Raleway', sans-serif;
+          }
+          h1,
+          h2,
+          h3,
+          h4,
+          h5,
+          h6 {
+            font-family: 'Alice', serif;
+            margin-top: 0;
+          }
+          p {
+            font-family: 'Raleway', sans-serif;
+          }
+        `}
+      </style>
+    </>
+  );
 }

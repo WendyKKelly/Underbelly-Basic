@@ -1,13 +1,13 @@
 import Avatar from '../components/avatar';
 import DateFormater from '../components/date-formater';
-import CoverImage from './cover-image';
+import CoverImage from '../components/cover-image';
 import Link from 'next/link';
 
 export default function PostPreview({
   title,
   coverImage,
   date,
-  excerpt,
+  description,
   author,
   slug,
 }) {
@@ -17,7 +17,7 @@ export default function PostPreview({
         <div className="mb-5">
           <CoverImage slug={slug} title={title} src={coverImage} />
         </div>
-        <h3 className="text-3xl mb-3 leading-snug">
+        <h3 className="title">
           <Link as={`/posts/${slug}`} href="/posts/[slug]">
             <a className="hover:underline">{title}</a>
           </Link>
@@ -25,12 +25,37 @@ export default function PostPreview({
         <div className="text-lg mb-4">
           <DateFormater dateString={date} />
         </div>
-        <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
+        <p className="text-lg leading-relaxed mb-4">{description}</p>
         <Avatar name={author.name} picture={author.picture} />
       </div>
       <style jsx>
         {`
-          body {
+          .title {
+            font-family: 'Alice', serif;
+            font-size: 2.5em;
+            color: #ec6f48;
+            text-align: center;
+            margin-left: 2vh;
+          }
+          image {
+          }
+          a {
+            border-bottom: 0px solid white;
+            color: #ec6f48;
+            padding-bottom: 0.25em;
+            text-decoration: none;
+          }
+
+          a:hover {
+            background-image: none;
+            background-position: bottom;
+            background-repeat: repeat-x;
+            background-size: 20%;
+            border-bottom: 0;
+            padding-bottom: 0.3em;
+            text-decoration: none;
+          }
+          . body {
             font-family: 'Raleway', sans-serif;
           }
           h1,

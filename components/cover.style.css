@@ -1,0 +1,23 @@
+.image {
+  background-size: 100%;
+  border-radius: 10%;
+  box-shadow: 0 10px 6px -6px black;
+  background-position-x: center;
+  background-position-y: top;
+  margin: 1.5vh;
+  background-repeat: no-repeat;
+  min-height: 70vh;
+
+  @media only screen and (max-width: 1440px) {
+    min-height: auto;
+    background-size: 59%;
+  }
+  @media only screen and (max-width: 1024px) {
+    background-size: 53%;
+  }
+  @media only screen and (max-width: 999px) {
+    background: transparent;
+    background-image: none;
+    min-height: auto;
+  }
+}

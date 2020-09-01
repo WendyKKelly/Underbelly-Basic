@@ -5,7 +5,7 @@ export default function Avatar({ name, picture }) {
     <>
       <div className="flex items-center">
         <img src={picture} className="avatar" alt={name} />
-        <div className="text-xl font-bold">{name}</div>
+        <div className="font-bold">{name}</div>
       </div>
 
       <style jsx>
@@ -13,7 +13,12 @@ export default function Avatar({ name, picture }) {
           .avatar {
             height: 100px;
             width: 100px;
-            border-radius: 5px 20px 5px;
+            border-radius: 10px;
+            box-shadow: 0 8px 6px -6px black;
+          }
+          .font-bold {
+            font-family: Raleway;
+            font-size: 16px;
           }
         `}
       </style>

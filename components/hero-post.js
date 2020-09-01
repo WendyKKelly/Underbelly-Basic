@@ -13,32 +13,60 @@ export default function HeroPost({
 }) {
   return (
     <>
-      <section>
-        <div className="mb-8 md:mb-16">
-          <CoverImage title={title} src={coverImage} slug={slug} />
-        </div>
-        <div className="md:grid md:grid-cols-2 md:col-gap-16 lg:col-gap-8 mb-20 md:mb-28">
+      <div>
+        <CoverImage title={title} src={coverImage} slug={slug} />
+      </div>
+
+      <div>
+        <div>
+          <h3>
+            <Link as={`/posts/${slug}`} href="/posts/[slug]">
+              <a className="hover">{title}</a>
+            </Link>
+          </h3>
           <div>
-            <h3 className="mb-4 text-4xl lg:text-6xl leading-tight">
-              <Link as={`/posts/${slug}`} href="/posts/[slug]">
-                <a className="hover:underline">{title}</a>
-              </Link>
-            </h3>
-            <div className="mb-4 md:mb-0 text-lg">
-              <DateFormater dateString={date} />
-            </div>
-          </div>
-          <div>
-            <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
-            <Avatar name={author.name} picture={author.picture} />
+            <DateFormater dateString={date} />
           </div>
         </div>
-      </section>
+        <div>
+          <p>{excerpt}</p>
+          <Avatar name={author.name} picture={author.picture} />
+        </div>
+      </div>
       <style jsx>
         {`
+          .hover {
+            font-family: 'Alice', serif;
+            font-size: 2.5em;
+            color: #ec6f48;
+            text-align: center;
+            margin-left: 2vh;
+          }
+          a {
+            border-bottom: 0px solid #white;
+            color: white;
+            padding-bottom: 0em;
+            text-decoration: none;
+          }
+
+          a:hover {
+            background-image: none;
+            background-position: bottom;
+            background-repeat: repeat-x;
+            background-size: 0%;
+            border-bottom: 0;
+            padding-bottom: 0em;
+            text-decoration: none;
+          }
+          .body {
+            font-family: 'Raleway', sans-serif;
+            color: #545454;
+            line-height: 170%;
+          }
           body {
             font-family: 'Raleway', sans-serif;
           }
+
           h1,
           h2,
           h3,

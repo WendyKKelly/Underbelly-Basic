@@ -15,7 +15,6 @@ import Section, {
   ImageGroup,
 } from './banner.style';
 
-
 const Banner = () => {
   return (
     <Section id="home">
@@ -29,7 +28,7 @@ const Banner = () => {
 
             <Text
               className="banner-caption"
-              content="What would change? What if you had compassion for yourself, held yourself in high regard, cared deeply for yourself? You'd be emotionally stronger, more flexible. Wanna try? Start by subscribing to my Monday Monrning newsletter, '10 Wild and Precious Things' — It's a start to your week on sure footing. Simple clear ways to practice loving yourself, loving others, living well."
+              content="What would change? What if you had compassion for yourself, held yourself in high regard, cared deeply for yourself? You'd be emotionally stronger, more flexible. Wanna try? Start by subscribing to my Monday Morning newsletter, '10 Wild and Precious Things' — It's a start to your week on sure footing. Simple clear ways to practice loving yourself, loving others, living well."
             />
 
             <Subscribe className="substack">

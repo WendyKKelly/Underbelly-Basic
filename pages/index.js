@@ -8,16 +8,15 @@ import {
   GlobalStyle,
   ContentWrapper,
 } from '../components/AgencyDigital/agencyDigital.style';
-import { DrawerProvider } from '../src/contexts/DrawerContext';
+import { DrawerProvider } from '../components/DrawerContext';
 import NavBar from '../components/NavBar';
 import Banner from '../components/Banner';
 import News from '../components/News';
 import Service from '../components/Service';
 
 import BlogSection from '../components/BlogSection';
-import FeatureSection from '../components/FeatureSection';
+
 import Sad from '../components/Sad';
-import AboutCopy from '../components/AboutCopy';
 import Footer from '../components/Footer';
 
 export default function Home() {
@@ -44,13 +43,14 @@ export default function Home() {
             </DrawerProvider>
           </Sticky>
           <Banner />
-          <News />
+
           <Service />
 
           <BlogSection />
-          <FeatureSection />
+          <News />
+
           <Sad />
-          <AboutCopy />
+
           <Footer />
         </ContentWrapper>
       </Fragment>

@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import { themeGet } from '@styled-system/theme-get';
-import navBg from '../../public/image/nav-bg.png'
-
+import navBg from '../../public/image/nav-bg.png';
 
 const NavbarWrapper = styled.header`
   width: 100%;
@@ -51,6 +50,7 @@ export const MenuArea = styled.nav`
     visibility: visible;
     transition: all 0.3s ease;
     margin-left: 100px;
+
     @media only screen and (max-width: 1366px) {
       margin-right: 13px;
     }
@@ -66,20 +66,21 @@ export const MenuArea = styled.nav`
     li {
       padding: 10px 0;
       margin: 0 19px;
+      list-style: none;
       a {
-        color: ${themeGet('colors.menu', '#02073E')};
-        font-family: DM Sans;
-        font-size: 16px;
+        color: ${themeGet('colors.menu', '#545454')};
+        font-family: Raleway;
+        font-size: 25px;
         font-weight: 400;
         transition: all 0.3s ease;
         &:hover {
-          color: ${themeGet('colors.menu', '#FF825C')};
+          color: ${themeGet('colors.menu', '#ec6f48')};
         }
       }
       &.is-current {
         background: transparent url(${navBg}) no-repeat center bottom / contain;
         a {
-          color: ${themeGet('colors.menu', '#FF825C')};
+          color: ${themeGet('colors.menu', '#ec6f48')};
         }
       }
       @media only screen and (max-width: 1366px) {
@@ -116,14 +117,15 @@ export const NavbarRight = styled.ul`
   }
   li {
     margin-left: 38px;
+    list-style: none;
     a {
-      color: ${themeGet('colors.menu', '#02073E')};
-      font-family: DM Sans;
-      font-size: 16px;
+      color: ${themeGet('colors.menu', '#545454')};
+      font-family: Raleway;
+      font-size: 25px;
       font-weight: 400;
       transition: all 0.3s ease;
       &:hover {
-        color: ${themeGet('colors.menu', '#FF825C')};
+        color: ${themeGet('colors.menu', '#ec6f48')};
       }
     }
   }
@@ -160,12 +162,13 @@ export const MobileMenu = styled.div`
     ul {
       padding-bottom: 20px;
       li {
+        list-style: none;
         a {
           display: block;
           padding: 13px 0;
           border-radius: 5px;
           transition: all 0.3s ease;
-          color: ${themeGet('colors.textPrimary', '#02073E')};
+          color: ${themeGet('colors.textPrimary', '#545454')};
         }
         &:hover {
           a {

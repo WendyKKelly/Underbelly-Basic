@@ -6,11 +6,9 @@ import PostTitle from '../components/post-title';
 export default function PostHeader({ title, coverImage, date, author }) {
   return (
     <>
-      <PostTitle>{title}</PostTitle>
-      <div className="hidden md:block md:mb-12">
-        <Avatar name={author.name} picture={author.picture} />
-      </div>
-      <div className="mb-8 md:mb-16 -mx-5 sm:mx-0">
+      <PostTitle className="post-title">{title}</PostTitle>
+
+      <div className="body">
         <CoverImage title={title} src={coverImage} />
       </div>
       <div className="max-w-2xl mx-auto">
@@ -24,6 +22,21 @@ export default function PostHeader({ title, coverImage, date, author }) {
 
       <style jsx>
         {`
+          .post-title {
+            font-family: 'Raleway', sans-serif;
+            font-size: 1.5em;
+            color: #8dbb85;
+            float: right;
+            margin-left: 2vh;
+          }
+          .body {
+            font-family: 'Raleway', sans-serif;
+            font-size: 1.5em;
+            color: #8dbb85;
+            float: right;
+            margin-left: 2vh;
+          }
+
           body {
             font-family: 'Raleway', sans-serif;
           }
