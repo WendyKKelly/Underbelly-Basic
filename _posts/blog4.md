@@ -1,7 +1,6 @@
 ---
 title: 'Perfectly Imperfect Family'
-description: 'How do you feel about your story? Would you feel comfortable telling a version of your story where you show up as the hero? And not some post modern dystopian anti-hero, but a solid, old-school, Joan of Arc or Lancelot kind?
-I don’t know how that feels for you, but I know that for many of us, it’s not easy to see ourselves as the gorgeous hero of our “one wild and precious life”.'
+description: 'I want a world not where every family looks the same. I don't want a world (God help us!) where everyone uses my proven techniques to achieve a happy family. I want a world where we aren't striving for happy families. I want healthy families.'
 coverImage: '/image/blog/blog-img4.png'
 date: '2020-03-16T05:35:07.322Z'
 author:
@@ -26,6 +25,7 @@ Brene Brown says that vulnerability has:
 - uncertainty
 - risk
 - emotional exposure
+
   I wrote in a previous blog post that "true vulnerability happens on our terms, with people who have earned that right. It involves consent.
   That means that you should be able to say, “No thank you, I’d rather not share that.” and know that, in fact, by showing up authentically, you are actually being vulnerable. You are not going to use a fake “vulnerability placeholder” laden with some bullshit answer that you think people want to hear. You’re going to show up with your most authentic self, saying, “I know you want more of me, but I’m not ready yet.” "
 

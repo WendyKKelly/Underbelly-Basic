@@ -11,11 +11,11 @@ export default function PostHeader({ title, coverImage, date, author }) {
       <div className="body">
         <CoverImage title={title} src={coverImage} />
       </div>
-      <div className="max-w-2xl mx-auto">
-        <div className="block md:hidden mb-6">
+      <div>
+        <div>
           <Avatar name={author.name} picture={author.picture} />
         </div>
-        <div className="mb-6 text-lg">
+        <div>
           <DateFormater dateString={date} />
         </div>
       </div>
@@ -35,6 +35,30 @@ export default function PostHeader({ title, coverImage, date, author }) {
             color: #8dbb85;
             float: right;
             margin-left: 2vh;
+          }
+          .image {
+            background-size: 60%;
+            border-radius: 10%;
+            box-shadow: 0 10px 6px -6px black;
+            background-position-x: center right;
+            background-position-y: top;
+            text-align: center;
+
+            background-repeat: no-repeat;
+            min-height: 50vh;
+            max-width: 70%;
+          }
+          @media only screen and (max-width: 1440px) {
+            min-height: auto;
+            background-size: 59%;
+          }
+          @media only screen and (max-width: 1024px) {
+            background-size: 53%;
+          }
+          @media only screen and (max-width: 999px) {
+            background: transparent;
+            background-size: 0px;
+            min-height: auto;
           }
 
           body {

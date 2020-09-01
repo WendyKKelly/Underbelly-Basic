@@ -19,11 +19,11 @@ export default function HeroPost({
 
       <div>
         <div>
-          <h3>
+          <title>
             <Link as={`/posts/${slug}`} href="/posts/[slug]">
               <a className="title">{title}</a>
             </Link>
-          </h3>
+          </title>
           <div>
             <DateFormater dateString={date} />
           </div>
