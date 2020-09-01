@@ -56,7 +56,7 @@ Our family, for multiple generations, has stayed remarkably close despite differ
 
 On paper, I have nothing in common with my family, and according to what stands in for culture in our society (i.e. mass media) we shouldn't get along. On the contrary, we're extremely close.
 
-I know I am not alone. I see healthy families all around me. They're each healthy in their own nutty, human way. You can tell a healthy family by it's willingness to grow. By it's care — a great example of this care was the time we spent, the four of us, making sure that we would be both authentic and vulnerable but also honoring to members of the family who wouldn't be in the (zoom) room with us.
+I know I am not alone. I see healthy families all around me. They're each healthy in their own nutty, human way. You can tell a healthy family by its willingness to grow. By its care — a great example of this care was the time we spent, the four of us, making sure that we would be both authentic and vulnerable but also honoring to members of the family who wouldn't be in the (zoom) room with us.
 
 I'm really looking forward to creating this episode. Yes, there are a few things I am editing out. Things we touched on that really, are none of y'alls business. But most stuff we're leaving in. It's a bit raw, funny, and very very real.
 
