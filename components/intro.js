@@ -13,6 +13,12 @@ export default function Intro() {
             text-align: center;
             margin-left: 2vh;
           }
+          .wild {
+            font-family: 'Alice', serif;
+            font-size: 2em;
+            color: #ec6f48;
+            text-align: center;
+          }
 
           .post-title {
             font-family: 'Raleway', sans-serif;
