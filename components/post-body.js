@@ -15,6 +15,9 @@ export default function PostBody({ content }) {
             font-family: 'Raleway', sans-serif;
             color: #545454;
             line-height: 170%;
+            text-indent: 1.5em;
+            margin-bottom: 1.5em;
+            padding: 1.5em 1.25em 2em;
           }
           body {
             font-family: 'Raleway', sans-serif;
