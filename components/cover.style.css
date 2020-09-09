@@ -2,8 +2,9 @@
   background-size: 60%;
   border-radius: 10%;
   box-shadow: 0 10px 6px -6px black;
-  background-position-x: center right;
+  background-position-x: center;
   background-position-y: top;
+  margin-left: 15%;
   text-align: center;
 
   background-repeat: no-repeat;
