@@ -11,7 +11,8 @@ import {
 import { DrawerProvider } from '../components/DrawerContext';
 import NavBar from '../components/NavBar';
 
-import AboutCopy from '../components/AboutCopy';
+import FeatureSection from '../components/FeatureSection';
+
 import Footer from '../components/Footer';
 
 export default function About() {
@@ -39,7 +40,7 @@ export default function About() {
             </DrawerProvider>
           </Sticky>
 
-          <AboutCopy />
+          <FeatureSection />
           <Footer />
         </ContentWrapper>
       </Fragment>

@@ -87,7 +87,7 @@ export const data = {
     {
       id: 1,
       icon: serviceIcon1,
-      title: '10 Wild and precious things',
+      title: '10 Wild and Precious Things',
       desc:
         'A free weekly newsletter every Monday morning to start your week off right.',
       link: 'https://underbelly.substack.com/',
@@ -95,14 +95,14 @@ export const data = {
     {
       id: 2,
       icon: serviceIcon2,
-      title: 'Stories from my underbelly',
-      desc: 'An every so often blog hosted on Medium.',
-      link: 'https://medium.com/our-underbelly',
+      title: 'Wild and Precious Bookshop',
+      desc: 'A collection of wild and precious books.',
+      link: 'https://bookshop.org/shop/underbelli',
     },
     {
       id: 3,
       icon: serviceIcon3,
-      title: 'Wild and precious conversations',
+      title: 'Wild and Precious Conversations',
       desc:
         'A podcast every Thursday with guests who speak freely with me on topics related to your emotional health.',
       link:
@@ -119,10 +119,10 @@ export const data = {
     {
       id: 5,
       icon: serviceIcon5,
-      title: 'Life Rules',
+      title: 'Self Care Kit',
       desc:
-        'A guided template to take you through the process of writing your own life rules. Pay-as-you-will',
-      link: 'https://wildprecious.thinkific.com/',
+        'Free short course to get you started in setting aside time for yourself, creating your own self care kit, and preparing your for all life brings you',
+      link: 'https://wildprecious.thinkific.com/courses/self-care-kit',
     },
     {
       id: 6,
@@ -228,6 +228,48 @@ export const data = {
       title: 'Self Care',
       description:
         'This looks different for everyone. Take time, starting today, to build out your own self care kit, so when the time comes that you need a little self care first aid, you are ready.',
+    },
+    {
+      id: 5,
+      icon: 'flaticon-hourglass',
+      title: 'Meditation and Prayer',
+      description:
+        'There are many ways to approach meditation and prayer. Take time to find your own practice.',
+    },
+    {
+      id: 6,
+      icon: 'flaticon-group',
+      title: 'Therapy',
+      description:
+        'No one does this alone. Every hero needs a Guide. Find yours and begin your practice.',
+    },
+    {
+      id: 1,
+      icon: 'flaticon-pencil-case',
+      title: 'Journaling',
+      description:
+        'There are so many ways to do this exercise. Old school, audio, video, find your best way to a daily journaling practice.',
+    },
+    {
+      id: 2,
+      icon: 'flaticon-creative',
+      title: 'Inquiry',
+      description: 'Take some time each day to check in with yourself.',
+    },
+    {
+      id: 3,
+      icon: 'flaticon-magnifying-glass',
+      title: 'Quests',
+      description:
+        'This is my preferred term for daily exercises to challenge yourself to continue your story: become a stronger, more flexible, more emotionally fit hero of your story.',
+    },
+    {
+      id: 4,
+      icon: 'flaticon-startup',
+      title: 'bibliotherapy',
+      description:
+        'In other words, reading good books. Check out a few good books to start and see where it takes you.',
+      link: 'https://bookshop.org/shop/underbelli',
     },
     {
       id: 5,

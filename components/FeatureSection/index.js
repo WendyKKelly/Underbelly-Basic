@@ -3,8 +3,9 @@ import PropTypes from 'prop-types';
 import Box from '../Box';
 import Text from '../Text';
 import Heading from '../Heading';
+import Link from '../Link';
 import FeatureBlock from '../FeatureBlock';
-import {data} from '../data';
+import { data } from '../data';
 import Container from '../UI/Container';
 import FeatureSectionWrapper from './featureSection.style';
 
@@ -16,6 +17,7 @@ const FeatureSection = ({
   sectionSubTitle,
   featureTitle,
   featureDescription,
+  featureLink,
   iconStyle,
   contentStyle,
   blockWrapperStyle,
@@ -42,6 +44,7 @@ const FeatureSection = ({
                 description={
                   <Text content={feature.description} {...featureDescription} />
                 }
+                link={<Link content={feature.link} {...featureLink} />}
               />
             </Box>
           ))}
@@ -60,6 +63,7 @@ FeatureSection.propTypes = {
   sectionSubTitle: PropTypes.object,
   featureTitle: PropTypes.object,
   featureDescription: PropTypes.object,
+  featureLink: PropTypes.object,
 };
 
 // FeatureSection default style
@@ -133,6 +137,11 @@ FeatureSection.defaultProps = {
   },
   // feature description default style
   featureDescription: {
+    fontSize: '15px',
+    lineHeight: '1.75',
+    color: '#343d48cc',
+  },
+  featureLink: {
     fontSize: '15px',
     lineHeight: '1.75',
     color: '#343d48cc',

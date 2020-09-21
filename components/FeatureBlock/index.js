@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
+import Link from '../Link';
 import FeatureBlockWrapper, {
   IconWrapper,
   ContentWrapper,
@@ -12,6 +13,7 @@ const FeatureBlock = ({
   title,
   button,
   description,
+  link,
   iconPosition,
   additionalContent,
   wrapperStyle,
@@ -48,11 +50,12 @@ const FeatureBlock = ({
     >
       {Icon}
 
-      {title || description || button ? (
+      {title || description || link || button ? (
         <Fragment>
           <ContentWrapper className="content__wrapper" {...contentStyle}>
             {title}
             {description}
+            {link}
             {button && (
               <ButtonWrapper className="button__wrapper" {...btnWrapperStyle}>
                 {button}
@@ -78,6 +81,7 @@ FeatureBlock.propTypes = {
   /** description prop contain a react component. You can use our Text component from reusecore */
   description: PropTypes.element,
 
+  link: PropTypes.element,
   /** button prop contain a react component. You can use our Button component from reusecore */
   button: PropTypes.element,
 
