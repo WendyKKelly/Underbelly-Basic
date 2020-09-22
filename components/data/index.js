@@ -114,7 +114,7 @@ export const data = {
       title: 'Journal',
       desc:
         'A 365 day journal to take you through a year of emotional growth. Pay-as-you-will',
-      link: 'https://wildprecious.thinkific.com/',
+      link: 'https://wildprecious.thinkific.com/courses/journal-to-your-heart',
     },
     {
       id: 5,
