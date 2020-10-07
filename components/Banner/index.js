@@ -21,14 +21,12 @@ const Banner = () => {
       <Container>
         <ContentWrapper>
           <BannerContent>
-            <Heading
-              as="h1"
-              content="What if you deeply loved your whole self?"
-            />
+            <Heading as="h1" content="Learn ›Life Skills" />
+            <Heading as="h2" content="Master Self Care & Avoid Burnout" />
 
             <Text
               className="banner-caption"
-              content="What would change? What if you had compassion for yourself, held yourself in high regard, cared deeply for yourself? You'd be emotionally stronger, more flexible. Wanna try? Start by subscribing to my Monday Morning newsletter, '10 Wild and Precious Things' — It's a start to your week on sure footing. Simple clear ways to practice loving yourself, loving others, living well."
+              content="You are precious. Take steps learn what you need in order to unfurl your strongest, best self. Learn how to care for yourself, how to stand up strong in the arena of life. "
             />
 
             <Subscribe className="substack">
