@@ -21,12 +21,12 @@ const Banner = () => {
       <Container>
         <ContentWrapper>
           <BannerContent>
-            <Heading as="h1" content="Learn ›Life Skills" />
+            <Heading as="h1" content="Learn › Life Skills" />
             <Heading as="h2" content="Master Self Care & Avoid Burnout" />
 
             <Text
               className="banner-caption"
-              content="You are precious. Take steps learn what you need in order to unfurl your strongest, best self. Learn how to care for yourself, how to stand up strong in the arena of life. "
+              content="Learn what your precious self needs to grow strong and healthy. By investing in YOU, byt learning to gain emotional strength, you can weather life's storms and actually   "
             />
 
             <Subscribe className="substack">
