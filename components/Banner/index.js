@@ -26,7 +26,7 @@ const Banner = () => {
 
             <Text
               className="banner-caption"
-              content="Learn what your precious self needs to grow strong and healthy. By investing in YOU, byt learning to gain emotional strength, you can weather life's storms and actually   "
+              content="Learn what your precious self needs to grow strong and healthy. By investing in YOU, byt learning to gain emotional strength, you can weather life's storms and actually become stronger from them.  "
             />
 
             <Subscribe className="substack">
