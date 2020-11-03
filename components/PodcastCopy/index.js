@@ -15,6 +15,7 @@ import Section, {
 } from './podcastcopy.style';
 
 import paypal from '../../public/image/apple.svg';
+import google from '../../public/image/stitcher.png';
 
 const PodcastCopy = () => {
   return (
@@ -45,7 +46,8 @@ const PodcastCopy = () => {
             <SponsoredBy>
               <Text className="sponsoredBy" content="Listen/Subscribe:" />
               <ImageGroup>
-                <Image src={paypal} alt="Apple" />
+                <Image src={paypal} width="15em" alt="Apple" />
+                <Image src={google} width="10em" alt="Stitcher" />
               </ImageGroup>
             </SponsoredBy>
           </BannerContent>

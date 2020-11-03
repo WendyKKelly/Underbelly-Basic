@@ -1,24 +1,23 @@
 import styled from 'styled-components';
 import { rgba } from 'polished';
 import { themeGet } from '@styled-system/theme-get';
-import illustration from '../../public/image/about.png';
 
 const Section = styled.section``;
 
 export const ContentWrapper = styled.div`
-  background-image: url(${illustration});
+  background-image: none;
   background-color: transparent;
-  background-size: 30%;
+  background-size: 0%;
   background-position: right center;
   background-repeat: no-repeat;
-  min-height: 20vh;
+  min-height: 0vh;
 
   @media only screen and (max-width: 1440px) {
     min-height: auto;
-    background-size: 29%;
+    background-size: 0%;
   }
   @media only screen and (max-width: 1024px) {
-    background-size: 17%;
+    background-size: 0%;
   }
   @media only screen and (max-width: 999px) {
     background: transparent;
@@ -27,15 +26,13 @@ export const ContentWrapper = styled.div`
   }
 `;
 
-export const Illustration = styled.div``;
-
 export const BannerContent = styled.div`
-  max-width: 58%;
+  max-width: 90%;
   width: 100%;
   padding-top: 100px;
   padding-bottom: 150px;
   @media only screen and (max-width: 1600px) {
-    max-width: 58%;
+    max-width: 90%;
   }
   @media only screen and (max-width: 1400px) {
     padding-top: 60px;
