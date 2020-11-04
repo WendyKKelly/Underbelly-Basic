@@ -84,6 +84,18 @@ export const BannerContent = styled.div`
       line-height: 40px;
     }
   }
+
+  a {
+    margin-top: 1em;
+    color: ${themeGet('colors.menu', '#545454')};
+    font-family: Raleway;
+    font-size: 25px;
+    font-weight: 400;
+    transition: all 0.3s ease;
+    &:hover {
+      color: ${themeGet('colors.menu', '#ec6f48')};
+    }
+
   .banner-caption {
     color: ${themeGet('colors.paragraph', '#02073E')};
     font-size: 18px;
@@ -106,8 +118,11 @@ export const BannerContent = styled.div`
   }
 `;
 
-export const Subscribe = styled.div`
+export const Podcast = styled.div`
+
   display: flex;
+  align-items: center;
+    justify-content: center;
   margin-top: 40px;
   @media only screen and (max-width: 1440px) {
     margin-top: 30px;
@@ -125,6 +140,7 @@ export const Subscribe = styled.div`
   @media only screen and (max-width: 480px) {
     align-items: center;
   }
+ 
   .reusecore__input {
     width: 100%;
   }
@@ -133,26 +149,7 @@ export const Subscribe = styled.div`
     @media only screen and (max-width: 480px) {
       margin-right: 0px;
     }
-    .substack {
-      background-color: white;
-      border-radius: 8px;
-      font-family: Raleway;
-      font-color: #545454;
-    }
-    input {
-      font-family: DM Sans;
-      font-size: 16px;
-      min-height: 60px;
-      padding: 0 24px;
-      border-radius: 8px;
-      ::placeholder {
-        color: ${rgba('#02073E', 0.4)};
-        opacity: 1; /* Firefox */
-      }
-      &:focus {
-        border-color: #ff825c;
-      }
-
+    
       @media only screen and (max-width: 1280px) {
         min-height: 50px;
       }
