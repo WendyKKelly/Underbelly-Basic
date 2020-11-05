@@ -105,8 +105,7 @@ export const data = {
       title: 'Wild and Precious Conversations',
       desc:
         'A podcast every Thursday with guests who speak freely with me on topics related to your emotional health.',
-      link:
-        'https://podcasts.apple.com/ca/podcast/wild-and-precious-conversations/id1491090272',
+      link: '/wild-and-precious-conversation',
     },
     {
       id: 4,
