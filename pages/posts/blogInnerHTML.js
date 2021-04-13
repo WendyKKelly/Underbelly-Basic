@@ -14,6 +14,9 @@ const Section = styled.section`
     font-family: 'Helvetica Neue', sans-serif;
     font-size: 3rem;
     color: #2b7b2f;
+    @media only screen and (max-width: 999px) {
+      font-size: 2rem;
+    }
   }
   h3 {
     font-family: 'Sometimes Times BETA';
@@ -24,6 +27,9 @@ const Section = styled.section`
     font-family: 'Sometimes Times BETA';
     font-size: 1.5rem;
     color: #2b7b2f;
+    @media only screen and (max-width: 999px) {
+      font-size: 0.7rem;
+    }
   }
   a {
     color: #2b7b2f;
@@ -32,7 +38,11 @@ const Section = styled.section`
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 10px;
+    @media only screen and (max-width: 999px) {
+      margin-left: 1rem;
+    }
   }
+
   .blogInnerHTML {
     margin-left: 3rem;
   }
