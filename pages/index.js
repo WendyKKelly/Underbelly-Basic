@@ -11,7 +11,7 @@ import {
 import { DrawerProvider } from '../components/DrawerContext';
 import NavBar from '../components/NavBar';
 import Banner from '../components/Banner';
-import Cursor from '../components/Cursor';
+
 import Service from '../components/Service';
 
 import Footer from '../components/Footer';
@@ -27,7 +27,7 @@ export default function Home() {
         </Head>
 
         <GlobalStyle />
-        <Cursor />
+
         <ContentWrapper>
           <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
             <DrawerProvider>

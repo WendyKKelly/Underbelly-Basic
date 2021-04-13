@@ -9,7 +9,7 @@ import {
   GlobalStyle,
   ContentWrapper,
 } from '../components/AgencyDigital/agencyDigital.style';
-import Cursor from '../components/Cursor';
+
 import Head from 'next/head';
 import Footer from '../components/Footer';
 import { ThemeProvider } from 'styled-components';
@@ -26,7 +26,7 @@ export default function Stories({ posts }) {
         </Head>
 
         <GlobalStyle />
-        <Cursor />
+
         <ContentWrapper>
           <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
             <DrawerProvider>
