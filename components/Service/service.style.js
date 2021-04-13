@@ -13,6 +13,8 @@ const Section = styled.div`
     font-size: 2.7rem;
     font-weight: 500;
     color: 2c2e35;
+    @media screen and (max-width: 480px) {
+      line-height: 1rem;
   }
   background-color: #f9fbfd;
   padding: 100px 0 120px;

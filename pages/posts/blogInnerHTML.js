@@ -42,11 +42,19 @@ const Section = styled.section`
       margin-left: 0.5rem;
       margin-right: 0.5rem;
     }
+    @media only screen and (max-width: 480px) {
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+    }
   }
 
   .blogInnerHTML {
     margin-left: 3rem;
     @media only screen and (max-width: 999px) {
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+    }
+    @media only screen and (max-width: 480px) {
       margin-left: 0.5rem;
       margin-right: 0.5rem;
     }

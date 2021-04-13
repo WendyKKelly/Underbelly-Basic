@@ -90,7 +90,7 @@ export const BannerContent = styled.div`
       margin-bottom: 20px;
       line-height: 40px;
       text-align: center;
-      margin-left: 1.2rem;
+      margin-left: 0.7rem;
     }
   }
   .banner-caption {
