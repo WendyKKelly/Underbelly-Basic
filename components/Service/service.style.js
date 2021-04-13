@@ -14,11 +14,11 @@ const Section = styled.div`
     font-weight: 500;
     color: 2c2e35;
     @media screen and (max-width: 480px) {
-      line-height: 2rem;
+      line-height: 3rem;
       font-family: 'Sometimes Times BETA';
   }
   @media screen and (max-width: 768px) {
-    line-height: 2rem;
+    line-height: 3rem;
     font-family: 'Sometimes Times BETA';
 }
   background-color: #f9fbfd;
@@ -100,7 +100,7 @@ export const ServiceWrapper = styled.div`
       }
     }
     .excerpt {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       line-height: 30px;
       color: #343d48;
       @media screen and (max-width: 480px) {

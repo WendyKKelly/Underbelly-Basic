@@ -10,6 +10,23 @@ const Section = styled.section`
       min-height: auto;
       margin-left: none;
     }
+    .margin {
+      margin-left: 10rem;
+      margin-right: 7rem;
+
+      @media only screen and (max-width: 999px) {
+        margin-left: 0.5rem;
+        margin-right: 0.2rem;
+      }
+      @media only screen and (max-width: 768px) {
+        margin-left: 0.5rem;
+        margin-right: 0.2rem;
+      }
+      @media only screen and (max-width: 480px) {
+        margin-left: 0.5rem;
+        margin-right: 0.2rem;
+      }
+    }
   }
   h1 {
     font-family: 'Helvetica Neue', sans-serif;
@@ -39,34 +56,10 @@ const Section = styled.section`
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 10px;
-    @media only screen and (max-width: 999px) {
-      margin-left: 0.2rem;
-      margin-right: 0.2rem;
-    }
-    @media only screen and (max-width: 768px) {
-      margin-left: 0.2rem;
-      margin-right: 0.2rem;
-    }
-    @media only screen and (max-width: 480px) {
-      margin-left: 0.2rem;
-      margin-right: 0.2rem;
-    }
   }
 
   .blogInnerHTML {
     margin-left: 3rem;
-    @media only screen and (max-width: 999px) {
-      margin-left: 0.2rem;
-      margin-right: 0.2rem;
-    }
-    @media only screen and (max-width: 768px) {
-      margin-left: 0.2rem;
-      margin-right: 0.2rem;
-    }
-    @media only screen and (max-width: 480px) {
-      margin-left: 0.2rem;
-      margin-right: 0.2rem;
-    }
   }
   blockquote {
     font-family: 'Sometimes Times BETA';
