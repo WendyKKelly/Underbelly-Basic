@@ -39,12 +39,17 @@ const Section = styled.section`
     margin-bottom: 10px;
     margin-left: 10px;
     @media only screen and (max-width: 999px) {
-      margin-left: 1rem;
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
     }
   }
 
   .blogInnerHTML {
     margin-left: 3rem;
+    @media only screen and (max-width: 999px) {
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+    }
   }
   blockquote {
     font-family: 'Sometimes Times BETA';
