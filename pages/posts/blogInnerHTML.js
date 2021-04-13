@@ -8,6 +8,7 @@ const Section = styled.section`
       background: transparent;
       display: none;
       min-height: auto;
+      margin-left: none;
     }
   }
   h1 {
@@ -39,24 +40,32 @@ const Section = styled.section`
     margin-bottom: 10px;
     margin-left: 10px;
     @media only screen and (max-width: 999px) {
-      margin-left: 0.5rem;
-      margin-right: 0.5rem;
+      margin-left: 0.2rem;
+      margin-right: 0.2rem;
+    }
+    @media only screen and (max-width: 768px) {
+      margin-left: 0.2rem;
+      margin-right: 0.2rem;
     }
     @media only screen and (max-width: 480px) {
-      margin-left: 0.5rem;
-      margin-right: 0.5rem;
+      margin-left: 0.2rem;
+      margin-right: 0.2rem;
     }
   }
 
   .blogInnerHTML {
     margin-left: 3rem;
     @media only screen and (max-width: 999px) {
-      margin-left: 0.5rem;
-      margin-right: 0.5rem;
+      margin-left: 0.2rem;
+      margin-right: 0.2rem;
+    }
+    @media only screen and (max-width: 768px) {
+      margin-left: 0.2rem;
+      margin-right: 0.2rem;
     }
     @media only screen and (max-width: 480px) {
-      margin-left: 0.5rem;
-      margin-right: 0.5rem;
+      margin-left: 0.2rem;
+      margin-right: 0.2rem;
     }
   }
   blockquote {

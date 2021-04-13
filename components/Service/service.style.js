@@ -14,8 +14,13 @@ const Section = styled.div`
     font-weight: 500;
     color: 2c2e35;
     @media screen and (max-width: 480px) {
-      line-height: 1rem;
+      line-height: 2rem;
+      font-family: 'Sometimes Times BETA';
   }
+  @media screen and (max-width: 768px) {
+    line-height: 2rem;
+    font-family: 'Sometimes Times BETA';
+}
   background-color: #f9fbfd;
   padding: 100px 0 120px;
 
