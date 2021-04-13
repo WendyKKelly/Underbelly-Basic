@@ -1,5 +1,6 @@
 import Link from 'next/link';
-
+import '../styles/theme/agencyDigital';
+import '../styles/index.css';
 export default function BlogPreviewCard({ blogpost }) {
   return (
     <div className="grid my-12">
@@ -21,6 +22,9 @@ export default function BlogPreviewCard({ blogpost }) {
               ))}
             </p>
             <p>{blogpost.dateFormatted}</p>
+            <p className="italic text-gray-700 text-xs">
+              (reading time: {blogpost.reading_time} min.)
+            </p>
             <hr />
             <Link href="/posts/[slug]" as={`/posts/${blogpost.slug}`}>
               <a>

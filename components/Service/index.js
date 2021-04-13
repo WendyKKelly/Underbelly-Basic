@@ -18,12 +18,12 @@ const Service = () => {
       <Container>
         <Zoom>
           <SectionHeading
-            slogan="The Underbelly Project"
-            title="A collection of Wild and Precious tools for your emotional health"
+            slogan="Wild + Precious"
+            title="An Underbelly Project"
           />
         </Zoom>
         <ServiceWrapper>
-          {data.services.map(service => (
+          {data.services.map((service) => (
             <Fade key={service.id} up delay={100 * service.id}>
               <BlogPost
                 className="serviceItem"

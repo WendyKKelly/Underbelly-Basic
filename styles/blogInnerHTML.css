@@ -1,0 +1,39 @@
+h1 {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 3rem;
+  color: #2b7b2f;
+}
+h3 {
+  font-family: 'Sometimes Times BETA';
+  font-size: 1.5rem;
+  color: #82733b;
+}
+h2 {
+  font-family: 'Sometimes Times BETA';
+  font-size: 1.5rem;
+  color: #2b7b2f;
+}
+a {
+  color: #2b7b2f;
+}
+p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+.blogInnerHTML {
+  margin-left: 3rem;
+}
+blockquote {
+  font-family: 'Sometimes Times BETA';
+  font-weight: 400;
+  line-height: 1.6em;
+  font-size: 2rem;
+  font-style: italic;
+  margin: 3.2rem 0 1.5rem 0;
+  border-left: 0.25rem solid #ee9b27;
+  border-left-color: #ee9b27;
+  border-left-style: solid;
+  border-left-width: 0.25rem;
+  padding: 0 1.6 0 2em;
+}

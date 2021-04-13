@@ -2,9 +2,21 @@ import styled from 'styled-components';
 import { themeGet } from '@styled-system/theme-get';
 
 const Section = styled.div`
+  h1 {
+    font-family: 'Sometimes Times BETA';
+    font-size: 3rem;
+    font-weight: 400;
+    color: 2c2e35;
+  }
+  h2 {
+    font-family: 'Sometimes Times BETA';
+    font-size: 2.7rem;
+    font-weight: 500;
+    color: 2c2e35;
+  }
   background-color: #f9fbfd;
   padding: 100px 0 120px;
-  
+
   @media screen and (max-width: 1440px) {
     padding: 50px 0 70px;
   }
@@ -71,16 +83,17 @@ export const ServiceWrapper = styled.div`
       margin-bottom: 25px;
     }
     .title {
-      font-weight: bold;
-      font-size: 18px;
-      line-height: 30px;
-      color: #0f2137;
+      font-family: 'Helvetica Neue';
+      font-weight: 300;
+      font-size: 2rem;
+      line-height: 3rem;
+      color: #2c2e35;
       @media screen and (max-width: 480px) {
         text-align: center;
       }
     }
     .excerpt {
-      font-size: 16px;
+      font-size: 1.5rem;
       line-height: 30px;
       color: #343d48;
       @media screen and (max-width: 480px) {
@@ -94,7 +107,7 @@ export const ServiceWrapper = styled.div`
     }
     .learn_more a {
       font-weight: 500;
-      font-size: 15px;
+      font-size: 2rem;
       line-height: 42px;
       display: inline-flex;
       align-items: center;

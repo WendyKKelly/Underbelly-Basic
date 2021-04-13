@@ -1,0 +1,9 @@
+.cursor {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 90%;
+  height: 70vh;
+  border-radius: 70%, 50%, 30%, 10% / 10%, 20%, 30%, 50%;
+  background-color: #ffa0a3;
+}

@@ -87,32 +87,32 @@ export const data = {
     {
       id: 1,
       icon: serviceIcon1,
-      title: '10 Wild and Precious Things',
+      title: 'Newsletter',
       desc:
         'A free weekly newsletter every Monday morning to start your week off right.',
-      link: 'https://underbelly.substack.com/',
+      link: './stories',
     },
     {
       id: 2,
       icon: serviceIcon2,
-      title: 'Wild and Precious Bookshop',
+      title: 'Bookshop',
       desc: 'A collection of wild and precious books.',
       link: 'https://bookshop.org/shop/underbelli',
     },
     {
       id: 3,
       icon: serviceIcon3,
-      title: 'Wild and Precious Conversations',
+      title: 'Podcast',
       desc:
         'A podcast every Thursday with guests who speak freely with me on topics related to your emotional health.',
-      link: '/wild-and-precious-conversation',
+      link: '/bpage/wild-and-precious-conversations',
     },
     {
       id: 4,
       icon: serviceIcon4,
-      title: 'Journal',
+      title: 'Course: Journal',
       desc:
-        'A 365 day journal to take you through a year of emotional growth. Pay-as-you-will',
+        'A 365 day journal to take you through a year of emotional growth. $20',
       link: 'https://wildprecious.thinkific.com/courses/journal-to-your-heart',
     },
     {
@@ -120,15 +120,15 @@ export const data = {
       icon: serviceIcon5,
       title: 'Self Care Kit',
       desc:
-        'Free short course to get you started in setting aside time for yourself, creating your own self care kit, and preparing your for all life brings you',
+        'Free short course to get you started in setting aside time for yourself, creating your own self care kit, and preparing your for all life brings you. $0',
       link: 'https://wildprecious.thinkific.com/courses/self-care-kit',
     },
     {
       id: 6,
       icon: serviceIcon6,
-      title: 'Discover Yourself',
+      title: 'Course: Discover Yourself',
       desc:
-        'Take a course to discover and gain compassion for your inner critic.',
+        'Take a course to discover and gain compassion for your inner critic. $10',
       link: 'https://wildprecious.thinkific.com/',
     },
   ],

@@ -69,7 +69,7 @@ export const MenuArea = styled.nav`
       list-style: none;
       a {
         color: ${themeGet('colors.menu', '#545454')};
-        font-family: Raleway;
+        font-family: 'Helvetica Neue';
         font-size: 25px;
         font-weight: 400;
         transition: all 0.3s ease;
@@ -120,7 +120,7 @@ export const NavbarRight = styled.ul`
     list-style: none;
     a {
       color: ${themeGet('colors.menu', '#545454')};
-      font-family: Raleway;
+      font-family: 'Helvetica Neue';
       font-size: 25px;
       font-weight: 400;
       transition: all 0.3s ease;

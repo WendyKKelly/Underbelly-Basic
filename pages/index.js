@@ -11,7 +11,7 @@ import {
 import { DrawerProvider } from '../components/DrawerContext';
 import NavBar from '../components/NavBar';
 import Banner from '../components/Banner';
-import BlogSection from '../components/BlogSection';
+import Cursor from '../components/Cursor';
 import Service from '../components/Service';
 
 import Footer from '../components/Footer';
@@ -24,15 +24,10 @@ export default function Home() {
           <title>Underbelly Project</title>
           <meta name="theme-color" content="#FF825C" />
           <meta name="Description" content="Underbelly project" />
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Alice&family=Raleway&display=swap"
-            rel="stylesheet"
-          />
         </Head>
 
         <GlobalStyle />
-
+        <Cursor />
         <ContentWrapper>
           <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
             <DrawerProvider>
@@ -42,8 +37,6 @@ export default function Home() {
           <Banner />
 
           <Service />
-
-          <BlogSection />
 
           <Footer />
         </ContentWrapper>

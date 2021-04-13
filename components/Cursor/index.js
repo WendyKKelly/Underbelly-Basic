@@ -1,4 +1,4 @@
-import './cursor.style.css';
+import './cursor.css';
 import { motion, useMotionValue, useSpring } from 'framer-motion';
 import React, { useState, useEffect } from 'react';
 export default function Cursor() {

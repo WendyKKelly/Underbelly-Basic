@@ -1,6 +1,7 @@
 import React from 'react';
 import Iframe from 'react-iframe';
 import Text from '../Text';
+
 import Input from '../Input';
 import Image from '../Image';
 import Button from '../Button';
@@ -16,11 +17,11 @@ import Section, {
 
 const AboutCopy = () => {
   return (
-    <Section id="about">
+    <Section>
       <Container>
         <ContentWrapper>
           <BannerContent>
-            <Heading as="h1" content="The Underbelly Project" />
+            <Heading as="h1" content="Wild + Precious" />
 
             <Text
               className="banner-caption"

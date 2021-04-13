@@ -1,18 +1,18 @@
 import React, { Fragment } from 'react';
 import App from 'next/app';
-import { withTina } from 'tinacms';
-import { MarkdownFieldPlugin, HtmlFieldPlugin } from 'react-tinacms-editor';
 
-function MyApp({ Component, pageProps }) {
+import '../styles/index.css';
+
+import { AnimatePresence } from 'framer-motion';
+
+function MyApp({ Component, pageProps, router }) {
   return (
     <Fragment>
-      <Component {...pageProps} />
+      <AnimatePresence exitBeforeEnter>
+        <Component {...pageProps} />
+      </AnimatePresence>
     </Fragment>
   );
 }
 
-export default withTina(MyApp, {
-  enabled: true,
-  sidebar: true,
-  plugins: [MarkdownFieldPlugin, HtmlFieldPlugin],
-});
+export default MyApp;

@@ -1,69 +1,69 @@
 import Container from '../components/container';
-import MoreStories from '../components/more-stories';
-import HeroPost from '../components/hero-post';
-import Intro from '../components/intro';
-import Layout from '../components/layout';
+import Link from 'next/link';
+import PostPreviewCard from '../components/postpreviewcard';
+import { DrawerProvider } from '../components/DrawerContext';
+import { getPosts } from '../api/ghost_data';
+import Sticky from 'react-stickynode';
+import NavBar from '../components/NavBar';
 import {
   GlobalStyle,
   ContentWrapper,
 } from '../components/AgencyDigital/agencyDigital.style';
-import { getAllPosts } from '../lib/api';
+import Cursor from '../components/Cursor';
 import Head from 'next/head';
-import { CMS_NAME } from '../lib/constants';
+import Footer from '../components/Footer';
 import { ThemeProvider } from 'styled-components';
 import { theme } from '../styles/theme/agencyDigital';
 
-export default function Stories({ allPosts }) {
-  const heroPost = allPosts[0];
-  const morePosts = allPosts.slice(1);
+export default function Stories({ posts }) {
   return (
     <>
-      <Layout>
+      <ThemeProvider theme={theme}>
         <Head>
-          <title>The Underbelly {CMS_NAME}</title>
+          <title>The Underbelly</title>
           <meta name="theme-color" content="#FF825C" />
           <meta name="Description" content="Underbelly project" />
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Alice&family=Raleway&display=swap"
-            rel="stylesheet"
-          />
         </Head>
 
         <GlobalStyle />
-
+        <Cursor />
         <ContentWrapper>
-          <Container>
-            <Intro />
-            {heroPost && (
-              <HeroPost
-                title={heroPost.title}
-                coverImage={heroPost.coverImage}
-                date={heroPost.date}
-                author={heroPost.author}
-                slug={heroPost.slug}
-                excerpt={heroPost.excerpt}
-              />
-            )}
-            {morePosts.length > 0 && <MoreStories posts={morePosts} />}
-          </Container>
+          <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
+            <DrawerProvider>
+              <NavBar />
+            </DrawerProvider>
+          </Sticky>
+          <ul>
+            {posts.map((post) => (
+              <li>
+                <PostPreviewCard blogpost={post} key={post} />
+              </li>
+            ))}
+          </ul>
+          <Footer />
         </ContentWrapper>
-      </Layout>
+      </ThemeProvider>
     </>
   );
 }
 
 export async function getStaticProps() {
-  const allPosts = getAllPosts([
-    'title',
-    'date',
-    'slug',
-    'author',
-    'coverImage',
-    'description',
-  ]);
+  const posts = await getPosts();
 
+  posts.map((post) => {
+    const options = {
+      year: 'numeric',
+      month: 'short',
+      day: 'numeric',
+    };
+
+    post.dateFormatted = new Intl.DateTimeFormat('default', options).format(
+      new Date(post.published_at)
+    );
+  });
   return {
-    props: { allPosts },
+    props: {
+      posts,
+    },
   };
 }

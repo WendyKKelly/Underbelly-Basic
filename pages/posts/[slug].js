@@ -1,125 +1,65 @@
-import { useRouter } from 'next/router';
-import ErrorPage from 'next/error';
-import Container from '../../components/container';
-import PostBody from '../../components/post-body';
-import Header from '../../components/header';
-import PostHeader from '../../components/post-header';
-import Layout from '../../components/layout';
-import { getPostBySlug, getAllPosts } from '../../lib/api';
-import PostTitle from '../../components/post-title';
+import { getPosts, getSinglePost } from '../../api/ghost_data';
+import Section from './blogInnerHTML';
+import { DrawerProvider } from '../../components/DrawerContext';
+
+import Sticky from 'react-stickynode';
+import NavBar from '../../components/NavBar';
+import {
+  GlobalStyle,
+  ContentWrapper,
+} from '../../components/AgencyDigital/agencyDigital.style';
+
 import Head from 'next/head';
-
-import markdownToHtml from '../../lib/markdownToHtml';
-import { useState, useEffect, useMemo } from 'react';
-import { TinaCMS, useForm, usePlugin } from 'tinacms';
-import { HtmlFieldPlugin, MarkdownFieldPlugin } from 'react-tinacms-editor';
-
-const cms = new TinaCMS({ enabled: true });
-
-cms.plugins.add(HtmlFieldPlugin);
-cms.plugins.add(MarkdownFieldPlugin);
-
-export default function Post({ post: initialPost, morePosts, preview }) {
-  const router = useRouter();
-  if (!router.isFallback && !initialPost?.slug) {
-    return <ErrorPage statusCode={404} />;
-  }
-
-  const sayHello = React.useCallback(() => {
-    // get all of the "hello" plugins.
-    const helloPlugins = cms.plugins.all(post.content);
-
-    // iterate over all of the "hello" plugins
-    helloPlugins.forEach((plugin) => alert(`Hello, ${plugin.user}!`));
-  }, []);
-  const formConfig = {
-    id: initialPost.slug, // a unique identifier for this instance of the form
-    label: 'Blog Post', // name of the form to appear in the sidebar
-    initialValues: initialPost, // populate the form with starting values
-    onSubmit: (values) => {
-      // do something with the data when the form is submitted
-      alert(`Submitting ${values.title}`);
-    },
-    fields: [
-      {
-        name: 'description',
-        label: 'Description',
-        component: 'html',
-      },
-      {
-        name: 'body',
-        label: 'Blog Body',
-        component: 'markdown',
-      },
-    ],
-  };
-  const [post, form] = useForm(formConfig);
-  usePlugin(form);
-
+import Footer from '../../components/Footer';
+import { ThemeProvider } from 'styled-components';
+import { theme } from '../../styles/theme/agencyDigital';
+export default function PostPage({ post }) {
+  // Render post title and content in the page from props
+  let _title = post.title + ' - Stories';
   return (
-    <Layout preview={preview}>
-      <>
-        <Container>
-          <Header />
-          {router.isFallback ? (
-            <PostTitle>Loading…</PostTitle>
-          ) : (
-            <>
-              <article className="mb-32">
-                <Head>
-                  <title>{post.title} | The Underbelly Blog</title>
-                  <meta property="og:image" content={post.ogImage.url} />
-                </Head>
-                <PostHeader
-                  title={post.title}
-                  coverImage={post.coverImage}
-                  date={post.date}
-                  author={post.author}
-                />
-                <PostBody content={post.content} />
-              </article>
-            </>
-          )}
-        </Container>
-      </>
-    </Layout>
+    <>
+      <ThemeProvider theme={theme}>
+        <Head>
+          <title>The Underbelly</title>
+          <meta name="theme-color" content="#FF825C" />
+          <meta name="Description" content="Underbelly project" />
+        </Head>
+
+        <GlobalStyle />
+
+        <ContentWrapper>
+          <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
+            <DrawerProvider>
+              <NavBar />
+            </DrawerProvider>
+          </Sticky>
+
+          <Section>
+            <img className="img " src={post.feature_image} />
+            <div style={{ marginLeft: '10rem', marginRight: '7rem' }}>
+              <h1>{post.title}</h1>
+              <div dangerouslySetInnerHTML={{ __html: post.html }} />
+            </div>
+          </Section>
+          <Footer />
+        </ContentWrapper>
+      </ThemeProvider>
+    </>
   );
 }
 
-export async function getStaticProps({ params }) {
-  const post = getPostBySlug(params.slug, [
-    'title',
-    'date',
-    'slug',
-    'author',
-    'content',
-    'ogImage',
-    'coverImage',
-  ]);
-  const content = await markdownToHtml(post.content || '');
-
-  return {
-    props: {
-      post: {
-        ...post,
-        content,
-        rawMarkdownBody: post.content,
-      },
-    },
-  };
+export async function getStaticPaths() {
+  const posts = await getPosts();
+  const paths = posts.map((post) => ({
+    params: { slug: post.slug },
+  }));
+  return { paths, fallback: false };
 }
 
-export async function getStaticPaths() {
-  const posts = getAllPosts(['slug']);
+// Pass the page slug over to the "getSinglePost" function
+// In turn passing it to the posts.read() to query the Ghost Content API
 
-  return {
-    paths: posts.map((posts) => {
-      return {
-        params: {
-          slug: posts.slug,
-        },
-      };
-    }),
-    fallback: false,
-  };
+export async function getStaticProps({ params }) {
+  const post = await getSinglePost(params.slug);
+  return { props: { post: post } };
 }

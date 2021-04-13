@@ -1,7 +1,6 @@
 import { getPages, getSinglePage } from '../../api/ghost_data';
 import Head from 'next/head';
-import Link from 'next/link';
-import Layout1 from '../../components/layout1';
+
 import Sticky from 'react-stickynode';
 import { ThemeProvider } from 'styled-components';
 import { theme } from '../../styles/theme/agencyDigital';
@@ -12,7 +11,6 @@ import {
 import { DrawerProvider } from '../../components/DrawerContext';
 import NavBar from '../../components/NavBar';
 import Footer from '../../components/Footer';
-import Cursor from '../../components/Cursor';
 
 export default function PostPage({ page }) {
   // Render post title and content in the page from props
@@ -28,20 +26,20 @@ export default function PostPage({ page }) {
       <GlobalStyle />
 
       <ContentWrapper>
-        <Cursor />
         <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
           <DrawerProvider>
             <NavBar />
           </DrawerProvider>
         </Sticky>
-        <div style={{ marginLeft: '15rem' }}>
-          <div _title={_title}></div>
+        <div style={{ marginLeft: '20rem', marginBottom: '7rem' }}>
+          <div style={{ marginBottom: '7rem' }} _title={_title}></div>
           <div className="">
             <h1
               style={{
                 fontFamily: "'Helvetica Neue', sans-serif",
                 fontSize: '3rem',
                 color: '#2b7b2f',
+                marginBottom: '3rem',
               }}
             >
               {page.title}
