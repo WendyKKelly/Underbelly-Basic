@@ -15,15 +15,15 @@ const Section = styled.section`
       margin-right: 7rem;
 
       @media only screen and (max-width: 999px) {
-        margin-left: 0.5rem;
+        margin-left: 0.8rem;
         margin-right: 0.2rem;
       }
       @media only screen and (max-width: 768px) {
-        margin-left: 0.5rem;
+        margin-left: 0.8rem;
         margin-right: 0.2rem;
       }
       @media only screen and (max-width: 480px) {
-        margin-left: 0.5rem;
+        margin-left: 0.8rem;
         margin-right: 0.2rem;
       }
     }
