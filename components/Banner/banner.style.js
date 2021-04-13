@@ -83,12 +83,14 @@ export const BannerContent = styled.div`
       font-size: 34px;
       margin-bottom: 10px;
       text-align: center;
+      margin-left: 2rem;
     }
     @media only screen and (max-width: 480px) {
       font-size: 23px;
       margin-bottom: 20px;
       line-height: 40px;
       text-align: center;
+      margin-left: 2rem;
     }
   }
   .banner-caption {
