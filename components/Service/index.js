@@ -6,7 +6,7 @@ import { chevronRight } from 'react-icons-kit/feather/chevronRight';
 
 import Container from '../UI/ContainerTwo';
 import Link from '../Link';
-import BlogPost from '../BlogPost';
+import BlogPost from './BlogPost';
 import SectionHeading from '../SectionHeading';
 import Section, { ServiceWrapper } from './service.style';
 

@@ -8,9 +8,8 @@ const Section = styled.section``;
 
 export const ContentWrapper = styled.div`
   background-image: url(${illustration});
-  background-color: linear-gradient(217deg, rgba(43,123,47,.2), rgba(43,123,47,.7) 70.71%), ;
+  background-color: linear-gradient(217deg, rgba(43,123,47,.2), rgba(43,123,47,.7) 70.71%);
   background-size: 100%;
-
   background-repeat: no-repeat;
   min-height: 70vh;
   border-radius: 0% 70% 0% 30% / 0% 50% 0% 70%;
@@ -89,6 +88,7 @@ export const BannerContent = styled.div`
       font-size: 23px;
       margin-bottom: 20px;
       line-height: 40px;
+      text-align: center;
     }
   }
   .banner-caption {
