@@ -1866,7 +1866,7 @@ autoprefixer@^9.4.5, autoprefixer@^9.6.1, autoprefixer@^9.8.6:
     postcss "^7.0.32"
     postcss-value-parser "^4.1.0"
 
-axios@0.21.1:
+axios@0.21.1, axios@^0.21.1:
   version "0.21.1"
   resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.1.tgz#22563481962f4d6bde9a76d516ef0e5d3c09b2b8"
   integrity sha512-dKQiRHxGD9PPRIUNIWvZhPTPpl1rf/OxTYKsqKUDjBwYylTvV7SjSHJb9ratfyzM6wCdLCOYLzs73qpg5c4iGA==
@@ -5659,6 +5659,13 @@ kind-of@^6.0.0, kind-of@^6.0.2:
   version "6.0.3"
   resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-6.0.3.tgz#07c05034a6c349fa06e24fa35aa76db4580ce4dd"
   integrity sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw==
+
+latest-node-version@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/latest-node-version/-/latest-node-version-1.0.0.tgz#59eba3db2e7e750f6720d0a729cf2ac8058d4693"
+  integrity sha512-pbUylQui8PBAMnNv7Upr8UR5PZkgdF7CihV1RntMun18+9JGNCTLPiuvmfRgFQJpVi6B4oNWYnW3sjwQS96w8Q==
+  dependencies:
+    axios "^0.21.1"
 
 leven@^3.1.0:
   version "3.1.0"
