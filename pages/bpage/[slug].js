@@ -1,6 +1,6 @@
 import { getPages, getSinglePage } from '../../api/ghost_data';
 import Head from 'next/head';
-
+import Section from './page.style';
 import Sticky from 'react-stickynode';
 import { ThemeProvider } from 'styled-components';
 import { theme } from '../../styles/theme/agencyDigital';
@@ -31,22 +31,24 @@ export default function PostPage({ page }) {
             <NavBar />
           </DrawerProvider>
         </Sticky>
-        <div style={{ marginLeft: '20rem', marginBottom: '7rem' }}>
-          <div style={{ marginBottom: '7rem' }} _title={_title}></div>
-          <div className="">
-            <h1
-              style={{
-                fontFamily: "'Helvetica Neue', sans-serif",
-                fontSize: '3rem',
-                color: '#2b7b2f',
-                marginBottom: '3rem',
-              }}
-            >
-              {page.title}
-            </h1>
-            <div dangerouslySetInnerHTML={{ __html: page.html }} />
+        <Section>
+          <div className="margin">
+            <div style={{ marginBottom: '7rem' }} _title={_title}></div>
+            <div className="">
+              <h1
+                style={{
+                  fontFamily: "'Helvetica Neue', sans-serif",
+                  fontSize: '3rem',
+                  color: '#2b7b2f',
+                  marginBottom: '3rem',
+                }}
+              >
+                {page.title}
+              </h1>
+              <div dangerouslySetInnerHTML={{ __html: page.html }} />
+            </div>
           </div>
-        </div>
+        </Section>
         <Footer />
       </ContentWrapper>
     </ThemeProvider>
