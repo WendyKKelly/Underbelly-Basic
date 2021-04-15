@@ -1,20 +1,22 @@
 import styled from 'styled-components';
 import { rgba } from 'polished';
 import { themeGet } from '@styled-system/theme-get';
-import { motion } from 'framer-motion';
 
 const Section = styled.section``;
 
 export const ContentWrapper = styled.div`
-
- width: 70rem;
-  height: 70rem;
-  background-color: linear-gradient ( rgba(43,123, 47, .2), rgba(43,123, 47, .7) );
-  border-radius: 10% 70% 10% 30% / 10% 50% 10% 70%;
+ width: 100%;
+  height: 100%;
+  background: linear-gradient(160deg, #ee9b27 0%, rgba(255, 160, 163, .7 ) 60%);
+  border-radius: 20%;
+  overflow: hidden;
+  padding: 0;
+  margin: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -9;
  
-  
-
-
 
   @media only screen and (max-width: 1440px) {
     min-height: auto;
@@ -58,12 +60,121 @@ export const BannerContent = styled.div`
     padding-bottom: 60px;
   }
   h1 {
-    font-family: 'Helvetica Neue';
-    font-size: 5rem;
+    font-family: 'Sometimes Times BETA';
+    font-size: 7rem;
     line-height: 70px;
-    font-weight: 700;
+    font-weight: 900;
+    text-align: center;
     margin-top: 4rem;
     color: ${themeGet('colors.menu', '#2c2e35')};
+    margin-bottom: 24px;
+    letter-spacing: 1px;
+
+    @media only screen and (max-width: 1440px) {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+      line-height: 55px;
+    }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+      font-size: 2.4rem;
+      line-height: 44px;
+    }
+    @media only screen and (max-width: 1024px) {
+      font-size: 2.4rem;
+      margin-bottom: 20px;
+    }
+
+    @media only screen and (max-width: 768px) {
+      font-size: 34px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    @media only screen and (max-width: 480px) {
+      font-size: 23px;
+      margin-bottom: 20px;
+      line-height: 40px;
+    }
+  }
+  h2 {
+    font-family: 'Helvetica Neue';
+    font-size: 2.7rem;
+    line-height: 70px;
+    font-weight: 900;
+    margin-top: 1rem;
+    background: linear-gradient(
+        300deg,
+        rgba(43, 123, 47, 0.8),
+        rgba(43, 123, 47, 0) 70.71%
+      ),
+      linear-gradient(
+        127deg,
+        rgba(43, 83, 123, 0.8),
+        rgba(43, 83, 123, 0) 70.71%
+      ),
+      linear-gradient(
+        217deg,
+        rgba(43, 123, 47, 0.8),
+        rgba(43, 123, 47, 0) 70.71%
+      );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 24px;
+    letter-spacing: 1px;
+
+    @media only screen and (max-width: 1440px) {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+      line-height: 55px;
+    }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+      font-size: 2.4rem;
+      line-height: 44px;
+    }
+    @media only screen and (max-width: 1024px) {
+      font-size: 2.4rem;
+      margin-bottom: 20px;
+    }
+
+    @media only screen and (max-width: 768px) {
+      font-size: 34px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    @media only screen and (max-width: 480px) {
+      font-size: 23px;
+      margin-bottom: 20px;
+      line-height: 40px;
+    }
+  }
+  h3 {
+    font-family: 'Helvetica Neue';
+    font-size: 1rem;
+    line-height: 70px;
+    font-weight: 900;
+    margin-top: 1rem;
+    background: linear-gradient(
+        300deg,
+        rgba(43, 123, 47, 0.8),
+        rgba(43, 123, 47, 0) 70.71%
+      ),
+      linear-gradient(
+        127deg,
+        rgba(43, 83, 123, 0.8),
+        rgba(43, 83, 123, 0) 70.71%
+      ),
+      linear-gradient(
+        217deg,
+        rgba(43, 123, 47, 0.8),
+        rgba(43, 123, 47, 0) 70.71%
+      );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
     margin-bottom: 24px;
     letter-spacing: 1px;
 
