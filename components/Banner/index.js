@@ -14,7 +14,7 @@ import Section, {
 
 const Banner = () => {
   return (
-    <Section id="home">
+    <Section>
       <Container>
         <ContentWrapper>
           <BannerContent>
