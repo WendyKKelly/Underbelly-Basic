@@ -30,6 +30,20 @@ export const ContentWrapper = styled.div`
     background-image: none;
     min-height: auto;
     margin: 1rem;
+    align-items: left;
+  }@media only screen and (max-width: 768px) {
+    background: transparent;
+    background-image: none;
+    min-height: auto;
+    margin: 1rem;
+    align-items: left;
+  }
+  @media only screen and (max-width: 480px) {
+    background: transparent;
+    background-image: none;
+    min-height: auto;
+    margin: .5rem;
+    align-items: left;
   }
 }
 `;
