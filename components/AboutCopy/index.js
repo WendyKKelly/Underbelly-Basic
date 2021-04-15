@@ -21,7 +21,7 @@ const AboutCopy = () => {
             <Heading as="h2" content="An Underbelly Project" />
             <Text
               className="banner-caption"
-              content="Welcome to the audacious project that is The Underbelly, and its daughter, Wild + Precious. The Underbelly is where we learn to love the unloveable. Wild + Precious is how we do it."
+              content="Welcome to the audacious project that is The Underbelly and its daughter, Wild + Precious. The Underbelly is where we learn to love the unloveable. Wild + Precious is how we do it."
             />
             <Text
               className="banner-caption"
@@ -69,7 +69,7 @@ const AboutCopy = () => {
             <Text
               className="banner-caption"
               content="
-            Wild + Precious is my weekly practice, too. I literally do each thing I ask you to do in the Monday morning newsletter. The peactices spelled out in my courses are evidence-based in Alderian practices such as 'third wave' cognitive behavioural therapy (acceptance and commitment therapy, for example) and Mindfulness practices. "
+            Wild + Precious is my weekly practice, too. I literally do each thing I ask you to do in the Monday morning newsletter. The practices spelled out in my courses are evidence-based in Alderian practices such as 'third wave' cognitive behavioural therapy (acceptance and commitment therapy, for example) and Mindfulness practices. "
             />
             <Subscribe className="substack">
               <Iframe

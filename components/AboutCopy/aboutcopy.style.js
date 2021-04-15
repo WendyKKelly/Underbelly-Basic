@@ -80,7 +80,7 @@ export const BannerContent = styled.div`
     line-height: 70px;
     font-weight: 900;
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 2.7rem;
     color: ${themeGet('colors.menu', '#2c2e35')};
     margin-bottom: 24px;
     letter-spacing: 1px;
