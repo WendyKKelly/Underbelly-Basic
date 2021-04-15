@@ -36,7 +36,7 @@ export default function PostPage({ post }) {
 
           <Section>
             <img className="img " src={post.feature_image} />
-            <div className="margin">
+            <div className="imgs">
               <h1>{post.title}</h1>
               <div dangerouslySetInnerHTML={{ __html: post.html }} />
             </div>

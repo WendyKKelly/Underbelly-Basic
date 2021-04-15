@@ -1,33 +1,41 @@
 import styled from 'styled-components';
 
 const Section = styled.section`
-  img {
+  div.img {
     margin-left: 10rem;
     width: 70%;
     @media only screen and (max-width: 999px) {
       background: transparent;
       display: none;
       min-height: auto;
-      margin-left: none;
-    }
-    .margin {
-      margin-left: 10rem;
-      margin-right: 7rem;
-
-      @media only screen and (max-width: 999px) {
-        margin-left: 0.8rem;
-        margin-right: 0.2rem;
-      }
-      @media only screen and (max-width: 768px) {
-        margin-left: 0.8rem;
-        margin-right: 0.2rem;
-      }
-      @media only screen and (max-width: 480px) {
-        margin-left: 0.8rem;
-        margin-right: 0.2rem;
-      }
+      margin-left: 7rem;
     }
   }
+  div.imgs {
+    width: 80%;
+    height: 100%;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    @media only screen and (max-width: 999px) {
+      margin-left: 1rem;
+      margin-right: 1rem;
+      width: 90%;
+      height: 100%;
+    }
+    @media only screen and (max-width: 786px) {
+      margin-left: 1rem;
+      margin-right: 1rem;
+      width: 90%;
+      height: 100%;
+    }
+    @media only screen and (max-width: 480px) {
+      margin-left: 1rem;
+      margin-right: 1rem;
+      width: 90%;
+      height: 100%;
+    }
+  }
+
   h1 {
     font-family: 'Helvetica Neue', sans-serif;
     font-size: 3rem;
