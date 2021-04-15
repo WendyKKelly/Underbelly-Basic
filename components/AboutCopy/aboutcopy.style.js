@@ -222,7 +222,7 @@ export const BannerContent = styled.div`
   }
   .banner-caption {
     color: ${themeGet('colors.paragraph', '#02073E')};
-    font-size: 2rem;
+    font-size: 1.3rem;
     line-height: 33px;
     text-align: left;
     font-weight: 400;
@@ -235,10 +235,11 @@ export const BannerContent = styled.div`
     }
     @media only screen and (max-width: 768px) {
       margin-bottom: 1.3rem;
-      text-align: center;
+      text-align: left;
     }
     @media only screen and (max-width: 480px) {
       font-size: 1.3rem;
+      text-align: left;
     }
   }
 `;

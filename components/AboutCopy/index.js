@@ -31,7 +31,7 @@ const AboutCopy = () => {
               className="banner-caption"
               content="Wild + Precious is how you DIY get from stuck, unsafe, and rigid to a place where your best self flows from your loving center — learning and practicing self-compassion, self-care, self-love ideally so that you can then go out into the world and love and serve others."
             />
-            <Heading as="h3" content="Why?" />
+            <Heading as="h2" content="Why?" />
             <Text
               className="banner-caption"
               content="Awhile back, I began noticing my activist friends get burntout — because they spent all their time taking care of the whole world and not any time taking care of themselves. I also was feeling burntout from a simple lack of meaningful work in my life.  "
