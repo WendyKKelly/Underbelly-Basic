@@ -61,11 +61,11 @@ export const BannerContent = styled.div`
   }
   h1 {
     font-family: 'Sometimes Times BETA';
-    font-size: 7rem;
+    font-size: 5rem;
     line-height: 70px;
     font-weight: 900;
     text-align: center;
-    margin-top: 4rem;
+    margin-top: 2rem;
     color: ${themeGet('colors.menu', '#2c2e35')};
     margin-bottom: 24px;
     letter-spacing: 1px;
@@ -85,18 +85,19 @@ export const BannerContent = styled.div`
     }
 
     @media only screen and (max-width: 768px) {
-      font-size: 34px;
+      font-size: 2rem;
       margin-bottom: 10px;
       text-align: center;
     }
     @media only screen and (max-width: 480px) {
-      font-size: 23px;
+      font-size: 2rem;
       margin-bottom: 20px;
       line-height: 40px;
     }
   }
   h2 {
     font-family: 'Helvetica Neue';
+    text-align: left;
     font-size: 2.7rem;
     line-height: 70px;
     font-weight: 900;
@@ -139,18 +140,19 @@ export const BannerContent = styled.div`
     }
 
     @media only screen and (max-width: 768px) {
-      font-size: 34px;
+      font-size: 2rem;
       margin-bottom: 10px;
       text-align: center;
     }
     @media only screen and (max-width: 480px) {
-      font-size: 23px;
+      font-size: 2rem;
       margin-bottom: 20px;
       line-height: 40px;
     }
   }
   h3 {
     font-family: 'Helvetica Neue';
+    text-align: left;
     font-size: 1rem;
     line-height: 70px;
     font-weight: 900;
@@ -193,12 +195,12 @@ export const BannerContent = styled.div`
     }
 
     @media only screen and (max-width: 768px) {
-      font-size: 34px;
+      font-size: 2rem;
       margin-bottom: 10px;
       text-align: center;
     }
     @media only screen and (max-width: 480px) {
-      font-size: 23px;
+      font-size: 2rem;
       margin-bottom: 20px;
       line-height: 40px;
     }
@@ -207,20 +209,21 @@ export const BannerContent = styled.div`
     color: ${themeGet('colors.paragraph', '#02073E')};
     font-size: 2rem;
     line-height: 33px;
+    text-align: left;
     font-weight: 400;
     margin-bottom: 0;
     @media only screen and (max-width: 1440px) {
-      font-size: 16px;
+      font-size: 1rem;
     }
     @media only screen and (max-width: 1024px) {
-      line-height: 33px;
+      line-height: 1.5rem;
     }
     @media only screen and (max-width: 768px) {
-      margin-bottom: 30px;
+      margin-bottom: 1.3rem;
       text-align: center;
     }
     @media only screen and (max-width: 480px) {
-      font-size: 16px;
+      font-size: 1.3rem;
     }
   }
 `;
