@@ -89,14 +89,15 @@ export const data = {
       icon: serviceIcon1,
       title: 'Newsletter',
       desc:
-        'A free weekly newsletter every Monday morning to start your week off right.',
+        ' Wild + Precious: 10 Things — a sweet + juicy Monday morning newsletter. "Always inspring" "Delicious" "delighted me in so many ways" ',
       link: './stories',
     },
     {
       id: 2,
       icon: serviceIcon2,
       title: 'Bookshop',
-      desc: 'A collection of wild and precious books.',
+      desc:
+        'A curation of wild and precious books. This service is currently only available in the UK and USA but it is a lovely company I want to support. Amazon for Indies, basically. If it works for you, consider buying your books from them:',
       link: 'https://bookshop.org/shop/underbelli',
     },
     {
@@ -104,7 +105,7 @@ export const data = {
       icon: serviceIcon3,
       title: 'Podcast',
       desc:
-        'A podcast every Thursday with guests who speak freely with me on topics related to your emotional health.',
+        'Wild + Precious Conversations every Thursday with guests who meander and muse with me on the current weekly theme.',
       link: '/bpage/wild-and-precious-conversations',
     },
     {
@@ -112,7 +113,7 @@ export const data = {
       icon: serviceIcon4,
       title: 'Course: Journal',
       desc:
-        'A 365 day journal to take you through a year of emotional growth. $20',
+        '52 weeks of quotes inspired from literature across time and space paired with a question to take you deep. Book + course with videos. $20',
       link: 'https://wildprecious.thinkific.com/courses/journal-to-your-heart',
     },
     {
@@ -120,7 +121,7 @@ export const data = {
       icon: serviceIcon5,
       title: 'Self Care Kit',
       desc:
-        'Free short course to get you started in setting aside time for yourself, creating your own self care kit, and preparing your for all life brings you. $0',
+        'Free short course based in the latest research around burnout and self care. You will learn your special care and feed to create your own self care kit, so you will be ready the next time life gets gnarly. $0',
       link: 'https://wildprecious.thinkific.com/courses/self-care-kit',
     },
     {
