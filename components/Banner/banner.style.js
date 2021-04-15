@@ -19,15 +19,18 @@ export const ContentWrapper = styled.div`
   @media only screen and (max-width: 1440px) {
     min-height: auto;
     background-size: 100%;
+    max-width: 100%;
   }
   @media only screen and (max-width: 1024px) {
     background-size: 100%;
+    max-width: 100%;
   }
   @media only screen and (max-width: 999px) {
     background: transparent;
     background-image: none;
     border-radius: 5%;
     min-height: auto;
+    max-width: 100%;
   }
   @media only screen and (max-width: 768px) {
     background: transparent;
