@@ -18,11 +18,16 @@ export const ContentWrapper = styled.div`
 }
   @media only screen and (max-width: 1440px) {
     min-height: auto;
+    background-repeat: no-repeat;
     background-size: 100%;
+    overflow: hidden;
     max-width: none;
   }
   @media only screen and (max-width: 1024px) {
+    min-height: auto;
+    background-repeat: no-repeat;
     background-size: 100%;
+    overflow: hidden;
     max-width: none;
   }
   @media only screen and (max-width: 999px) {
