@@ -13,6 +13,7 @@ export const ContentWrapper = styled.div`
   background-repeat: no-repeat;
   min-height: 70vh;
   border-radius: 0% 70% 0% 30% / 0% 50% 0% 70%;
+  overflow: hidden;
 }
   @media only screen and (max-width: 1440px) {
     min-height: auto;
@@ -24,6 +25,19 @@ export const ContentWrapper = styled.div`
   @media only screen and (max-width: 999px) {
     background: transparent;
     background-image: none;
+    border-radius: 5%;
+    min-height: auto;
+  }
+  @media only screen and (max-width: 768px) {
+    background: transparent;
+    background-image: none;
+    border-radius: 5%;
+    min-height: auto;
+  }
+  @media only screen and (max-width: 480px) {
+    background: transparent;
+    background-image: none;
+    border-radius: 5%;
     min-height: auto;
   }
 `;

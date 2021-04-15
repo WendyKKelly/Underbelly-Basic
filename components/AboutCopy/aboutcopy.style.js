@@ -7,7 +7,7 @@ const Section = styled.section``;
 export const ContentWrapper = styled.div`
  width: 100%;
   height: 100%;
-  background: linear-gradient(160deg, #ee9b27 0%, rgba(255, 160, 163, .7 ) 60%);
+  background: linear-gradient(to top, rgba(238,155,39, .3), rgba(255, 160, 163, .3 ) );
   border-radius: 20%;
   overflow: hidden;
   padding: 0;
