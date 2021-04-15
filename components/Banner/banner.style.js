@@ -14,16 +14,16 @@ export const ContentWrapper = styled.div`
   min-height: 70vh;
   border-radius: 0% 70% 0% 30% / 0% 50% 0% 70%;
   overflow: hidden;
-  max-width: 100%;
+  max-width: none;
 }
   @media only screen and (max-width: 1440px) {
     min-height: auto;
     background-size: 100%;
-    max-width: 100%;
+    max-width: none;
   }
   @media only screen and (max-width: 1024px) {
     background-size: 100%;
-    max-width: 100%;
+    max-width: none;
   }
   @media only screen and (max-width: 999px) {
     background: transparent;
