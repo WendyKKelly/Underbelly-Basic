@@ -29,6 +29,7 @@ export const ContentWrapper = styled.div`
     background: transparent;
     background-image: none;
     min-height: auto;
+    margin: 1rem;
   }
 }
 `;
