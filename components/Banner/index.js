@@ -15,7 +15,7 @@ import Section, {
 const Banner = () => {
   return (
     <Section>
-      <Container>
+      <Container style={{ maxWidth: 'none' }}>
         <ContentWrapper>
           <BannerContent>
             <Heading as="h1" content="Unloveable => Loved." />
