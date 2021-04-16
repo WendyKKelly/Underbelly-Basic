@@ -24,27 +24,27 @@ import Joy6 from '../../public/image/blog1/joy6.png';
 export const data = {
   navItems: [
     {
-      label: '',
+      label: 'Connect',
       path: '#',
       offset: '70',
     },
     {
-      label: '',
+      label: 'Shop',
       path: '#',
       offset: '70',
     },
     {
-      label: '',
+      label: 'Articles',
       path: '#',
       offset: '70',
     },
     {
-      label: '',
+      label: 'Newsletters',
       path: '#',
       offset: '70',
     },
     {
-      label: '',
+      label: 'Courses',
       path: '#',
       offset: '70',
     },

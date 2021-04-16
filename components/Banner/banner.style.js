@@ -7,47 +7,14 @@ import illustration from '../../public/image/banner.jpg';
 const Section = styled.section``;
 
 export const ContentWrapper = styled.div`
-  background-image: url(${illustration});
-  background-color: linear-gradient(217deg, rgba(43,123,47,.2), rgba(43,123,47,.7) 70.71%);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  min-height: 70vh;
-  border-radius: 0% 70% 0% 30% / 0% 50% 0% 70%;
-  overflow: hidden;
-  max-width: none;
-}
-  @media only screen and (max-width: 1440px) {
-    min-height: auto;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    overflow: hidden;
-    max-width: none;
-  }
-  @media only screen and (max-width: 1024px) {
-    min-height: auto;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    overflow: hidden;
-    max-width: none;
-  }
-  @media only screen and (max-width: 999px) {
-    background: transparent;
-    background-image: none;
-    border-radius: 5%;
-    min-height: auto;
+  .image {
+    background-image: url(${illustration});
+    background-size: cover;
     max-width: 100%;
-  }
-  @media only screen and (max-width: 768px) {
-    background: transparent;
-    background-image: none;
-    border-radius: 5%;
-    min-height: auto;
-  }
-  @media only screen and (max-width: 480px) {
-    background: transparent;
-    background-image: none;
-    border-radius: 5%;
-    min-height: auto;
+    background-repeat: no-repeat;
+    min-height: 70vh;
+    border-radius: 0% 70% 0% 30% / 0% 50% 0% 70%;
+    z-index: -9;
   }
 `;
 
@@ -58,6 +25,7 @@ export const BannerContent = styled.div`
   width: 100%;
   padding-top: 100px;
   padding-bottom: 150px;
+  z-index: 5;
   @media only screen and (max-width: 1600px) {
     max-width: 100%;
   }
@@ -84,9 +52,9 @@ export const BannerContent = styled.div`
     font-weight: 700;
     margin-left: 17rem;
     margin-top: 4rem;
-    color: ${themeGet('colors.menu', '#2c2e35')};
+    color: ${themeGet('colors.menu', '#2b7b2f')};
     margin-bottom: 24px;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
 
     @media only screen and (max-width: 1440px) {
       font-size: 2.5rem;
@@ -193,12 +161,7 @@ export const Subscribe = styled.div`
       }
     }
   }
-.substack {
-  background-color: transparent;
-  border-radius: 8px;
-  font-family: 'Helvetica Neue';
-  font-color: #2c2e35;
-}
+
   button {
     background-color: #ff825c;
     min-width: 150px;

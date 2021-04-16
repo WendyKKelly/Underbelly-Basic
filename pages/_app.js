@@ -3,14 +3,10 @@ import App from 'next/app';
 
 import '../styles/index.css';
 
-import { AnimatePresence } from 'framer-motion';
-
 function MyApp({ Component, pageProps, router }) {
   return (
     <Fragment>
-      <AnimatePresence exitBeforeEnter>
-        <Component {...pageProps} />
-      </AnimatePresence>
+      <Component {...pageProps} />
     </Fragment>
   );
 }
