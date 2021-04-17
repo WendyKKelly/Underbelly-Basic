@@ -1,18 +1,19 @@
 import styled from 'styled-components';
 import { themeGet } from '@styled-system/theme-get';
+import flower from '../../public/image/wp-sm.jpg';
 
 const Section = styled.div`
   h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 5rem;
+    font-size: 6rem;
     font-weight: 400;
     color: #ffa0a3;
   }
   h2 {
     font-family: 'Helvetica Neue';
-    font-size: 3rem;
-    font-weight: 500;
-    color: 2c2e35;
+    font-size: 5rem;
+    font-weight: 300;
+    color: #2b7b2f;
     @media screen and (max-width: 480px) {
       line-height: 3rem;
       font-family: 'Sometimes Times BETA';
@@ -21,7 +22,8 @@ const Section = styled.div`
     line-height: 3rem;
     font-family: 'Sometimes Times BETA';
 }
-  background-color: #f9fbfd;
+  background-image: linear-gradient( rgba(239, 239, 239, .3),   rgba(239, 239, 239, .5) ), url(${flower});
+  
   padding: 100px 0 120px;
 
   @media screen and (max-width: 1440px) {

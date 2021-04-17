@@ -101,7 +101,7 @@ export const BannerContent = styled.div`
       color: #2b7b2f;
       margin-left: 0rem;
       margin-bottom: 20px;
-      text-align: center;
+      text-align: left;
     }
   }
   .banner-caption {
@@ -165,6 +165,7 @@ export const Subscribe = styled.div`
     @media only screen and (max-width: 1440px) {
       font-size: 2.5rem;
       color: #fff;
+      
       margin-bottom: 5px;
       text-align: left;
       margin-left: 0.5rem;
