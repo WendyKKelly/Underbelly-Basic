@@ -3,14 +3,14 @@ import { themeGet } from '@styled-system/theme-get';
 
 const Section = styled.div`
   h1 {
-    font-family: 'Sometimes Times BETA';
-    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem;
     font-weight: 400;
-    color: 2c2e35;
+    color: #ffa0a3;
   }
   h2 {
-    font-family: 'Sometimes Times BETA';
-    font-size: 2.7rem;
+    font-family: 'Helvetica Neue';
+    font-size: 3rem;
     font-weight: 500;
     color: 2c2e35;
     @media screen and (max-width: 480px) {

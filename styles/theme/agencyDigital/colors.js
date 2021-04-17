@@ -14,9 +14,9 @@ const colors = {
   secondary: '#ff5b60', // 10
   secondaryHover: '#FF282F', // 11
   yellow: '#ee9b27', // 12
-  yellowHover: '#F29E02', // 13
+  yellowHover: '#ee9b27', // 13
   linkColor: '#2b7b2f',
-  slogan: '#00A99D',
+  slogan: '#2b7b2f',
   primaryBoxShadow: ' 0px 9px 19.74px 1.26px rgba(82, 104, 219, 0.57) ',
 };
 
