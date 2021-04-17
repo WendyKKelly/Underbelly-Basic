@@ -3,7 +3,7 @@ import { rgba } from 'polished';
 import { themeGet } from '@styled-system/theme-get';
 import Image from '../Image';
 import illustration from '../../public/image/banner.jpg';
-
+import { AnimSpinner } from '../Animation';
 const Section = styled.section``;
 
 export const ContentWrapper = styled.div`
@@ -69,20 +69,6 @@ export const BannerContent = styled.div`
       font-size: 2.4rem;
       margin-bottom: 20px;
     }
-
-    @media only screen and (max-width: 768px) {
-      font-size: 3rem;
-      margin-bottom: 10px;
-      text-align: center;
-      margin-left: 0.5rem;
-    }
-    @media only screen and (max-width: 480px) {
-      font-size: 3rem;
-      margin-bottom: 20px;
-      line-height: 40px;
-      text-align: center;
-      margin-left: 0.5rem;
-    }
   }
   .banner-caption {
     color: ${themeGet('colors.paragraph', '#02073E')};
@@ -132,15 +118,37 @@ export const Subscribe = styled.div`
   @media only screen and (max-width: 480px) {
     align-items: center;
   }
-  .reusecore__input {
-    width: 100%;
-  }
-  .field-wrapper {
-    margin-right: 15px;
-    @media only screen and (max-width: 480px) {
-      margin-right: 0px;
+  h2 {
+    font-family: 'Helvetica Neue';
+    font-size: 2rem;
+    line-height: 70px;
+    font-weight: 700;
+    margin-left: 0rem;
+    margin-top: 4rem;
+    color: ${themeGet('colors.menu', '#fff')};
+    margin-bottom: 24px;
+    letter-spacing: 1.5px;
+    @media only screen and (max-width: 768px) {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      text-align: center;
+      margin-left: 0.5rem;
     }
-
+    @media only screen and (max-width: 480px) {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      line-height: 40px;
+      text-align: center;
+      margin-left: 0.5rem;
+    }
+    .reusecore__input {
+      width: 100%;
+    }
+    .field-wrapper {
+      margin-right: 15px;
+      @media only screen and (max-width: 480px) {
+        margin-right: 0px;
+      }
     }
     input {
       font-family: 'Helvetica Neue';
@@ -163,9 +171,13 @@ export const Subscribe = styled.div`
   }
 
   button {
-    background-color: #ff825c;
+    background-color: #ee9b27;
     min-width: 150px;
-    border-radius: 8px;
+    height: 150px;
+    margin-top: 10rem;
+    margin-right: 1rem;
+    border-radius: 48%;
+    ${AnimSpinner};
 
     @media only screen and (max-width: 480px) {
       min-width: 100%;

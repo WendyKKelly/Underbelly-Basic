@@ -2,8 +2,9 @@ import React from 'react';
 import Iframe from 'react-iframe';
 import Zoom from 'react-reveal/Zoom';
 import Text from '../Text';
-
+import Button from '../Button';
 import Heading from '../Heading';
+import AnimSpinner from '../Animation';
 
 import Container from '../UI/ContainerTwo';
 import Section, {
@@ -26,10 +27,14 @@ const Banner = () => {
                 <Text className="banner-caption" content="" />
 
                 <Subscribe className="substack">
-                  <Text
-                    className="banner-caption"
-                    content="Real love is not a soft skill. Learn how to love, be loved, and create a loving world"
+                  <Heading
+                    as="h2"
+                    content="The Underbelly is Your Safe Space To Cultivate Love"
                   />
+
+                  <Button onClick="/about" />
+
+                  <Text className="banner-caption" content="" />
                 </Subscribe>
               </BannerContent>
             </div>

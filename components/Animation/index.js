@@ -6,7 +6,7 @@ const spinner = keyframes`
   }
   50% {
     transform: rotate(180deg);
-    opacity: 0.5;
+    opacity: 0.3;
   }
   100% {
     transform: rotate(360deg);
@@ -14,7 +14,7 @@ const spinner = keyframes`
 `;
 
 const AnimSpinner = css`
-  animation: ${spinner} 1s linear infinite;
+  animation: ${spinner} 10s linear infinite;
 `;
 
 export { AnimSpinner };
