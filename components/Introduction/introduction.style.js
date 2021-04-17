@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 import { themeGet } from '@styled-system/theme-get';
-import introduction from '../../public/image/introduction-lg.jpg';
+import introduction from '../../public/image/water.jpg';
 const Section = styled.div`
 .img {
-    background: rgba(239,239,239, .7);
+    background-image: linear-gradient( rgba(239, 239, 239, .3),   rgba(239, 239, 239, .8) ),url(${introduction});
     background-size: cover;
     max-width: 100%;
     margin-top: 0rem;
