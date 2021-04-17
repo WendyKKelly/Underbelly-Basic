@@ -8,19 +8,27 @@ const Section = styled.div`
     font-size: 6rem;
     font-weight: 400;
     color: #ffa0a3;
+    @media screen and (max-width: 480px) {
+      line-height: 5rem;
+      font-family: 'Playfair Display';
   }
+  @media screen and (max-width: 768px) {
+    line-height: 5rem;
+    font-family: 'Playfair Display';
+}
+}
   h2 {
     font-family: 'Helvetica Neue';
     font-size: 5rem;
     font-weight: 300;
     color: #2b7b2f;
     @media screen and (max-width: 480px) {
-      line-height: 3rem;
-      font-family: 'Sometimes Times BETA';
+      line-height: 4rem;
+      font-family: 'Helvetica Neue';
   }
   @media screen and (max-width: 768px) {
-    line-height: 3rem;
-    font-family: 'Sometimes Times BETA';
+    line-height: 4rem;
+    font-family: 'Helvetica Neue';
 }
   background-image: linear-gradient( rgba(239, 239, 239, .3),   rgba(239, 239, 239, .5) ), url(${flower});
   
