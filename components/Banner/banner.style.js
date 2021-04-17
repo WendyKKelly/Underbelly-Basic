@@ -15,6 +15,22 @@ export const ContentWrapper = styled.div`
     min-height: 70vh;
     border-radius: 0% 70% 0% 30% / 0% 50% 0% 70%;
     z-index: -9;
+  
+  @media only screen and (max-width: 1600px) {
+    max-width: 100%;
+  }
+  @media only screen and (max-width: 1400px) {
+    
+    
+  }
+  @media only screen and (max-width: 1024px) {
+    max-width: 100%;
+  }
+  @media only screen and (max-width: 999px) {
+    background-image: none;
+  }
+  @media only screen and (max-width: 480px) {
+    background-image: none;
   }
 `;
 
@@ -66,8 +82,16 @@ export const BannerContent = styled.div`
       line-height: 44px;
     }
     @media only screen and (max-width: 1024px) {
-      font-size: 2.4rem;
+      font-size: 4rem;
       margin-bottom: 20px;
+      margin-left: 0rem;
+      text-align: center;
+    }
+    @media only screen and (max-width: 480px) {
+      font-size: 4rem;
+      margin-left: 0rem;
+      margin-bottom: 20px;
+      text-align: center;
     }
   }
   .banner-caption {
@@ -178,10 +202,22 @@ export const Subscribe = styled.div`
     margin-right: 1rem;
     border-radius: 48%;
     ${AnimSpinner};
-
+    @media only screen and (max-width: 1440px) {
+      margin-top: 30px;
+      margin-left: 30rem;
+    }
+    @media only screen and (max-width: 1024px) {
+      margin-left: 20rem;
+      margin-bottom: 20px;
+    }
+    @media only screen and (max-width: 768px) {
+      max-width: 80%;
+      margin: 0 auto;
+      flex-direction: column;
+    }
     @media only screen and (max-width: 480px) {
-      min-width: 100%;
-      margin-top: 15px;
+      margin: 0 auto;
+      flex-direction: column;
     }
   }
 `;
