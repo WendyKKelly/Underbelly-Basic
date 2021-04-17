@@ -32,7 +32,7 @@ const Banner = () => {
                     content="The Underbelly is Your Safe Space To Cultivate Love"
                   />
 
-                  <Button onClick="/about" />
+                  <Button onClick="" />
 
                   <Text className="banner-caption" content="" />
                 </Subscribe>

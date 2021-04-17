@@ -97,9 +97,9 @@ export const BannerContent = styled.div`
       text-align: center;
     }
     @media only screen and (max-width: 480px) {
-      font-size: 5rem;
+      font-size: 4.8rem;
       color: #2b7b2f;
-      margin-left: 0rem;
+      margin-left: -1rem;
       margin-bottom: 20px;
       text-align: left;
     }
@@ -200,7 +200,7 @@ export const Subscribe = styled.div`
       margin-bottom: 20px;
       line-height: 60px;
       text-align: left;
-      margin-left: 0.5rem;
+      margin-left: 0;
     }
   }
     .reusecore__input {

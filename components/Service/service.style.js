@@ -10,6 +10,7 @@ const Section = styled.div`
     color: #ffa0a3;
     @media screen and (max-width: 480px) {
       line-height: 5rem;
+      font-size: 5rem;
       font-family: 'Playfair Display';
   }
   @media screen and (max-width: 768px) {
@@ -24,6 +25,7 @@ const Section = styled.div`
     color: #2b7b2f;
     @media screen and (max-width: 480px) {
       line-height: 4rem;
+      font-size: 4rem;
       font-family: 'Helvetica Neue';
   }
   @media screen and (max-width: 768px) {
