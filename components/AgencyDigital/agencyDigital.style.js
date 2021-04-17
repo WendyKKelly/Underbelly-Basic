@@ -22,6 +22,15 @@ export const GlobalStyle = createGlobalStyle`
   section {
     position: relative;
     background: radial-gradient( rgba(130, 115, 59, .1),  rgba(130, 115, 59, .3), rgba(130, 115, 59, .7) );
+    @media only screen and (max-width: 1024px) {
+      background: radial-gradient( rgba(130, 115, 59, .1),  rgba(130, 115, 59, .3), rgba(130, 115, 59, .7) );
+    }
+    @media only screen and (max-width: 999px) {
+      background: linear-gradient( rgba(130, 115, 59, .5),   rgba(130, 115, 59, 1) );
+    }
+    @media only screen and (max-width: 480px) {
+      background: linear-gradient( rgba(130, 115, 59, .5),   rgba(130, 115, 59, 1) );
+    }
   }
 
 `;

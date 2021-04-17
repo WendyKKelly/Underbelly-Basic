@@ -73,7 +73,7 @@ export const BannerContent = styled.div`
     letter-spacing: 1.5px;
 
     @media only screen and (max-width: 1440px) {
-      font-size: 2.5rem;
+      font-size: 4rem;
       margin-bottom: 15px;
       line-height: 55px;
     }
@@ -83,12 +83,22 @@ export const BannerContent = styled.div`
     }
     @media only screen and (max-width: 1024px) {
       font-size: 4rem;
+
       margin-bottom: 20px;
       margin-left: 0rem;
       text-align: center;
     }
+    @media only screen and (max-width: 768px) {
+      font-size: 5rem;
+      line-height: 70px;
+      color: #2b7b2f;
+      margin-left: 0rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
     @media only screen and (max-width: 480px) {
-      font-size: 4rem;
+      font-size: 5rem;
+      color: #2b7b2f;
       margin-left: 0rem;
       margin-bottom: 20px;
       text-align: center;
@@ -152,19 +162,46 @@ export const Subscribe = styled.div`
     color: ${themeGet('colors.menu', '#fff')};
     margin-bottom: 24px;
     letter-spacing: 1.5px;
+    @media only screen and (max-width: 1440px) {
+      font-size: 2.5rem;
+      color: #fff;
+      margin-bottom: 5px;
+      text-align: left;
+      margin-left: 0.5rem;
+    }
+    @media only screen and (max-width: 1024px) {
+      font-size: 3rem;
+      color: #2c2e35;
+      margin-bottom: 20px;
+      line-height: 60px;
+      text-align: left;
+      margin-left: 0.5rem;
+    }
+    @media only screen and (max-width: 999px) {
+      font-size: 3rem;
+      color: #2c2e35;
+      margin-bottom: 20px;
+      line-height: 60px;
+      text-align: left;
+      margin-left: 0.5rem;
+    }
     @media only screen and (max-width: 768px) {
       font-size: 3rem;
-      margin-bottom: 10px;
-      text-align: center;
+      color: #2c2e35;
+      margin-bottom: 20px;
+      line-height: 60px;
+      text-align: left;
       margin-left: 0.5rem;
     }
     @media only screen and (max-width: 480px) {
       font-size: 3rem;
+      color: #2c2e35;
       margin-bottom: 20px;
-      line-height: 40px;
-      text-align: center;
+      line-height: 60px;
+      text-align: left;
       margin-left: 0.5rem;
     }
+  }
     .reusecore__input {
       width: 100%;
     }
@@ -203,15 +240,17 @@ export const Subscribe = styled.div`
     border-radius: 48%;
     ${AnimSpinner};
     @media only screen and (max-width: 1440px) {
-      margin-top: 30px;
-      margin-left: 30rem;
+      margin-top: 20rem;
+      
+      flex-direction: column;
     }
     @media only screen and (max-width: 1024px) {
-      margin-left: 20rem;
-      margin-bottom: 20px;
+      margin-top: 30rem;
+      
+      flex-direction: column;
     }
     @media only screen and (max-width: 768px) {
-      max-width: 80%;
+      
       margin: 0 auto;
       flex-direction: column;
     }
