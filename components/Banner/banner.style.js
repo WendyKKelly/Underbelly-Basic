@@ -154,7 +154,7 @@ export const Subscribe = styled.div`
   }
   h2 {
     font-family: 'Helvetica Neue';
-    font-size: 2rem;
+    font-size: 2.5rem;
     line-height: 70px;
     font-weight: 700;
     margin-left: 0rem;
@@ -165,7 +165,7 @@ export const Subscribe = styled.div`
     @media only screen and (max-width: 1440px) {
       font-size: 2.5rem;
       color: #fff;
-      
+      margin-top: 20rem;
       margin-bottom: 5px;
       text-align: left;
       margin-left: 0.5rem;

@@ -8,6 +8,7 @@ const Section = styled.div`
     max-width: 100%;
     margin-top: 0rem;
     padding-bottom: 2rem;
+    border-radius: 30% 0% 30% 0%;
     min-height: auto;
 }
   h1 {

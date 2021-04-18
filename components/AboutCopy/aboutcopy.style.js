@@ -5,17 +5,13 @@ import { themeGet } from '@styled-system/theme-get';
 const Section = styled.section``;
 
 export const ContentWrapper = styled.div`
- width: 100%;
-  height: 100%;
-  background: linear-gradient(to top, rgba(238,155,39, .3), rgba(255, 160, 163, .3 ) );
-  border-radius: 20%;
-  overflow: hidden;
-  padding: 0;
-  margin: 3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: -9;
+
+background-color: #2c2e35;
+width: 100%;
+height: 300px;
+border-radius: 0% 0 90% 90% / 900px;
+
+
  
 
   @media only screen and (max-width: 1440px) {
