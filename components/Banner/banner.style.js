@@ -97,7 +97,7 @@ export const BannerContent = styled.div`
       text-align: center;
     }
     @media only screen and (max-width: 480px) {
-      font-size: 4.8rem;
+      font-size: 4.3rem;
       color: #2b7b2f;
       margin-left: -1rem;
       margin-bottom: 5px;
