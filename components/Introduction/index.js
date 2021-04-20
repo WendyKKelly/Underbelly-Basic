@@ -19,6 +19,11 @@ const Introduction = () => {
               text="It's time to meet your own underbelly — your deep, authentic vulnerable self. 
             "
             />
+            <Link href="/about" passHref>
+              <div className="un">
+                <span className="u">What's An Underbelly?</span>
+              </div>
+            </Link>
           </Zoom>
         </Container>
       </div>

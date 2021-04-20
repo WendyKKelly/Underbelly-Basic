@@ -8,7 +8,7 @@ const Section = styled.div`
     max-width: 100%;
     margin-top: 0rem;
     padding-bottom: 2rem;
-    border-radius: 30% 0% 30% 0%;
+    border-radius: 0% 70% 0% 50% / 0% 50% 0% 70%;
     min-height: auto;
 }
   h1 {
@@ -43,9 +43,6 @@ const Section = styled.div`
     margin-top: 0rem;
     padding-top: 0rem;
 }
-  
-  
-
   @media screen and (max-width: 1440px) {
     padding: 50px 0 70px;
   }
@@ -53,6 +50,36 @@ const Section = styled.div`
   @media screen and (max-width: 480px) {
     padding: 30px 0 50px;
   }
+}
+  .un {
+    width: 40rem;
+    height: auto;
+    margin-top: 2rem;
+    background-color: #82733b;
+    text-align: center;
+    @media only screen and (max-width: 1440px) {
+      font-size: 1.7rem;
+    }
+    @media only screen and (max-width: 1024px) {
+       
+    }
+    @media only screen and (max-width: 768px) {
+      margin-bottom: 3px;
+      text-align: center;
+      width: 30rem;
+      height: 8rem;
+    }
+    @media only screen and (max-width: 480px) {
+        
+      width: 20rem;
+      padding-bottom: 10rem;
+    }
+    .u {
+      font-family: Sometimes Times BETA;
+      font-size: 3rem;
+      font-weight: 900;
+      
+    }
 `;
 
 export default Section;
