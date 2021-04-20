@@ -35,13 +35,13 @@ export const data = {
     },
     {
       label: 'Newsletter',
-      path: './stories',
+      path: '/stories',
       offset: '70',
     },
     {
       label: 'Courses',
-      path: '',
-      offset: 'https://wildprecious.thinkific.com/courses/self-care-kit',
+      path: 'https://wildprecious.thinkific.com/courses/self-care-kit',
+      offset: '70',
     },
     {
       label: 'Breathe.',
@@ -90,7 +90,7 @@ export const data = {
       title: 'Newsletter',
       desc:
         ' Wild + Precious: 10 Things — a sweet + juicy Monday morning newsletter. "Always inspring" "Delicious" "delighted me in so many ways" ',
-      link: './stories',
+      link: '/stories',
     },
     {
       id: 2,

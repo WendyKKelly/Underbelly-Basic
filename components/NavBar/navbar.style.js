@@ -168,20 +168,12 @@ export const MobileMenu = styled.div`
         list-style: none;
         a {
           display: block;
-          padding: 13px 0;
+          padding: 5px 0;
           border-radius: 5px;
           transition: all 0.3s ease;
           font-family: 'Helvetica Neue';
-          font-size: 4rem;
+          font-size: 3rem;
           color: ${themeGet('colors.white', '#fff')};
-          @media only screen and (max-width: 768px) {
-            padding: 0px;
-            font-size: 3rem;
-          }
-          @media only screen and (max-width: 480px) {
-            padding: 0px;
-            font-size: 3rem;
-          }
         }
         &:hover {
           a {
