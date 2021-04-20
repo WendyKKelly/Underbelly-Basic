@@ -37,13 +37,13 @@ const Section = styled.section`
     }
   }
   h3 {
-    font-family: 'Sometimes Times BETA';
+    font-family: 'Helvetica Neue';
     font-size: 1.5rem;
     color: #82733b;
   }
   h2 {
-    font-family: 'Sometimes Times BETA';
-    font-size: 1.5rem;
+    font-family: 'Helvetica Neue';
+    font-size: 2rem;
     color: #2b7b2f;
     @media only screen and (max-width: 999px) {
       font-size: 0.7rem;
