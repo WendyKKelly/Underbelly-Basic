@@ -57,7 +57,7 @@ const NavBar = () => {
           />
           <NavbarRight>
             <li>
-              <Link href="bpage/wild-and-precious-conversations" replace>
+              <Link href="/wild-and-precious-conversations" replace>
                 <a> Podcast </a>
               </Link>
             </li>
@@ -67,22 +67,22 @@ const NavBar = () => {
               </Link>
             </li>
             <li>
-              <Link href="bpage/courses" replace>
+              <Link href="/courses" replace>
                 <a> Courses</a>
               </Link>
             </li>
             <li>
-              <Link href="bpage/breathe" replace>
+              <Link href="/breathe" replace>
                 <a> Breathe </a>
               </Link>
             </li>
             <li>
-              <Link href="bpage/contact" replace>
+              <Link href="/contact" replace>
                 <a> Contact </a>
               </Link>
             </li>
             <li>
-              <Link href="bpage/about">
+              <Link href="/about">
                 <a>About</a>
               </Link>
             </li>
