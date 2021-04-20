@@ -36,6 +36,7 @@ export const ContentWrapper = styled.div`
       padding-right: 0rem;
       flex-direction: column;
       background-position: top center;
+      padding-bottom: 0rem;
       min-height: auto;
     }
   }
@@ -251,6 +252,7 @@ export const BannerContent = styled.div`
                 
               font-size: 4rem;
             }
+           
   }
 `;
 

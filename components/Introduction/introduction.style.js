@@ -8,8 +8,11 @@ const Section = styled.div`
     max-width: 100%;
     margin-top: 0rem;
     padding-bottom: 2rem;
-    border-radius: 0% 70% 0% 50% / 0% 50% 0% 70%;
+    border-radius: 0% 60% 0% 70% / 0% 40% 0% 60%;
     min-height: auto;
+
+@media screen and (max-width: 1440px) {
+  border-radius: 0%;
 }
   h1 {
     font-family: 'Helvetica Neue';
@@ -27,25 +30,27 @@ const Section = styled.div`
     font-family: 'Helvetica Neue';
     font-size: 4rem;
     font-weight: 300;
-    color: rgba(43, 123, 47, 1);
+    color: rgba(44, 46, 53, 1);
     text-align: left;
     margin-top: 0rem;
     padding-top: 0rem;
     
     
-  @media screen and (max-width: 768px) {
-      font-size: 2.5rem;
-    line-height: 3rem;
-    font-family: 'Helvetica Neue';
-    font-weight: 300;
-    color: rgba(43, 123, 47, 1);
-    text-align: left;
-    margin-top: 0rem;
-    padding-top: 0rem;
-}
+  
   @media screen and (max-width: 1440px) {
     padding: 50px 0 70px;
+    
   }
+  @media screen and (max-width: 768px) {
+    font-size: 2.5rem;
+  line-height: 3rem;
+  font-family: 'Helvetica Neue';
+  font-weight: 300;
+  color: rgba(44, 46, 53, 1);
+  text-align: left;
+  margin-top: 0rem;
+  padding-top: 0rem;
+}
 
   @media screen and (max-width: 480px) {
     padding: 30px 0 50px;

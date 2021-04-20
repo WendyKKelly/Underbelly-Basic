@@ -57,12 +57,14 @@ const NavBar = () => {
           />
           <NavbarRight>
             <li>
-              <Link href="/stories" replace>
-              <a>  Stories </a>
+              <Link href="/contact" replace>
+                <a> Contact </a>
               </Link>
             </li>
             <li>
-              <Link href="/about"><a>About</a></Link>
+              <Link href="/about">
+                <a>About</a>
+              </Link>
             </li>
           </NavbarRight>
           {/* end of main menu */}
@@ -116,10 +118,14 @@ const NavBar = () => {
               </li>
             ))}
             <li>
-              <Link href="/about"><a>About</a></Link>
+              <Link href="/about">
+                <a>About</a>
+              </Link>
             </li>
             <li>
-              <Link href="/stories"><a>Stories</a></Link>
+              <Link href="/stories">
+                <a>Stories</a>
+              </Link>
             </li>
           </Scrollspy>
         </Container>

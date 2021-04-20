@@ -24,28 +24,28 @@ import Joy6 from '../../public/image/blog1/joy6.png';
 export const data = {
   navItems: [
     {
-      label: 'Connect',
+      label: '',
       path: '#',
       offset: '70',
     },
     {
-      label: 'Shop',
-      path: '#',
+      label: 'Podcast',
+      path: '/bpage/wild-and-precious-conversations',
       offset: '70',
     },
     {
-      label: 'Articles',
-      path: '#',
-      offset: '70',
-    },
-    {
-      label: 'Newsletters',
-      path: '#',
+      label: 'Newsletter',
+      path: './stories',
       offset: '70',
     },
     {
       label: 'Courses',
-      path: '#',
+      path: '',
+      offset: 'https://wildprecious.thinkific.com/courses/self-care-kit',
+    },
+    {
+      label: 'Breathe.',
+      path: '/breathe',
       offset: '70',
     },
   ],
@@ -129,8 +129,8 @@ export const data = {
       icon: serviceIcon6,
       title: 'Course: Discover Yourself',
       desc:
-        'Take a course to discover and gain compassion for your inner critic. $10',
-      link: 'https://wildprecious.thinkific.com/',
+        'Take a course to discover and gain compassion for your inner critic. $10 Coming Soon',
+      link: '#',
     },
   ],
   blog: [
@@ -309,12 +309,12 @@ export const data = {
     },
     {
       id: 3,
-      title: 'Stories',
-      link: '/stories',
+      title: 'Connect',
+      link: '/connect',
     },
     {
       id: 4,
-      title: 'Support Our Mission',
+      title: '',
       link: 'https://www.patreon.com/underbellyproject',
     },
   ],

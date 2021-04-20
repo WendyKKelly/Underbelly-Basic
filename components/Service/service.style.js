@@ -3,6 +3,7 @@ import { themeGet } from '@styled-system/theme-get';
 import flower from '../../public/image/wp-sm.jpg';
 
 const Section = styled.div`
+
   h1 {
     font-family: 'Playfair Display', serif;
     font-size: 6rem;
@@ -102,8 +103,8 @@ export const ServiceWrapper = styled.div`
       margin-bottom: 25px;
     }
     .title {
-      font-family: 'Helvetica Neue';
-      font-weight: 300;
+      font-family: 'Playfair Display';
+      font-weight: 700;
       font-size: 2rem;
       line-height: 3rem;
       color: #2c2e35;
@@ -112,6 +113,7 @@ export const ServiceWrapper = styled.div`
       }
     }
     .excerpt {
+      font-family: 'Fira Sans';
       font-size: 1.2rem;
       line-height: 30px;
       color: #343d48;
@@ -130,7 +132,7 @@ export const ServiceWrapper = styled.div`
       line-height: 42px;
       display: inline-flex;
       align-items: center;
-      color: ${themeGet('colors.linkColor')};
+      color: #ffa0a3;
       @media screen and (max-width: 480px) {
         text-align: center;
       }
