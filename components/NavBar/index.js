@@ -138,6 +138,26 @@ const NavBar = () => {
               </li>
             ))}
             <li>
+              <Link href="/wild-and-precious-conversations" replace>
+                <a> Podcast </a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/stories" replace>
+                <a> Newsletter </a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/courses" replace>
+                <a> Courses</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/breathe" replace>
+                <a> Breathe </a>
+              </Link>
+            </li>
+            <li>
               <Link href="/about">
                 <a>About</a>
               </Link>
