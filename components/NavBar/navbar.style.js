@@ -160,8 +160,10 @@ export const MobileMenu = styled.div`
       flex-direction: column;
       justify-content: space-between;
     }
+
     ul {
       padding-bottom: 20px;
+
       li {
         list-style: none;
         a {
@@ -170,8 +172,16 @@ export const MobileMenu = styled.div`
           border-radius: 5px;
           transition: all 0.3s ease;
           font-family: 'Helvetica Neue';
-          font-size: 4.5rem;
+          font-size: 4rem;
           color: ${themeGet('colors.white', '#fff')};
+          @media only screen and (max-width: 768px) {
+            padding: 0px;
+            font-size: 3rem;
+          }
+          @media only screen and (max-width: 480px) {
+            padding: 0px;
+            font-size: 3rem;
+          }
         }
         &:hover {
           a {
