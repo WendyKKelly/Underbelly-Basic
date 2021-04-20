@@ -11,7 +11,7 @@ export const ContentWrapper = styled.div`
     background-size: 60%;
     background-position: right center;
     background-repeat: no-repeat;
-    border-radius: 50%;
+
     min-height: 70vh;
     display: flex;
 
