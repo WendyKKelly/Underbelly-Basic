@@ -57,12 +57,32 @@ const NavBar = () => {
           />
           <NavbarRight>
             <li>
-              <Link href="/contact" replace>
+              <Link href="bpage/wild-and-precious-conversations" replace>
+                <a> Podcast </a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/stories" replace>
+                <a> Newsletter </a>
+              </Link>
+            </li>
+            <li>
+              <Link href="bpage/courses" replace>
+                <a> Courses</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="bpage/breathe" replace>
+                <a> Breathe </a>
+              </Link>
+            </li>
+            <li>
+              <Link href="bpage/contact" replace>
                 <a> Contact </a>
               </Link>
             </li>
             <li>
-              <Link href="/about">
+              <Link href="bpage/about">
                 <a>About</a>
               </Link>
             </li>

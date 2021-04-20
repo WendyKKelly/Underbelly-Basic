@@ -21,16 +21,8 @@ export const GlobalStyle = createGlobalStyle`
 
   section {
     position: relative;
-    background: radial-gradient( rgba(239, 239, 239, .1),  rgba(239, 239, 239, .3), rgba(239, 239, 239, .8) );
-    @media only screen and (max-width: 1024px) {
-      background: radial-gradient( rgba(239, 239, 239, .1),  rgba(239, 239, 239, .3), rgba(239, 239, 239, .8) );
-    }
-    @media only screen and (max-width: 999px) {
-      background: linear-gradient( rgba(239, 239, 239, .5),   rgba(239, 239, 239,1) );
-    }
-    @media only screen and (max-width: 480px) {
-      background: linear-gradient( rgba(239, 239, 239, .3),   rgba(239, 239, 239, .8) );
-    }
+    
+    
   }
 
 `;
