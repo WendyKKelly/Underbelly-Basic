@@ -164,7 +164,7 @@ const NavBar = () => {
             </li>
             <li>
               <Link href="/bpage/contact">
-                <a>Contact</a>
+                <a>Connect</a>
               </Link>
             </li>
           </Scrollspy>
