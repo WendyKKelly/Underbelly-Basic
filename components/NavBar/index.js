@@ -123,8 +123,8 @@ const NavBar = () => {
               </Link>
             </li>
             <li>
-              <Link href="/stories">
-                <a>Stories</a>
+              <Link href="/contact">
+                <a>Contact</a>
               </Link>
             </li>
           </Scrollspy>

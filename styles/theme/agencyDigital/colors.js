@@ -1,6 +1,6 @@
 const colors = {
   transparent: 'transparent', // 0
-  black: '#000000', // 1
+  black: '#2c2e35', // 1
   white: '#ffffff', // 2
   text: '#2c2e35', // 3
   textPrimary: '#2c2e35', // 4
