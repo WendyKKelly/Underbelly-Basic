@@ -5,37 +5,39 @@ import illustration from '../..//public/image/Wendy2013HikeFlip.jpg';
 const Section = styled.section``;
 
 export const ContentWrapper = styled.div`
-  background-image: url(${illustration});
-  background-color: transparent;
-  background-size: 60%;
-  background-position: right center;
-  background-repeat: no-repeat;
-  border-radius: 50%;
-  min-height: 70vh;
-  display: flex;
+  .me {
+    background-image: url(${illustration});
+    background-color: transparent;
+    background-size: 60%;
+    background-position: right center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    min-height: 70vh;
+    display: flex;
 
-  @media only screen and (max-width: 1440px) {
-    min-height: auto;
-    padding-top: 15rem;
-    padding-bottom: 15rem;
-    background-size: 59%;
-  }
-  @media only screen and (max-width: 1024px) {
-    background-size: 100%;
-    padding-left: 0rem;
-    padding-right: 0rem;
-    flex-direction: column;
-    background-position: top center;
-    min-height: auto;
-  }
-  @media only screen and (max-width: 999px) {
-    background-size: 100%;
+    @media only screen and (max-width: 1440px) {
+      min-height: auto;
+      padding-top: 15rem;
+      padding-bottom: 15rem;
+      background-size: 59%;
+    }
+    @media only screen and (max-width: 1024px) {
+      background-size: 100%;
+      padding-left: 0rem;
+      padding-right: 0rem;
+      flex-direction: column;
+      background-position: top center;
+      min-height: auto;
+    }
+    @media only screen and (max-width: 999px) {
+      background-size: 100%;
 
-    padding-left: 0rem;
-    padding-right: 0rem;
-    flex-direction: column;
-    background-position: top center;
-    min-height: auto;
+      padding-left: 0rem;
+      padding-right: 0rem;
+      flex-direction: column;
+      background-position: top center;
+      min-height: auto;
+    }
   }
 `;
 
