@@ -57,7 +57,7 @@ const NavBar = () => {
           />
           <NavbarRight>
             <li>
-              <Link href="/wild-and-precious-conversations" replace>
+              <Link href="/bpage/wild-and-precious-conversations" replace>
                 <a> Podcast </a>
               </Link>
             </li>
@@ -67,17 +67,17 @@ const NavBar = () => {
               </Link>
             </li>
             <li>
-              <Link href="/courses" replace>
+              <Link href="/bpage/courses" replace>
                 <a> Courses</a>
               </Link>
             </li>
             <li>
-              <Link href="/breathe" replace>
+              <Link href="/bpage/breathe" replace>
                 <a> Breathe </a>
               </Link>
             </li>
             <li>
-              <Link href="/contact" replace>
+              <Link href="/bpage/contact" replace>
                 <a> Contact </a>
               </Link>
             </li>
@@ -138,7 +138,7 @@ const NavBar = () => {
               </li>
             ))}
             <li>
-              <Link href="/wild-and-precious-conversations" replace>
+              <Link href="/bpage/wild-and-precious-conversations" replace>
                 <a> Podcast </a>
               </Link>
             </li>
@@ -148,12 +148,12 @@ const NavBar = () => {
               </Link>
             </li>
             <li>
-              <Link href="/courses" replace>
+              <Link href="/bpage/courses" replace>
                 <a> Courses</a>
               </Link>
             </li>
             <li>
-              <Link href="/breathe" replace>
+              <Link href="/bpage/breathe" replace>
                 <a> Breathe </a>
               </Link>
             </li>
@@ -163,7 +163,7 @@ const NavBar = () => {
               </Link>
             </li>
             <li>
-              <Link href="/contact">
+              <Link href="/bpage/contact">
                 <a>Contact</a>
               </Link>
             </li>
