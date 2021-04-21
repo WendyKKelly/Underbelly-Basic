@@ -32,9 +32,9 @@ export default function PostPage({ page }) {
           </DrawerProvider>
         </Sticky>
         <Section>
-          <div className="margin">
+          <div className="img">
             <div style={{ marginBottom: '7rem' }} _title={_title}></div>
-            <div className="">
+            <div className="mar">
               <h1
                 style={{
                   fontFamily: "'Helvetica Neue', sans-serif",

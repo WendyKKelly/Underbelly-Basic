@@ -2,32 +2,33 @@ import styled from 'styled-components';
 
 const Section = styled.section`
   img {
-    margin-left: 10rem;
+    margin-left: 1rem;
     width: 70%;
     @media only screen and (max-width: 999px) {
       background: transparent;
-      display: none;
+      width: 100%;
       min-height: auto;
       margin-left: none;
     }
-    .margin {
-      margin-left: 20rem;
-      margin-bottom: 7rem;
+  }
+  div.mar {
+    margin-left: 8rem;
+    margin-right: 3rem;
 
-      @media only screen and (max-width: 999px) {
-        margin-left: 0.8rem;
-        margin-right: 0.2rem;
-      }
-      @media only screen and (max-width: 768px) {
-        margin-left: 0.8rem;
-        margin-right: 0.2rem;
-      }
-      @media only screen and (max-width: 480px) {
-        margin-left: 0.8rem;
-        margin-right: 0.2rem;
-      }
+    @media only screen and (max-width: 999px) {
+      margin-left: 8rem;
+      margin-right: 3rem;
+    }
+    @media only screen and (max-width: 768px) {
+      margin-left: 8rem;
+      margin-right: 3rem;
+    }
+    @media only screen and (max-width: 480px) {
+      margin-left: 8rem;
+      margin-right: 3rem;
     }
   }
+
   h1 {
     font-family: 'Helvetica Neue', sans-serif;
     font-size: 3rem;
@@ -38,7 +39,7 @@ const Section = styled.section`
   }
   h3 {
     font-family: 'Helvetica Neue';
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     color: #82733b;
   }
   h2 {
@@ -53,14 +54,12 @@ const Section = styled.section`
     color: #2b7b2f;
   }
   p {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
+    font-family: 'Sometimes Times BETA';
+    font-size: 1.3rem;
+    color: #2c2e35;
+    line-height: 2rem;
   }
 
-  .blogInnerHTML {
-    margin-left: 3rem;
-  }
   blockquote {
     font-family: 'Sometimes Times BETA';
     font-weight: 400;
