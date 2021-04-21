@@ -32,7 +32,7 @@ const Banner = () => {
                     content="The Underbelly is Your Safe Space To Cultivate Love"
                   />
 
-                  <Link href="/about" passHref>
+                  <Link href="/bpage/about" passHref>
                     <Button />
                   </Link>
 
