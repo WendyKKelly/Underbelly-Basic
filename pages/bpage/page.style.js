@@ -12,19 +12,19 @@ const Section = styled.section`
     }
   }
   div.mar {
-    margin-left: 8rem;
+    margin-left: 3rem;
     margin-right: 3rem;
 
     @media only screen and (max-width: 999px) {
-      margin-left: 8rem;
+      margin-left: 3rem;
       margin-right: 3rem;
     }
     @media only screen and (max-width: 768px) {
-      margin-left: 8rem;
+      margin-left: 1.7rem;
       margin-right: 3rem;
     }
     @media only screen and (max-width: 480px) {
-      margin-left: 8rem;
+      margin-left: 1.5rem;
       margin-right: 3rem;
     }
   }
