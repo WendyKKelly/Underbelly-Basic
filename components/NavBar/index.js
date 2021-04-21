@@ -82,7 +82,7 @@ const NavBar = () => {
               </Link>
             </li>
             <li>
-              <Link href="/about">
+              <Link href="bpage/about">
                 <a>About</a>
               </Link>
             </li>
@@ -158,7 +158,7 @@ const NavBar = () => {
               </Link>
             </li>
             <li>
-              <Link href="/about">
+              <Link href="/bpage/about">
                 <a>About</a>
               </Link>
             </li>
