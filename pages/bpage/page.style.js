@@ -33,8 +33,10 @@ const Section = styled.section`
     font-family: 'Helvetica Neue', sans-serif;
     font-size: 3rem;
     color: #2b7b2f;
+    margin-bottom: 2rem;
     @media only screen and (max-width: 999px) {
       font-size: 2rem;
+      margin-bottom: 1.5rem;
     }
   }
   h3 {
@@ -58,6 +60,7 @@ const Section = styled.section`
     font-size: 1.3rem;
     color: #2c2e35;
     line-height: 2rem;
+    margin-bottom: 2rem;
   }
 
   blockquote {

@@ -35,16 +35,7 @@ export default function PostPage({ page }) {
           <div className="img">
             <div style={{ marginBottom: '7rem' }} _title={_title}></div>
             <div className="mar">
-              <h1
-                style={{
-                  fontFamily: "'Helvetica Neue', sans-serif",
-                  fontSize: '3rem',
-                  color: '#2b7b2f',
-                  marginBottom: '3rem',
-                }}
-              >
-                {page.title}
-              </h1>
+              <h1>{page.title}</h1>
               <div dangerouslySetInnerHTML={{ __html: page.html }} />
             </div>
           </div>
