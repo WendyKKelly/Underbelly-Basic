@@ -35,9 +35,9 @@ export default function PostPage({ post }) {
           </Sticky>
 
           <Section>
-            <img className="img " src={post.feature_image} />
             <div className="imgs">
               <h1>{post.title}</h1>
+              <img className="image" src={post.feature_image} />
               <div dangerouslySetInnerHTML={{ __html: post.html }} />
             </div>
           </Section>

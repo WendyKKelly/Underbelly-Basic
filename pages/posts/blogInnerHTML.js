@@ -1,14 +1,12 @@
 import styled from 'styled-components';
 
 const Section = styled.section`
-  div.img {
-    margin-left: 10rem;
-    width: 70%;
+  .image {
+    padding: 5rem;
+    width: 100%;
     @media only screen and (max-width: 999px) {
-      background: transparent;
-      display: none;
       min-height: auto;
-      margin-left: 7rem;
+      padding: 2rem;
     }
   }
   div.imgs {
@@ -38,8 +36,10 @@ const Section = styled.section`
 
   h1 {
     font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 800;
     font-size: 3rem;
     color: #2b7b2f;
+
     @media only screen and (max-width: 999px) {
       font-size: 2rem;
     }
@@ -61,9 +61,8 @@ const Section = styled.section`
     color: #2b7b2f;
   }
   p {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
+    padding: 1rem;
+    font-size: 1.6rem;
   }
 
   .blogInnerHTML {
