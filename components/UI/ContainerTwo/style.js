@@ -1,11 +1,6 @@
 import styled, { css } from 'styled-components';
 
 const ContainerWrapper = styled.div`
-
-.bg {
-  background-color: linear-gradient(217deg, rgba(0, 0, 0, .7), rgba(0, 0, 0,.3) 70.71%)
-  height: 100%;
-  }
   margin-left: auto;
   margin-right: auto;
   ${(props) =>
@@ -21,15 +16,15 @@ const ContainerWrapper = styled.div`
         padding-right: 0;
       `) ||
     css`
-      padding-left: 30px;
-      padding-right: 30px;
+      padding-left: 0rem;
+      padding-right: 0rem;
     `};
   @media (min-width: 768px) {
-    max-width: 750px;
+    max-width: 100%;
     width: 100%;
   }
   @media (min-width: 992px) {
-    max-width: 970px;
+    max-width: 100%;
     width: 100%;
   }
 
@@ -46,8 +41,8 @@ const ContainerWrapper = styled.div`
     ${(props) =>
       props.mobileGutter &&
       css`
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 0px;
+        padding-right: 0px;
       `};
   }
 `;

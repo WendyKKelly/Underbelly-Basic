@@ -5,7 +5,7 @@ import navBg from '../../public/image/nav-bg.png';
 const NavbarWrapper = styled.header`
   width: 100%;
   padding: 15px 0 16px;
-  background-color: white;
+  background-color: #ee9b27;
   z-index: 9999;
   transition: all 0.3s ease;
 

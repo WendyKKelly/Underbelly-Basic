@@ -6,9 +6,9 @@ import Link from '../Link';
 import Heading from '../Heading';
 
 import Container from '../UI/ContainerTwo';
-import Section, { ContentWrapper, BannerContent } from './explain.style';
+import Section, { ContentWrapper, BannerContent } from './intronews.style';
 
-const Explain = () => {
+const IntroNews = () => {
   return (
     <Section>
       <Container>
@@ -18,7 +18,7 @@ const Explain = () => {
               <Heading
                 className="head"
                 as="h1"
-                content="Welcome to The Underbelly"
+                content="Wendy Kelly's Underbelly"
               />
 
               <Text
@@ -49,4 +49,4 @@ const Explain = () => {
   );
 };
 
-export default Explain;
+export default IntroNews;

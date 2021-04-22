@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 import { rgba } from 'polished';
 import { themeGet } from '@styled-system/theme-get';
-import illustration from '../../public/image/Wendy2013HikeFlip.jpg';
+import { getPosts, getSinglePost } from '../../api/ghost_data';
 const Section = styled.section``;
 
 export const ContentWrapper = styled.div`
   .me {
-    background-image: url(${illustration});
+    background-image: src={post.feature_image});
     background-color: transparent;
     background-size: 60%;
     background-position: right center;
@@ -113,7 +113,6 @@ export const BannerContent = styled.div`
     @media only screen and (max-width: 1024px) {
       font-size: 3.3rem;
       margin-bottom: 20px;
-      margin-top: 2rem;
     }
 
     @media only screen and (max-width: 768px) {
@@ -122,9 +121,9 @@ export const BannerContent = styled.div`
       text-align: center;
     }
     @media only screen and (max-width: 480px) {
-      font-size: 3.5rem;
+      font-size: 2.7rem;
       margin-bottom: 20px;
-      line-height: 3rem;
+      line-height: 40px;
     }
 }
     h2 {
@@ -164,19 +163,17 @@ export const BannerContent = styled.div`
   }
   .banner-caption {
       
-    color: ${themeGet('colors.paragraph', '#2c2e35')};
+    color: ${themeGet('colors.paragraph', '#82733b')};
     font-size: 2rem;
     line-height: 33px;
     font-weight: 400;
     margin-bottom: 0;
-    margin-left: 1rem;
-    margin-right: 1rem;
     
     @media only screen and (max-width: 1440px) {
       font-size: 1.7rem;
     }
     @media only screen and (max-width: 1024px) {
-      margin-bottom: 2rem; 
+       
       line-height: 2rem;
     }
     @media only screen and (max-width: 768px) {

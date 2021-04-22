@@ -21,6 +21,8 @@ export const GlobalStyle = createGlobalStyle`
 
   section {
     position: relative;
+    padding-left: 0rem;
+    padding-right: 0rem;
     
     
   }

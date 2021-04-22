@@ -15,22 +15,31 @@ export const ContentWrapper = styled.div`
     min-height: 70vh;
     border-radius: 0% 70% 0% 50% / 0% 50% 0% 70%;
     z-index: -9;
-  
-  @media only screen and (max-width: 1600px) {
-    max-width: 100%;
-  }
-  @media only screen and (max-width: 1400px) {
-    
-    
-  }
-  @media only screen and (max-width: 1024px) {
-    max-width: 100%;
-  }
-  @media only screen and (max-width: 999px) {
-    background-image: none;
-  }
-  @media only screen and (max-width: 480px) {
-    background-image: none;
+
+    @media only screen and (max-width: 1600px) {
+      max-width: 100%;
+    }
+    @media only screen and (max-width: 1400px) {
+      max-width: 100%;
+    }
+    @media only screen and (max-width: 1024px) {
+      max-width: 100%;
+    }
+    @media only screen and (max-width: 999px) {
+      min-height: 50vh;
+      border-radius: 0%;
+    }
+    @media only screen and (max-width: 768px) {
+      max-width: 100%;
+      min-height: 30vh;
+      height: 40vh;
+      border-radius: 0%;
+    }
+    @media only screen and (max-width: 480px) {
+      min-height: 30vh;
+      height: 40vh;
+      border-radius: 0%;
+    }
   }
 `;
 
@@ -54,11 +63,11 @@ export const BannerContent = styled.div`
   }
   @media only screen and (max-width: 999px) {
     max-width: 100%;
-    padding-top: 30px;
+    padding-top: 3px;
     padding-bottom: 80px;
   }
   @media only screen and (max-width: 480px) {
-    padding-top: 30px;
+    padding-top: 0rem;
     padding-bottom: 60px;
   }
   h1 {
@@ -89,18 +98,17 @@ export const BannerContent = styled.div`
       text-align: center;
     }
     @media only screen and (max-width: 768px) {
-      font-size: 5rem;
-      line-height: 70px;
-      color: #2b7b2f;
+      font-size: 0rem;
+      color: #fff;
       margin-left: 0rem;
-      margin-bottom: 5px;
-      text-align: center;
+      margin-bottom: 0.3rem;
+      text-align: left;
     }
     @media only screen and (max-width: 480px) {
-      font-size: 4.3rem;
-      color: #2b7b2f;
-      margin-left: -1rem;
-      margin-bottom: 5px;
+      font-size: 0rem;
+      color: #fff;
+      margin-left: 0rem;
+      margin-bottom: 0.3rem;
       text-align: left;
     }
   }
@@ -135,11 +143,11 @@ export const Subscribe = styled.div`
     margin-left: 30rem;
   }
   @media only screen and (max-width: 1024px) {
-    margin-left: 20rem;
+    margin-left: 0rem;
     margin-bottom: 20px;
   }
   @media only screen and (max-width: 768px) {
-    max-width: 80%;
+    max-width: 100%;
     margin: 0 auto;
     flex-direction: column;
   }
@@ -169,7 +177,7 @@ export const Subscribe = styled.div`
       margin-top: 20rem;
       margin-bottom: 5px;
       text-align: left;
-      margin-left: 0.5rem;
+      margin-left: 0rem;
     }
     @media only screen and (max-width: 1024px) {
       font-size: 3rem;
@@ -177,7 +185,7 @@ export const Subscribe = styled.div`
       margin-bottom: 20px;
       line-height: 60px;
       text-align: left;
-      margin-left: 0.5rem;
+      margin-left: 0rem;
     }
     @media only screen and (max-width: 999px) {
       font-size: 3rem;
@@ -186,22 +194,77 @@ export const Subscribe = styled.div`
       margin-top: 5rem;
       line-height: 60px;
       text-align: left;
-      margin-left: 0.5rem;
+      margin-left: 0rem;
     }
     @media only screen and (max-width: 768px) {
+      font-size: 3rem;
+      color: #fff;
+      margin-top: 0rem;
+      margin-bottom: 10rem;
+      line-height: 0px;
+      text-align: left;
+      margin-left: 0rem;
+    }
+    @media only screen and (max-width: 480px) {
+      font-size: 3rem;
+      color: #000;
+      margin-top: 0rem;
+      margin-bottom: 10rem;
+      line-height: 60px;
+      text-align: left;
+      margin-left: 0;
+    }
+  }
+  h3 {
+    font-family: 'Helvetica Neue';
+    font-size: 2.5rem;
+    line-height: 70px;
+    font-weight: 900;
+    margin-left: 0rem;
+    margin-top: 4rem;
+    color: ${themeGet('colors.menu', '#fff')};
+    margin-bottom: 24px;
+    letter-spacing: 1.5px;
+    @media only screen and (max-width: 1440px) {
+      font-size: 2.5rem;
+      font-weight: 900;
+      color: #fff;
+      margin-top: 20rem;
+      margin-bottom: 5px;
+      text-align: left;
+      margin-left: 0rem;
+    }
+    @media only screen and (max-width: 1024px) {
+      font-size: 3rem;
+      color: #2c2e35;
+      margin-bottom: 20px;
+      line-height: 60px;
+      text-align: left;
+      margin-left: 0rem;
+    }
+    @media only screen and (max-width: 999px) {
       font-size: 3rem;
       color: #2c2e35;
       margin-bottom: 20px;
       margin-top: 5rem;
       line-height: 60px;
       text-align: left;
-      margin-left: 0.5rem;
+      margin-left: 0rem;
+    }
+    @media only screen and (max-width: 768px) {
+      font-size: 3rem;
+      color: #fff;
+      margin-top: 0rem;
+      margin-bottom: 10rem;
+      line-height: 60px;
+      text-align: left;
+      margin-left: 0;
     }
     @media only screen and (max-width: 480px) {
       font-size: 3rem;
-      color: #2c2e35;
-      margin-bottom: 20px;
-      margin-top: 5rem;
+      color: #fff;
+      margin-top: 0rem;
+      margin-bottom: 10rem;
       line-height: 60px;
       text-align: left;
       margin-left: 0;
@@ -256,12 +319,14 @@ export const Subscribe = styled.div`
     }
     @media only screen and (max-width: 768px) {
       
-      margin: 0 auto;
+      margin: auto;
       flex-direction: column;
+      background-position: bottom center;
     }
     @media only screen and (max-width: 480px) {
-      margin: 0 auto;
+      margin: auto;
       flex-direction: column;
+      background-position: bottom center;
     }
   }
 `;

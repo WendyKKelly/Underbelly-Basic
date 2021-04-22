@@ -21,20 +21,18 @@ const Banner = () => {
           <ContentWrapper>
             <div className="image">
               <BannerContent>
-                <Heading as="h1" content="Unloveable => Loved." />
+                <Heading as="h1" content="" />
                 <Heading as="h2" content="" />
 
                 <Text className="banner-caption" content="" />
 
                 <Subscribe className="substack">
-                  <Heading
-                    as="h2"
-                    content="The Underbelly is Your Safe Space To Cultivate Love"
-                  />
+                  <Heading as="h2" content="Get Loved." />
 
                   <Link href="/bpage/about" passHref>
                     <Button />
                   </Link>
+                  <Heading as="h3" content="Love Well." />
 
                   <Text className="banner-caption" content="" />
                 </Subscribe>
