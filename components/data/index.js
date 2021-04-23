@@ -24,28 +24,8 @@ import Joy6 from '../../public/image/blog1/joy6.png';
 export const data = {
   navItems: [
     {
-      label: '',
+      label: 'Underbelly',
       path: '#',
-      offset: '70',
-    },
-    {
-      label: '',
-      path: '#home',
-      offset: '70',
-    },
-    {
-      label: '',
-      path: '#stories',
-      offset: '70',
-    },
-    {
-      label: '',
-      path: '#about',
-      offset: '70',
-    },
-    {
-      label: '',
-      path: '#breathe',
       offset: '70',
     },
   ],

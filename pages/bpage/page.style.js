@@ -1,15 +1,7 @@
 import styled from 'styled-components';
 
 const Section = styled.section`
-  img {
-    margin-left: 1rem;
-    width: 70%;
-    @media only screen and (max-width: 999px) {
-      background: transparent;
-      width: 100%;
-      min-height: auto;
-      margin-left: none;
-    }
+  
   }
   div.mar {
     margin-left: 3rem;

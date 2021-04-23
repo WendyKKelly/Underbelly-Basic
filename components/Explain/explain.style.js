@@ -60,7 +60,7 @@ export const BannerContent = styled.div`
     padding-bottom: 2rem;
   }
   @media only screen and (max-width: 1024px) {
-    padding-top: 28rem;
+    padding-top: 40rem;
     padding-bottom: 2rem;
     max-width: 60%;
     background: cover;

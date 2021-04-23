@@ -70,14 +70,16 @@ export const BannerContent = styled.div`
     padding-top: 3rem;
     padding-bottom: 80px;
   }
+
   h1 {
     font-family: 'Helvetica Neue';
     font-size: 4rem;
-    line-height: 70px;
-    font-weight: 700;
-    margin-left: 17rem;
-    margin-top: 4rem;
-    color: ${themeGet('colors.menu', '#2b7b2f')};
+    line-height: 60px;
+    font-weight: 900;
+    margin-left: 13rem;
+    margin-top: 0rem;
+    margin-right: 27rem;
+    color: ${themeGet('colors.menu', '#2c2e35')};
     margin-bottom: 24px;
     letter-spacing: 1.5px;
 
@@ -98,38 +100,21 @@ export const BannerContent = styled.div`
       text-align: center;
     }
     @media only screen and (max-width: 768px) {
-      font-size: 0rem;
-      color: #fff;
-      margin-left: 0rem;
+      font-size: 4rem;
+      color: #2c2e35;
+      background-color: rgba(255, 255, 255, 0.5);
+      margin-left: 1rem;
       margin-bottom: 0.3rem;
-      text-align: left;
-    }
-    @media only screen and (max-width: 480px) {
-      font-size: 0rem;
-      color: #fff;
-      margin-left: 0rem;
-      margin-bottom: 0.3rem;
-      text-align: left;
-    }
-  }
-  .banner-caption {
-    color: ${themeGet('colors.paragraph', '#02073E')};
-    font-size: 18px;
-    line-height: 33px;
-    font-weight: 400;
-    margin-bottom: 0;
-    @media only screen and (max-width: 1440px) {
-      font-size: 16px;
-    }
-    @media only screen and (max-width: 1024px) {
-      line-height: 33px;
-    }
-    @media only screen and (max-width: 768px) {
-      margin-bottom: 30px;
       text-align: center;
     }
     @media only screen and (max-width: 480px) {
-      font-size: 16px;
+      font-size: 2rem;
+      color: #2c2e35;
+      line-height: 1.6rem;
+      margin-left: 0rem;
+      margin-bottom: 0.3rem;
+      margin-right: 1rem;
+      text-align: left;
     }
   }
 `;
@@ -158,7 +143,28 @@ export const Subscribe = styled.div`
     flex-direction: column;
     margin-top: 0rem;
   }
-
+  .banner-caption {
+    color: ${themeGet('colors.paragraph', '#2c2e35')};
+    font-family: 'Helvetica Neue';
+    font-size: 2rem;
+    line-height: 33px;
+    font-weight: 400;
+    margin-bottom: 0;
+    background-position: right bottom;
+    @media only screen and (max-width: 1440px) {
+      font-size: 1.5rem;
+    }
+    @media only screen and (max-width: 1024px) {
+      line-height: 33px;
+    }
+    @media only screen and (max-width: 768px) {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    @media only screen and (max-width: 480px) {
+      font-size: 1.5rem;;
+    }
+  }
   
   h2 {
     font-family: 'Helvetica Neue';
@@ -185,32 +191,33 @@ export const Subscribe = styled.div`
       margin-bottom: 20px;
       line-height: 60px;
       text-align: left;
-      margin-left: 0rem;
+      margin-left: 5rem;
     }
     @media only screen and (max-width: 999px) {
       font-size: 3rem;
-      color: #2c2e35;
+      color: #fff;
       margin-bottom: 20px;
-      margin-top: 5rem;
+      margin-top: 25rem;
       line-height: 60px;
       text-align: left;
       margin-left: 0rem;
     }
     @media only screen and (max-width: 768px) {
-      font-size: 3rem;
+      font-size: 2.3rem;
       color: #fff;
-      margin-top: 0rem;
-      margin-bottom: 10rem;
-      line-height: 0px;
+      margin-top: 4rem;
+      margin-bottom: 0rem;
+      line-height: 40px;
       text-align: left;
       margin-left: 0rem;
     }
     @media only screen and (max-width: 480px) {
-      font-size: 3rem;
-      color: #000;
-      margin-top: 0rem;
+      font-size: 2rem;
+      color: #fff;
+      
+      margin-top: 13rem;
       margin-bottom: 0rem;
-      line-height: 60px;
+      line-height: 40px;
       text-align: left;
       margin-left: 0;
     }
@@ -324,9 +331,7 @@ export const Subscribe = styled.div`
       background-position: bottom center;
     }
     @media only screen and (max-width: 480px) {
-      margin: 0rem;
-      flex-direction: column;
-      background-position: bottom center;
+      display: none;
     }
   }
 `;

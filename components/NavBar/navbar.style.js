@@ -50,7 +50,7 @@ export const MenuArea = styled.nav`
     opacity: 1;
     visibility: visible;
     transition: all 0.3s ease;
-    margin-left: 100px;
+    margin-left: 0px;
 
     @media only screen and (max-width: 1366px) {
       margin-right: 13px;
@@ -61,7 +61,7 @@ export const MenuArea = styled.nav`
     @media only screen and (max-width: 411px) and (max-height: 812px) and (orientation: landscape) {
       display: none;
     }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 911px) {
       display: none;
     }
     li {
@@ -71,8 +71,8 @@ export const MenuArea = styled.nav`
       a {
         color: ${themeGet('colors.menu', '#545454')};
         font-family: 'Helvetica Neue';
-        font-size: 25px;
-        font-weight: 400;
+        font-size: 40px;
+        font-weight: 900;
         transition: all 0.3s ease;
         &:hover {
           color: ${themeGet('colors.menu', '#ec6f48')};
