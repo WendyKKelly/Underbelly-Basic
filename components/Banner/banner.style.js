@@ -67,8 +67,8 @@ export const BannerContent = styled.div`
     padding-bottom: 80px;
   }
   @media only screen and (max-width: 480px) {
-    padding-top: 0rem;
-    padding-bottom: 60px;
+    padding-top: 3rem;
+    padding-bottom: 80px;
   }
   h1 {
     font-family: 'Helvetica Neue';
@@ -153,7 +153,7 @@ export const Subscribe = styled.div`
   }
   @media only screen and (max-width: 480px) {
     max-width: 100%;
-    margin: 0 auto;
+    margin: 0rem;
     flex-direction: column;
   }
 
@@ -176,7 +176,7 @@ export const Subscribe = styled.div`
       color: #fff;
       margin-top: 20rem;
       margin-bottom: 5px;
-      text-align: left;
+      text-align: center;
       margin-left: 0rem;
     }
     @media only screen and (max-width: 1024px) {
@@ -231,7 +231,7 @@ export const Subscribe = styled.div`
       color: #fff;
       margin-top: 20rem;
       margin-bottom: 5px;
-      text-align: left;
+      text-align: center;
       margin-left: 0rem;
     }
     @media only screen and (max-width: 1024px) {
@@ -309,12 +309,12 @@ export const Subscribe = styled.div`
     ${AnimSpinner};
     @media only screen and (max-width: 1440px) {
       margin-top: 20rem;
-      
+      background-position: bottom center;
       flex-direction: column;
     }
     @media only screen and (max-width: 1024px) {
       margin-top: 30rem;
-      
+      background-position: bottom center;
       flex-direction: column;
     }
     @media only screen and (max-width: 768px) {
@@ -324,7 +324,7 @@ export const Subscribe = styled.div`
       background-position: bottom center;
     }
     @media only screen and (max-width: 480px) {
-      margin: auto;
+      margin: 0rem;
       flex-direction: column;
       background-position: bottom center;
     }
