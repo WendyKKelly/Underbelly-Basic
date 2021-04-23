@@ -32,12 +32,9 @@ export default function PostPage({ page }) {
           </DrawerProvider>
         </Sticky>
         <Section>
-          <div className="img">
-            <div style={{ marginBottom: '7rem' }} _title={_title}></div>
-            <div className="mar">
-              <h1>{page.title}</h1>
-              <div dangerouslySetInnerHTML={{ __html: page.html }} />
-            </div>
+          <div className="mar">
+            <h1>{page.title}</h1>
+            <div dangerouslySetInnerHTML={{ __html: page.html }} />
           </div>
         </Section>
         <Footer />
