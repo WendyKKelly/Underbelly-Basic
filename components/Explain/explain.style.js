@@ -17,8 +17,8 @@ export const ContentWrapper = styled.div`
 
     @media only screen and (max-width: 1440px) {
       min-height: auto;
-      padding-top: 15rem;
-      padding-bottom: 15rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
       background-size: 59%;
     }
     @media only screen and (max-width: 1024px) {
@@ -48,7 +48,7 @@ export const BannerContent = styled.div`
   max-width: 38%;
   width: 100%;
   padding-top: 1rem;
-  padding-bottom: 15rem;
+  padding-bottom: 1rem;
   display: flex;
   flex-direction: column;
   
@@ -57,17 +57,17 @@ export const BannerContent = styled.div`
   }
   @media only screen and (max-width: 1400px) {
     padding-top: 60px;
-    padding-bottom: 100px;
+    padding-bottom: 2rem;
   }
   @media only screen and (max-width: 1024px) {
-    padding-top: 60px;
-    padding-bottom: 100px;
+    padding-top: 28rem;
+    padding-bottom: 2rem;
     max-width: 60%;
     background: cover;
   }
   @media only screen and (max-width: 999px) {
     max-width: 100%;
-    padding-top: 10px;
+    padding-top: 23rem;
     padding-bottom: 30px;
     margin-top: 15rem;
     flex-direction: column;
@@ -75,7 +75,7 @@ export const BannerContent = styled.div`
   }
   @media only screen and (max-width: 768px) {
     max-width: 100%;
-    padding-top: 30px;
+    padding-top: 23rem;
     padding-bottom: 30px;
     margin-top: 8rem;
     flex-direction: column;
@@ -84,7 +84,7 @@ export const BannerContent = styled.div`
   @media only screen and (max-width: 480px) {
     width: 100%;
     margin-top: 2.5rem;
-    padding-top: 5px;
+    padding-top: 15rem;
     padding-bottom: 5px;
   }
   .head {

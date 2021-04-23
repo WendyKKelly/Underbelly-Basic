@@ -31,13 +31,13 @@ export const ContentWrapper = styled.div`
     }
     @media only screen and (max-width: 768px) {
       max-width: 100%;
-      min-height: 30vh;
-      height: 40vh;
+      min-height: 80vh;
+      height: 80vh;
       border-radius: 0%;
     }
     @media only screen and (max-width: 480px) {
-      min-height: 30vh;
-      height: 40vh;
+      min-height: 60vh;
+      height: 60vh;
       border-radius: 0%;
     }
   }
@@ -136,30 +136,30 @@ export const BannerContent = styled.div`
 
 export const Subscribe = styled.div`
   display: flex;
-  margin-top: 15rem;
+  margin-top: 10rem;
   margin-left: 50rem;
   @media only screen and (max-width: 1440px) {
-    margin-top: 30px;
+    margin-top: 0rem;
     margin-left: 30rem;
   }
   @media only screen and (max-width: 1024px) {
-    margin-left: 0rem;
+    margin-left: 2rem;
     margin-bottom: 20px;
   }
   @media only screen and (max-width: 768px) {
     max-width: 100%;
-    margin: 0 auto;
     flex-direction: column;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
   }
   @media only screen and (max-width: 480px) {
     max-width: 100%;
-    margin: 0rem;
+    margin-bottom: 0rem;
     flex-direction: column;
+    margin-top: 0rem;
   }
 
-  @media only screen and (max-width: 480px) {
-    align-items: center;
-  }
+  
   h2 {
     font-family: 'Helvetica Neue';
     font-size: 2.5rem;
@@ -181,7 +181,7 @@ export const Subscribe = styled.div`
     }
     @media only screen and (max-width: 1024px) {
       font-size: 3rem;
-      color: #2c2e35;
+      color: #fff;
       margin-bottom: 20px;
       line-height: 60px;
       text-align: left;
@@ -209,7 +209,7 @@ export const Subscribe = styled.div`
       font-size: 3rem;
       color: #000;
       margin-top: 0rem;
-      margin-bottom: 10rem;
+      margin-bottom: 0rem;
       line-height: 60px;
       text-align: left;
       margin-left: 0;
@@ -236,7 +236,7 @@ export const Subscribe = styled.div`
     }
     @media only screen and (max-width: 1024px) {
       font-size: 3rem;
-      color: #2c2e35;
+      color: #fff;
       margin-bottom: 20px;
       line-height: 60px;
       text-align: left;

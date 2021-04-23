@@ -26,7 +26,7 @@ const Banner = () => {
 
                 <Text className="banner-caption" content="" />
 
-                <Subscribe className="substack">
+                <Subscribe>
                   <Heading as="h2" content="Get Loved." />
 
                   <Link href="/bpage/about" passHref>
