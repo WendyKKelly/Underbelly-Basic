@@ -21,6 +21,15 @@ export default function PostPage({ page }) {
         <title>Underbelly Project</title>
         <meta name="theme-color" content="#FF825C" />
         <meta name="Description" content="Underbelly project" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;300;400;500&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@100;300;400;500;800;900&display=swap"
+          rel="stylesheet"
+        />
       </Head>
 
       <GlobalStyle />

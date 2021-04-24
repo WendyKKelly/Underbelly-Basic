@@ -214,9 +214,8 @@ export const Subscribe = styled.div`
     @media only screen and (max-width: 480px) {
       font-size: 2rem;
       color: #fff;
-      
-      margin-top: 13rem;
-      margin-bottom: 0rem;
+      margin-top: 10rem;
+      margin-bottom: 1rem;
       line-height: 40px;
       text-align: left;
       margin-left: 0;

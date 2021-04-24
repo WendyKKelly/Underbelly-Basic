@@ -4,44 +4,46 @@ const Section = styled.section`
   
   }
   div.mar {
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
 
     @media only screen and (max-width: 999px) {
       margin-left: 3rem;
       margin-right: 3rem;
     }
     @media only screen and (max-width: 768px) {
-      margin-left: 1.7rem;
+      margin-left: 3rem;
       margin-right: 3rem;
     }
     @media only screen and (max-width: 480px) {
-      margin-left: 1.5rem;
+      margin-left: 3rem;
       margin-right: 3rem;
     }
   }
 
   h1 {
     font-family: 'Helvetica Neue', sans-serif;
-    font-size: 3rem;
+    font-size: 5rem;
+    font-weight: 900;
     color: #2b7b2f;
     margin-bottom: 2rem;
     @media only screen and (max-width: 999px) {
-      font-size: 2rem;
+      font-size: 3rem;
+      font-weight: 900;
       margin-bottom: 1.5rem;
     }
   }
   h3 {
     font-family: 'Helvetica Neue';
-    font-size: 1.7rem;
+    font-size: 2.7rem;
     color: #82733b;
   }
   h2 {
     font-family: 'Helvetica Neue';
-    font-size: 2rem;
+    font-size: 3rem;
     color: #2b7b2f;
     @media only screen and (max-width: 999px) {
-      font-size: 0.7rem;
+      font-size: 3rem;
     }
   }
   a {
