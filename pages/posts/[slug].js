@@ -21,7 +21,7 @@ export default function PostPage({ post }) {
       <ThemeProvider theme={theme}>
         <Head>
           <title>The Underbelly</title>
-          <meta name="theme-color" content="#FF825C" />
+          <meta name="theme-color" content="#2c2e35" />
           <meta name="Description" content="Underbelly project" />
         </Head>
 
