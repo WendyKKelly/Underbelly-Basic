@@ -36,8 +36,8 @@ export const ContentWrapper = styled.div`
       border-radius: 0%;
     }
     @media only screen and (max-width: 480px) {
-      min-height: 50vh;
-      height: 50vh;
+      min-height: 60vh;
+      height: 60vh;
       border-radius: 0%;
     }
   }
