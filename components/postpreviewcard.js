@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import '../styles/theme/agencyDigital';
-import '../styles/index.css';
+
 export default function BlogPreviewCard({ blogpost }) {
   return (
     <div className="grid my-12">
