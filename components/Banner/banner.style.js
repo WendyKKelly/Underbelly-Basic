@@ -36,8 +36,8 @@ export const ContentWrapper = styled.div`
       border-radius: 0%;
     }
     @media only screen and (max-width: 480px) {
-      min-height: 60vh;
-      height: 60vh;
+      min-height: 50vh;
+      height: 50vh;
       border-radius: 0%;
     }
   }
@@ -214,8 +214,8 @@ export const Subscribe = styled.div`
     @media only screen and (max-width: 480px) {
       font-size: 2rem;
       color: #fff;
-      margin-top: 9rem;
-      margin-bottom: 1.5rem;
+      margin-top: 7rem;
+      margin-bottom: 2.6rem;
       line-height: 40px;
       text-align: left;
       margin-left: 0;

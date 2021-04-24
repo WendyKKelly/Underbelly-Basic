@@ -124,6 +124,7 @@ export const BannerContent = styled.div`
     @media only screen and (max-width: 480px) {
       font-size: 3.5rem;
       margin-bottom: 20px;
+      margin-left: 1rem;
       line-height: 3rem;
     }
 }

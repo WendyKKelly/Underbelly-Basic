@@ -24,6 +24,7 @@ const Section = styled.div`
     text-align: left;
     @media screen and (max-width: 768px) {
         font-size: 3rem;  
+        margin-left: 1rem;
   }
 }
   h2 {
@@ -50,6 +51,7 @@ const Section = styled.div`
   text-align: left;
   margin-top: 0rem;
   padding-top: 0rem;
+  margin-left: 1rem;
 }
 
   @media screen and (max-width: 480px) {
