@@ -4,7 +4,18 @@ const withOptimizedImages = require('next-optimized-images');
 const withFonts = require('next-fonts');
 const withCSS = require('@zeit/next-css');
 
-module.exports = withPlugins([
+module.exports = {
+  async redirects() {
+    return [
+      {
+        source: '/posts/:slug',
+        destination: '/:slug',
+        permanent: true,
+      },
+    ];
+  },
+};
+withPlugins([
   [withTM],
   [
     withOptimizedImages,

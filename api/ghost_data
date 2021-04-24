@@ -4,7 +4,7 @@ import GhostContentAPI from '@tryghost/content-api';
 const api = new GhostContentAPI({
   url: 'https://underbellystories.club',
   key: '06f303648c25dc038f07928838',
-  version: 'v4',
+  version: 'v3',
 });
 
 export async function getPosts() {
