@@ -144,7 +144,7 @@ export const MobileMenu = styled.div`
     position: absolute;
     top: 82px;
     flex-direction: column;
-    background-color: #82733b;
+    background-color: #ee9b27;
     transition: all 0.3s ease;
     color: ${themeGet('colors.white', '#fff')};
     &.active {
@@ -168,11 +168,11 @@ export const MobileMenu = styled.div`
         list-style: none;
         a {
           display: block;
-          padding: 5px 0;
+          padding: 3px 0rem 0rem 1.2rem;
           border-radius: 5px;
           transition: all 0.3s ease;
           font-family: 'Helvetica Neue';
-          font-size: 3rem;
+          font-size: 2.7rem;
           color: ${themeGet('colors.white', '#fff')};
         }
         &:hover {

@@ -25,7 +25,7 @@ const Section = styled.section`
     font-family: 'Helvetica Neue', sans-serif;
     font-size: 5rem;
     font-weight: 900;
-    color: #2b7b2f;
+    color: #2c2e35;
     margin-bottom: 2rem;
     @media only screen and (max-width: 999px) {
       font-size: 3rem;
@@ -37,6 +37,11 @@ const Section = styled.section`
     font-family: 'Helvetica Neue';
     font-size: 2.7rem;
     color: #82733b;
+    @media only screen and (max-width: 999px) {
+      font-size: 1.9rem;
+      font-weight: 900;
+      margin-bottom: 1.5rem;
+    }
   }
   h2 {
     font-family: 'Helvetica Neue';
