@@ -285,7 +285,7 @@ export const data = {
     {
       id: 2,
       title: 'About',
-      link: '/about',
+      link: '/bpage/about',
     },
     {
       id: 3,
