@@ -1,7 +1,6 @@
 import { getPosts, getSinglePost } from '../../api/ghost_data';
 import Section from './blogInnerHTML';
 import { DrawerProvider } from '../../components/DrawerContext';
-
 import Sticky from 'react-stickynode';
 import NavBar from '../../components/NavBar';
 import {
@@ -36,7 +35,26 @@ export default function PostPage({ post }) {
 
           <Section>
             <div className="imgs">
-              <h1>{post.title}</h1>
+              <div className="open">
+                <div className="title">{post.title}</div>
+                <div
+                  className="excerpt"
+                  dangerouslySetInnerHTML={{ __html: post.excerpt }}
+                />
+                <div className="last">
+                  <div className="date">
+                    {new Intl.DateTimeFormat('default', {
+                      year: 'numeric',
+                      month: 'short',
+                      day: 'numeric',
+                    }).format(new Date(post.published_at))}
+                  </div>
+                  <div className="dash">—</div>
+                  <div className="read">
+                    (reading time: {post.reading_time} min.)
+                  </div>
+                </div>
+              </div>
               <img className="image" src={post.feature_image} />
               <div dangerouslySetInnerHTML={{ __html: post.html }} />
             </div>

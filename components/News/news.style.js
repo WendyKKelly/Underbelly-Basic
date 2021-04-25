@@ -3,7 +3,6 @@ import { themeGet } from '@styled-system/theme-get';
 import illustration from '../../public/image/banner.png';
 
 const Section = styled.div`
-
   padding: 70px 0;
   @media screen and (max-width: 1440px) {
     padding: 30px 0 30px;
@@ -14,15 +13,12 @@ const Section = styled.div`
 `;
 
 export const SectionHeading = styled.div`
-.longNarrow {
-color: black;
-}
+  .longNarrow {
+    color: black;
+  }
 `;
 
-
 export const ContentWrapper = styled.div`
-
-
   .masonryGrid {
     margin-left: -15px;
     margin-right: -15px;
@@ -48,7 +44,7 @@ export const BlogPost = styled.div`
     }
   }
   h4 {
-    font-family: Alice;
+    font-family: 'Sometimes Times BETA';
     font-weight: 700;
     font-size: 70px;
     line-height: 30px;
@@ -56,7 +52,6 @@ export const BlogPost = styled.div`
     margin-bottom: 0;
     margin-top: 15px;
   }
-
 
   .learnMore {
     font-weight: 500;

@@ -40,7 +40,7 @@ export const ContentWrapper = styled.div`
 
   .sticky-nav-active {
     .agencyDigital-navbar {
-      background-color: rgba(238, 155, 39, 0.7);
+      background-color: rgba(238, 155, 39, 1);
       box-shadow: 0px 3px 8px 0px rgba(43, 83, 135, 0.08);
     }
   }

@@ -61,7 +61,7 @@ export const MenuArea = styled.nav`
     @media only screen and (max-width: 411px) and (max-height: 812px) and (orientation: landscape) {
       display: none;
     }
-    @media only screen and (max-width: 911px) {
+    @media only screen and (max-width: 950px) {
       display: none;
     }
     li {
@@ -69,7 +69,7 @@ export const MenuArea = styled.nav`
       margin: 0 19px;
       list-style: none;
       a {
-        color: ${themeGet('colors.menu', '#545454')};
+        color: ${themeGet('colors.menu', '#fff')};
         font-family: 'Helvetica Neue';
         font-size: 40px;
         font-weight: 900;
@@ -120,7 +120,7 @@ export const NavbarRight = styled.ul`
     margin-left: 38px;
     list-style: none;
     a {
-      color: ${themeGet('colors.menu', '#545454')};
+      color: ${themeGet('colors.menu', '#fff')};
       font-family: 'Helvetica Neue';
       font-size: 25px;
       font-weight: 400;

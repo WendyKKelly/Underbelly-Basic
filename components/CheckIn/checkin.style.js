@@ -48,7 +48,7 @@ export const Content = styled.div`
     margin-top: 0;
   }
   h2 {
-    font-family: Anita;
+    font-family: 'Sometimes Times BETA';
     font-weight: 700;
     font-size: 32px;
     line-height: 60px;

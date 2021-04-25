@@ -17,7 +17,6 @@
     "@tryghost/content-api": "^1.5.2",
     "@zeit/next-css": "^1.0.1",
     "autoprefixer": "^9.8.6",
-    "chokidar": "3",
     "classnames": "^2.2.6",
     "core-js": "3",
     "ctx": "^0.3.0",

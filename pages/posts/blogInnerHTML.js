@@ -33,15 +33,58 @@ const Section = styled.section`
       height: 100%;
     }
   }
-
+  .open {
+    padding: 5rem;
+    width: 100%;
+    @media only screen and (max-width: 999px) {
+      padding: 3rem;
+    }
+  }
+  .title {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 800;
+    font-size: 5rem;
+    color: #2c2e35;
+    @media only screen and (max-width: 999px) {
+      font-size: 3rem;
+    }
+  }
+  .excerpt {
+    font-family: Helvetica Neue;
+    font-size: 1.2rem;
+    color: rgba(44, 46, 53, 0.5);
+  }
+  .last {
+    font-family: Sometimes Times BETA;
+    font-size: 1.7rem;
+    color: rgba(44, 46, 53, 0.7);
+    display: flex;
+    @media only screen and (max-width: 480px) {
+      flex-direction: column;
+      padding: 0rem;
+    }
+  }
+  .date {
+  }
+  .dash {
+    font-weight: 900;
+    @media only screen and (max-width: 480px) {
+      display: none;
+    }
+  }
+  .read {
+  }
   h1 {
     font-family: 'Helvetica Neue', sans-serif;
     font-weight: 800;
+    margin-top: 4rem;
+    margin-left: 10rem;
     font-size: 3rem;
-    color: #2b7b2f;
+    color: #2c2e35;
 
     @media only screen and (max-width: 999px) {
-      font-size: 2rem;
+      font-size: 3rem;
+      margin-left: 2rem;
     }
   }
   h3 {

@@ -14,14 +14,14 @@ export default function Intro() {
             margin-left: 2vh;
           }
           .wild {
-            font-family: 'Alice', serif;
+            font-family: 'Sometimes Times BETA', serif;
             font-size: 2em;
             color: #ec6f48;
             text-align: center;
           }
 
           .post-title {
-            font-family: 'Raleway', sans-serif;
+            font-family: 'Helvetica Neue', sans-serif;
             font-size: 2.5em;
             color: #8dbb85;
             text-align: center;
@@ -29,7 +29,7 @@ export default function Intro() {
             padding-top: 0.8vh;
           }
           body {
-            font-family: 'Raleway', sans-serif;
+            font-family: 'Helvetica Neue', sans-serif;
           }
           h1,
           h2,
@@ -37,11 +37,11 @@ export default function Intro() {
           h4,
           h5,
           h6 {
-            font-family: 'Alice', serif;
+            font-family: 'Sometimes Times BETA', serif;
             margin-top: 0;
           }
           p {
-            font-family: 'Raleway', sans-serif;
+            font-family: 'Helvetica Neue', sans-serif;
           }
         `}
       </style>
