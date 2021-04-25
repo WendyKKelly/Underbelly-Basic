@@ -1,7 +1,7 @@
 import { getTags, getSingleTag, getPostsByTag } from '../../api/ghost_data';
 import Link from 'next/link';
 import { DrawerProvider } from '../../components/DrawerContext';
-
+import Section from './tag.style';
 import Sticky from 'react-stickynode';
 import NavBar from '../../components/NavBar';
 import {
@@ -33,39 +33,44 @@ export default function TagPage(tagData) {
               <NavBar />
             </DrawerProvider>
           </Sticky>
-
-          <div className="my-10">
-            <h2 className="py-1 mx-2 my-8  text-indigo-900 text-xl">
-              {' '}
-              <span className="font-bold">{tagData.tag.name}</span>
-            </h2>
-            <ul>
-              {tagData.posts.map((post) => (
-                <li>
-                  <div className="cursor-pointer py-4 bg-gray-100 hover:bg-gray-200 m-2 rounded-md border-gray-200 border-2">
-                    <Link href="/posts/[slug]" as={`/posts/${post.slug}`}>
-                      <div className="mx-10">
-                        <h3 className="font-medium text-indigo-900">
-                          {post.title}
-                        </h3>
-                        <p className="text-gray-600 text-xs">
-                          {new Intl.DateTimeFormat('default', {
-                            year: 'numeric',
-                            month: 'short',
-                            day: 'numeric',
-                          }).format(new Date(post.published_at))}
-                        </p>
-                        <p className="italic text-gray-700 text-xs">
-                          (reading time: {post.reading_time} min.)
-                        </p>
-                      </div>
-                    </Link>
-                  </div>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <Footer />
+          <Section>
+            <div className="mar">
+              <h1>
+                {' '}
+                <span className="font-bold">{tagData.tag.name}</span>
+              </h1>
+              <ul>
+                {tagData.posts.map((post) => (
+                  <li>
+                    <div className="border">
+                      <Link href="/posts/[slug]" as={`/posts/${post.slug}`}>
+                        <div className="mx-10">
+                          <h3 className="font-medium text-indigo-900">
+                            {post.title}
+                          </h3>
+                          <blockquote>{post.excerpt}</blockquote>
+                          <div className="last">
+                            <div className="date">
+                              {new Intl.DateTimeFormat('default', {
+                                year: 'numeric',
+                                month: 'short',
+                                day: 'numeric',
+                              }).format(new Date(post.published_at))}
+                            </div>
+                            <div className="dash"></div>
+                            <div className="read">
+                              (reading time: {post.reading_time} min.)
+                            </div>
+                          </div>
+                        </div>
+                      </Link>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <Footer />
+          </Section>
         </ContentWrapper>
       </ThemeProvider>
     </>

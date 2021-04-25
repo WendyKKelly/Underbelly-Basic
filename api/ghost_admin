@@ -1,0 +1,7 @@
+Import GhostAdminAPI from '@tryghost/admin-api';
+
+const api = new GhostAdminAPI ({
+    url: 'process.env.BLOG_URL',
+    key: process.env.ADMIN_API_KEY,
+    version: 'v3',
+})

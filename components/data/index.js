@@ -298,4 +298,142 @@ export const data = {
       link: 'https://www.patreon.com/underbellyproject',
     },
   ],
+  footer: [
+    {
+      id: 1,
+      title: 'Underbelly',
+      list: [
+        {
+          id: 1,
+          title: 'About',
+          link: '/bpage/about',
+        },
+        {
+          id: 2,
+          title: 'Breathe Manifesto',
+          link: '/bpage/breathe',
+        },
+        {
+          id: 3,
+          title: 'Client Work',
+          link: '/bpage/client-work',
+        },
+        {
+          id: 4,
+          title: 'Acumen Moral Leadership Group',
+          link: '#',
+        },
+        {
+          id: 5,
+          title: 'Blog',
+          link: '/tags/stories',
+        },
+      ],
+    },
+    {
+      id: 2,
+      title: 'Wild + Precious',
+      list: [
+        {
+          id: 1,
+          title: 'Newsletter',
+          link: '/tags/newsletter',
+        },
+        {
+          id: 2,
+          title: 'Podcast',
+          link: '/tags/podcast',
+        },
+        {
+          id: 3,
+          title: 'Courses',
+          link: '/bpage/courses',
+        },
+        {
+          id: 4,
+          title: 'Shop',
+          link: '#',
+        },
+        {
+          id: 5,
+          title: 'Blog',
+          link: '/tags/precious',
+        },
+      ],
+    },
+
+    {
+      id: 4,
+      title: 'Connect',
+      list: [
+        {
+          id: 1,
+          title: 'Say Hello',
+          link: '/bpage/connect',
+        },
+        {
+          id: 2,
+          title: 'Instagram',
+          link: '/https://instagram.com/undrblly',
+        },
+        {
+          id: 3,
+          title: 'Bookshop',
+          link: 'https://bookshop/wild-and-precious',
+        },
+        {
+          id: 4,
+          title: '',
+          link: '#',
+        },
+        {
+          id: 5,
+          title: '',
+          link: '#',
+        },
+      ],
+    },
+    {
+      id: 3,
+      title: 'Support',
+      list: [
+        {
+          id: 1,
+          title: 'Share',
+          link: '/bpage/how-to-share',
+        },
+        {
+          id: 2,
+          title: 'Connect',
+          link: '/pbage/connect',
+        },
+        {
+          id: 3,
+          title: 'Patreon',
+          link: 'https://www.patreon.com/underbellyproject',
+        },
+        {
+          id: 4,
+          title: 'Rate/Review/Subscribe',
+          link: '/bpage/rate-review-subscribe',
+        },
+        {
+          id: 5,
+          title: 'Membership',
+          link: '/bpage/membership',
+        },
+      ],
+    },
+    {
+      id: 5,
+      title: 'Policy',
+      list: [
+        {
+          id: 1,
+          title: 'Privacy',
+          link: '/bpage/privacy',
+        },
+      ],
+    },
+  ],
 };

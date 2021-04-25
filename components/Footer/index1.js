@@ -1,12 +1,9 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
 
-import { Icon } from 'react-icons-kit';
-import { chevronRight } from 'react-icons-kit/feather/chevronRight';
-
-import Container from '../UI/ContainerTwo';
-import Image from '../Image';
-import Link from '../Link';
+import Container from 'common/src/components/UI/ContainerTwo';
+import Image from 'common/src/components/Image';
+import Link from 'common/src/components/Link';
 import {
   Section,
   FooterTop,
@@ -15,8 +12,8 @@ import {
   Copyright,
   FooterNav,
 } from './footer.style';
-import { data } from '../data';
-import Logo from '../../public/image/logo.png';
+import { data } from 'common/src/data/AgencyDigital';
+import Logo from 'common/src/assets/image/agencyDigital/logo.png';
 
 const Footer = () => {
   return (
@@ -41,15 +38,11 @@ const Footer = () => {
         <FooterBottom>
           <Copyright>
             <Image src={Logo} alt="Agency Digital" />
-            Copyright &copy; {new Date().getFullYear()}
+            Copyright &copy; {new Date().getFullYear()} by Redq, Inc
           </Copyright>
           <FooterNav>
             {data.footerNav.map((item) => (
-              <li key={item.id}>
-                <Link href={item.link} className="">
-                  {item.title} <Icon icon={chevronRight} />
-                </Link>{' '}
-              </li>
+              <li key={item.id}>{item.title}</li>
             ))}
           </FooterNav>
         </FooterBottom>
