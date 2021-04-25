@@ -84,7 +84,7 @@ const Section = styled.section`
 
     @media only screen and (max-width: 999px) {
       font-size: 3rem;
-      margin-left: 2rem;
+      margin-left: 0rem;
     }
   }
   h3 {
