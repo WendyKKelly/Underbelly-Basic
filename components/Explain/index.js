@@ -19,7 +19,7 @@ const Explain = () => {
 
               <Text
                 className="banner-caption"
-                content="How do you go from unloveable to loved? From burned out to deeply connected to the world around you? From wounded and wounding to caring for yourself and others? Curious? So was I! I'm Wendy Kelly, and The Underbelly is my attempt to share what I am learning around becoming a deeply connected, caring person in this world. I created a daughter project called 'Wild and Precious' with offerings created from what I have learned. A weekly newsletter, a podcast, courses, and booklists so far. Explore a bit and see what you find.
+                content="How do you go from unloveable to loved? From burned out to deeply connected to the world around you? From wounded and wounding to caring for yourself and others? Curious? So was I! I'm Wendy Kelly, and Underbelly is my attempt to share what I am learning around becoming a deeply connected, caring person in this world. I created a daughter project called 'Wild and Precious' with offerings created from what I have learned. A weekly newsletter, a podcast, courses, and booklists so far. Explore a bit and see what you find.
                 "
               />
 

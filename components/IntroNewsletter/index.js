@@ -23,7 +23,7 @@ const IntroNews = () => {
 
               <Text
                 className="banner-caption"
-                content="How do you go from unloveable to loved? From burned out to deeply connected to the world around you? From wounded and wounding to caring for yourself and others? Curious? Explore my 'delightful', 'always inspiring' and 'delicious' offerings in the daughter project to The Underbelly, 'Wild and Precious' 
+                content="How do you go from unloveable to loved? From burned out to deeply connected to the world around you? From wounded and wounding to caring for yourself and others? Curious? Explore my 'delightful', 'always inspiring' and 'delicious' offerings in the daughter project to Underbelly, 'Wild and Precious' 
                 "
               />
 

@@ -20,7 +20,7 @@ export default function Stories({ posts }) {
     <>
       <ThemeProvider theme={theme}>
         <Head>
-          <title>The Underbelly</title>
+          <title>Underbelly</title>
           <meta name="theme-color" content="#FF825C" />
           <meta name="Description" content="Underbelly project" />
         </Head>

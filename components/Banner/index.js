@@ -26,7 +26,7 @@ const Banner = () => {
                 <Subscribe>
                   <Heading
                     as="h2"
-                    content="The Underbelly is a project that helps us become better humans."
+                    content="Underbelly is a project that helps us become better humans."
                   />
 
                   <Link href="/bpage/about" passHref>
