@@ -5,10 +5,10 @@ export const Section = styled.footer`
   background-color: #f9fafc;
   padding: 45px 0 0;
   @media screen and (max-width: 1440px) {
-    padding: 70px 0 20px;
+    padding: 70px 20px 20px;
   }
   @media screen and (max-width: 480px) {
-    padding: 50px 0 20px;
+    padding: 50px 20px 20px;
   }
 `;
 

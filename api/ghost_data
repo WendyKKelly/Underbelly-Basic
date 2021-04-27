@@ -2,8 +2,8 @@
 import GhostContentAPI from '@tryghost/content-api';
 
 const api = new GhostContentAPI({
-  url: process.env.BLOG_URL,
-  key: process.env.CONTENT_API_KEY,
+  url: 'https://underbellystories.club',
+  key: '06f303648c25dc038f07928838',
   version: 'v3',
 });
 
