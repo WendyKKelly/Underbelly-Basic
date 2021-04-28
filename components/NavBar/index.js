@@ -57,7 +57,7 @@ const NavBar = () => {
           />
           <NavbarRight>
             <li>
-              <Link href="/bpage/wild-and-precious-conversations" replace>
+              <Link href="/blog/bpage/wild-and-precious-conversations" replace>
                 <a> Podcast </a>
               </Link>
             </li>
@@ -67,22 +67,22 @@ const NavBar = () => {
               </Link>
             </li>
             <li>
-              <Link href="/bpage/courses" replace>
+              <Link href="/blog/bpage/courses" replace>
                 <a> Courses</a>
               </Link>
             </li>
             <li>
-              <Link href="/bpage/breathe" replace>
+              <Link href="/blog/bpage/breathe" replace>
                 <a> Breathe </a>
               </Link>
             </li>
             <li>
-              <Link href="/bpage/contact" replace>
+              <Link href="/blog/bpage/contact" replace>
                 <a> Contact </a>
               </Link>
             </li>
             <li>
-              <Link href="/bpage/about">
+              <Link href="/blog/bpage/about">
                 <a>About</a>
               </Link>
             </li>
@@ -138,12 +138,12 @@ const NavBar = () => {
               </li>
             ))}
             <li>
-              <Link href="/bpage/about" replace>
+              <Link href="/blog/bpage/about" replace>
                 <a> About </a>
               </Link>
             </li>
             <li>
-              <Link href="/bpage/wild-and-precious-conversations" replace>
+              <Link href="/blog/bpage/wild-and-precious-conversations" replace>
                 <a> Podcast </a>
               </Link>
             </li>
@@ -153,18 +153,18 @@ const NavBar = () => {
               </Link>
             </li>
             <li>
-              <Link href="/bpage/courses" replace>
+              <Link href="/blog/bpage/courses" replace>
                 <a> Courses</a>
               </Link>
             </li>
             <li>
-              <Link href="/bpage/breathe" replace>
+              <Link href="/blog/bpage/breathe" replace>
                 <a> Breathe </a>
               </Link>
             </li>
 
             <li>
-              <Link href="/bpage/contact">
+              <Link href="/blog/bpage/contact">
                 <a>Connect</a>
               </Link>
             </li>
