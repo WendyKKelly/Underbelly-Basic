@@ -1,17 +1,17 @@
-import { getPosts, getSinglePost } from '../../api/ghost_data';
+import { getPosts, getSinglePost } from '../../../api/ghost_data';
 import Section from './blogInnerHTML';
-import { DrawerProvider } from '../../components/DrawerContext';
+import { DrawerProvider } from '../../../components/DrawerContext';
 import Sticky from 'react-stickynode';
-import NavBar from '../../components/NavBar';
+import NavBar from '../../../components/NavBar';
 import {
   GlobalStyle,
   ContentWrapper,
-} from '../../components/AgencyDigital/agencyDigital.style';
+} from '../../../components/AgencyDigital/agencyDigital.style';
 
 import Head from 'next/head';
-import Footer from '../../components/Footer';
+import Footer from '../../../components/Footer';
 import { ThemeProvider } from 'styled-components';
-import { theme } from '../../styles/theme/agencyDigital';
+import { theme } from '../../../styles/theme/agencyDigital';
 export default function PostPage({ post }) {
   // Render post title and content in the page from props
   let _title = post.title + ' - Stories';

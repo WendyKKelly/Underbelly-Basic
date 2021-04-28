@@ -1,16 +1,16 @@
-import { getPages, getSinglePage } from '../../api/ghost_data';
+import { getPages, getSinglePage } from '../../../api/ghost_data';
 import Head from 'next/head';
 import Section from './page.style';
 import Sticky from 'react-stickynode';
 import { ThemeProvider } from 'styled-components';
-import { theme } from '../../styles/theme/agencyDigital';
+import { theme } from '../../../styles/theme/agencyDigital';
 import {
   GlobalStyle,
   ContentWrapper,
-} from '../../components/AgencyDigital/agencyDigital.style';
-import { DrawerProvider } from '../../components/DrawerContext';
-import NavBar from '../../components/NavBar';
-import Footer from '../../components/Footer';
+} from '../../../components/AgencyDigital/agencyDigital.style';
+import { DrawerProvider } from '../../../components/DrawerContext';
+import NavBar from '../../../components/NavBar';
+import Footer from '../../../components/Footer';
 
 export default function PostPage({ page }) {
   // Render post title and content in the page from props
