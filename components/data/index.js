@@ -279,23 +279,23 @@ export const data = {
   footerNav: [
     {
       id: 1,
-      title: 'Home',
+      title: '',
       link: '/',
     },
     {
       id: 2,
-      title: 'About',
-      link: '/bpage/about',
+      title: '',
+      link: '',
     },
     {
       id: 3,
-      title: 'Connect',
-      link: '/connect',
+      title: '',
+      link: '',
     },
     {
       id: 4,
       title: '',
-      link: 'https://www.patreon.com/underbellyproject',
+      link: '',
     },
   ],
   footer: [
@@ -306,17 +306,17 @@ export const data = {
         {
           id: 1,
           title: 'About',
-          link: '/bpage/about',
+          link: '/blog/bpage/about',
         },
         {
           id: 2,
           title: 'Breathe Manifesto',
-          link: '/bpage/breathe',
+          link: '/blog/bpage/breathe',
         },
         {
           id: 3,
           title: 'Client Work',
-          link: '/bpage/client-work',
+          link: '/blog/bpage/client-work',
         },
         {
           id: 4,
@@ -326,7 +326,7 @@ export const data = {
         {
           id: 5,
           title: 'Blog',
-          link: '/tags/stories',
+          link: '/blog/tags/stories',
         },
       ],
     },
@@ -337,17 +337,17 @@ export const data = {
         {
           id: 1,
           title: 'Newsletter',
-          link: '/tags/newsletter',
+          link: '/blog/tags/newsletter',
         },
         {
           id: 2,
           title: 'Podcast',
-          link: '/tags/podcast',
+          link: 'blog/tags/podcast',
         },
         {
           id: 3,
           title: 'Courses',
-          link: '/bpage/courses',
+          link: 'blog/bpage/courses',
         },
         {
           id: 4,
@@ -357,7 +357,7 @@ export const data = {
         {
           id: 5,
           title: 'Blog',
-          link: '/tags/precious',
+          link: 'blog/tags/precious',
         },
       ],
     },
@@ -369,7 +369,7 @@ export const data = {
         {
           id: 1,
           title: 'Say Hello',
-          link: '/bpage/connect',
+          link: 'blog/bpage/connect',
         },
         {
           id: 2,
@@ -383,8 +383,8 @@ export const data = {
         },
         {
           id: 4,
-          title: '',
-          link: '#',
+          title: 'Wendy Kelly',
+          link: 'https://www.wendykianakelly.com',
         },
         {
           id: 5,
@@ -400,12 +400,12 @@ export const data = {
         {
           id: 1,
           title: 'Share',
-          link: '/bpage/how-to-share',
+          link: 'blog/bpage/how-to-share',
         },
         {
           id: 2,
           title: 'Connect',
-          link: '/pbage/connect',
+          link: 'blog/pbage/connect',
         },
         {
           id: 3,
@@ -415,12 +415,12 @@ export const data = {
         {
           id: 4,
           title: 'Rate/Review/Subscribe',
-          link: '/bpage/rate-review-subscribe',
+          link: 'blog/bpage/rate-review-subscribe',
         },
         {
           id: 5,
           title: 'Membership',
-          link: '/bpage/membership',
+          link: 'blog/bpage/membership',
         },
       ],
     },
@@ -431,7 +431,7 @@ export const data = {
         {
           id: 1,
           title: 'Privacy',
-          link: '/bpage/privacy',
+          link: 'blog/bpage/privacy',
         },
       ],
     },
