@@ -21,12 +21,15 @@ const Banner = () => {
           <ContentWrapper>
             <div className="image">
               <BannerContent>
-                <Heading as="h1" content="Your safe space to breathe." />
+                <Heading
+                  as="h1"
+                  content="Becoming who you are — well — needs a safe space "
+                />
                 <Heading as="h2" content="" />
                 <Subscribe>
                   <Heading
                     as="h2"
-                    content="Underbelly is a project that helps us become better humans."
+                    content="Welcome to that space. Explore our resources  dedicated to you becoming — well."
                   />
 
                   <Link href="/bpage/about" passHref>

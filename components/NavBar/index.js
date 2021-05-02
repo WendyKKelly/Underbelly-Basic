@@ -62,7 +62,7 @@ const NavBar = () => {
               </Link>
             </li>
             <li>
-              <Link href="/stories" replace>
+              <Link href="newsletter.underbel.li" replace>
                 <a> Newsletter </a>
               </Link>
             </li>
@@ -148,7 +148,7 @@ const NavBar = () => {
               </Link>
             </li>
             <li>
-              <Link href="/stories" replace>
+              <Link href="newsletter.underbel.li" replace>
                 <a> Newsletter </a>
               </Link>
             </li>
