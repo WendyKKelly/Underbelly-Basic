@@ -13,7 +13,7 @@ import NavBar from '../components/NavBar';
 import Banner from '../components/Banner';
 import Introduction from '../components/Introduction';
 import Explain from '../components/Explain';
-import Newsletter from '../components/Newsletter';
+
 import Footer from '../components/Footer';
 
 export default function Home() {
@@ -44,7 +44,7 @@ export default function Home() {
             </DrawerProvider>
           </Sticky>
           <Banner />
-          <Newsletter />
+
           <Explain />
           <Introduction />
 
