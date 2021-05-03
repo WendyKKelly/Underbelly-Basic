@@ -322,6 +322,7 @@ export const Subscribe = styled.div`
       margin-top: 30rem;
       background-position: bottom center;
       flex-direction: column;
+      display: none;
     }
     @media only screen and (max-width: 768px) {
       
