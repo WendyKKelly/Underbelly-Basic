@@ -69,15 +69,8 @@ const Newsletter = () => {
               <a target="_blank" href="https://www.getrevue.co/privacy">
                 Privacy Policy
               </a>
-              .
             </div>
           </form>
-        </div>
-        <div className="intro">
-          <Link href="./newsletter.underbel.li">
-            {' '}
-            Check out a sample Newsletter
-          </Link>
         </div>
       </Container>
     </Section>
