@@ -24,18 +24,20 @@ const Explain = () => {
               />
 
               <Link href="/wild-and-precious" passHref>
-                <div className="wp">
-                  <span className="w">Wild </span>
-                  <span
-                    style={{
-                      fontFamily: 'Playfair Display',
-                      fontWeight: '900',
-                      fontSize: '4rem',
-                    }}
-                  >
-                    + Precious
-                  </span>
-                </div>
+                <a>
+                  <div className="wp">
+                    <span className="w">Wild </span>
+                    <span
+                      style={{
+                        fontFamily: 'Playfair Display',
+                        fontWeight: '900',
+                        fontSize: '4rem',
+                      }}
+                    >
+                      + Precious
+                    </span>
+                  </div>
+                </a>
               </Link>
             </BannerContent>
           </div>
