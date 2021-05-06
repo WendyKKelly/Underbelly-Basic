@@ -14,7 +14,7 @@ const Section = styled.div`
     background: #fff;
     
    
-    height: 100vh;
+    height: 50vh;
    
     
   

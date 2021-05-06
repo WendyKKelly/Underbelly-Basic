@@ -14,6 +14,7 @@ import Banner from '../components/Banner';
 import Introduction from '../components/Introduction';
 import Explain from '../components/Explain';
 import Newsletter from '../components/Newsletter';
+import CourseIntro from '../components/CourseIntro';
 import Footer from '../components/Footer';
 
 export default function Home() {
@@ -47,7 +48,7 @@ export default function Home() {
           <Newsletter />
           <Explain />
           <Introduction />
-
+          <CourseIntro />
           <Footer />
         </ContentWrapper>
       </Fragment>
