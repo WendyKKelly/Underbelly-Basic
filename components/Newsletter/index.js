@@ -28,43 +28,36 @@ const Newsletter = () => {
             target="_blank"
           >
             <div className="revue-form-group">
-              <label htmlFor="member_email">Email address: </label>
               <input
                 className="revue-form-field"
-                placeholder="Your email address..."
-                type="email"
-                name="member[email]"
-                id="member_email"
-              />
-            </div>
-            <div className="revue-form-group">
-              <label htmlFor="member_first_name">
-                First name <span className="optional">(Optional): </span>
-              </label>
-              <input
-                className="revue-form-field"
-                placeholder="First name... (Optional)"
+                placeholder="First Name:"
                 type="text"
                 name="member[first_name]"
                 id="member_first_name"
               />
             </div>
             <div className="revue-form-group">
-              <label htmlFor="member_last_name">
-                Last name <span className="optional">(Optional): </span>
-              </label>
               <input
                 className="revue-form-field"
-                placeholder="Last name... (Optional)"
+                placeholder="Last Name:"
                 type="text"
                 name="member[last_name]"
                 id="member_last_name"
               />
             </div>
+            <div className="revue-form-group">
+              <input
+                className="revue-form-field"
+                placeholder="Email:"
+                type="email"
+                name="member[email]"
+                id="member_email"
+              />
+            </div>
             <div className="revue-form-actions">
               <input
                 type="submit"
-                value="Subscribe"
+                value="Sign Me Up"
                 name="member[subscribe]"
                 id="member_submit"
               />

@@ -115,13 +115,13 @@ const Section = styled.div`
     line-height: 70px;
     font-weight: 700;
     color: ${themeGet('colors.menu', '#02073e')};
-    margin-bottom: 24px;
+    margin-bottom: 0px;
     letter-spacing: -1px;
     margin-top: 0;
     text-align: left;
     @media only screen and (max-width: 1440px) {
       font-size: 40px;
-      margin-bottom: 15px;
+      margin-bottom: 0px;
       line-height: 55px;
     }
     @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
@@ -130,17 +130,17 @@ const Section = styled.div`
     }
     @media only screen and (max-width: 1024px) {
       font-size: 28px;
-      margin-bottom: 20px;
+      margin-bottom: 0px;
     }
 
     @media only screen and (max-width: 768px) {
       font-size: 34px;
-      margin-bottom: 10px;
+      margin-bottom: 0px;
       text-align: center;
     }
     @media only screen and (max-width: 480px) {
       font-size: 23px;
-      margin-bottom: 20px;
+      margin-bottom: 0px;
       line-height: 40px;
     }
 }
@@ -161,18 +161,18 @@ const Section = styled.div`
     height: auto;
    
     @media screen and (max-width: 1600px) {
-        border-radius: 5%; 
+        border-radius: 0%; 
         flex-
 }    
     @media screen and (max-width: 1440px) {
-        border-radius: 5%; 
+        border-radius: 0%; 
 }
 @media screen and (max-width: 999px) {
-    border-radius: 5%; 
+    border-radius: 0%; 
     flex: 
 }
 @media screen and (max-width: 768px) {
-    border-radius: 5%; 
+    border-radius: 0%; 
     flex: 
 }
 }
@@ -183,14 +183,14 @@ const Section = styled.div`
     
     flex: initial;
     @media screen and (max-width: 1440px) {
-        border-radius: 5%; 
+        border-radius: 0%; 
 }
 @media screen and (max-width: 999px) {
-    border-radius: 5%; 
+    border-radius: 0%; 
     padding-bottom: 1rem;
 }
 @media screen and (max-width: 768px) {
-    border-radius: 5%; 
+    border-radius: 0%; 
     padding-bottom: 1rem;
 }
 }
@@ -198,34 +198,42 @@ const Section = styled.div`
 .revue-form-field {
     flex: auto;
     flex: wrap;
-    border: solid;
+    border-bottom: solid;
     border-color: #2c2e35;
-    width: 15rem;
+    
     height: 2rem;
-    text-align: center;
-    border-radius: 5rem;
-    padding-left: 1rem;
+    text-align: left;
+    border-radius: 0;
+    padding-left: 0rem;
+    padding-bottom: 0rem;
     @media screen and (max-width: 1440px) {
-        border-radius: 5%; 
+        border-radius: 0%; 
         flex: wrap;
 }
 @media screen and (max-width: 999px) {
-    border-radius: 5%; 
+    border-radius: 0%; 
    
 }
 @media screen and (max-width: 768px) {
-    border-radius: 5%; 
+    border-radius: 0%; 
     
 }
 }
-
+input#member-submit {
+    color: #2c2e35;
+}
+input[type="submit" i]:hover {
+    color #ee9b27;
+    cursor: grab;
+}
 .revue-form-actions {
-    border:solid;
-    text-align: center;
-    font-size: 3rem;
+   
+    text-align: left;
+    font-size: 2rem;
     font-weight: 900;
     cursor: grab;
-    padding-bottom: 1.3rem;
+    padding-bottom: 0rem;
+    padding-left: 1rem;
     flex: auto;
     flex: wrap;
     
