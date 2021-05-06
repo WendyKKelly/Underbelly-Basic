@@ -97,7 +97,8 @@ export const BannerContent = styled.div`
 
       margin-bottom: 20px;
       margin-left: 0rem;
-      text-align: center;
+      text-align: right;
+      margin-right: 1rem;
     }
     @media only screen and (max-width: 768px) {
       font-size: 4rem;
@@ -105,7 +106,7 @@ export const BannerContent = styled.div`
       background-color: rgba(255, 255, 255, 0.5);
       margin-left: 1rem;
       margin-bottom: 0.3rem;
-      text-align: center;
+      text-align: right;
     }
     @media only screen and (max-width: 480px) {
       font-size: 2rem;
@@ -114,7 +115,7 @@ export const BannerContent = styled.div`
       margin-left: 0rem;
       margin-bottom: 0.3rem;
       margin-right: 1rem;
-      text-align: left;
+      text-align: right;
     }
   }
 `;
@@ -214,8 +215,8 @@ export const Subscribe = styled.div`
     @media only screen and (max-width: 480px) {
       font-size: 2rem;
       color: #fff;
-      margin-top: 7rem;
-      margin-bottom: 2.6rem;
+      margin-top: 10rem;
+      margin-bottom: 0rem;
       line-height: 40px;
       text-align: left;
       margin-left: 0;

@@ -337,7 +337,7 @@ export const data = {
         {
           id: 1,
           title: 'Newsletter',
-          link: 'newsletter.underbel.li',
+          link: 'https://newsletter.underbel.li',
         },
         {
           id: 2,

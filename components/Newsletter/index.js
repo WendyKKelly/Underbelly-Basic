@@ -6,9 +6,18 @@ const Newsletter = () => {
   return (
     <Section>
       <Container>
-        <div className="intro">
-          Stay Connected: First step, 10 Wild+Precious Things in your inbox each
-          Monday Morning.
+        <div className="watch-face">
+          <div className="circle"></div>
+          <div className="circle"></div>
+          <div className="circle"></div>
+          <div className="circle"></div>
+          <div className="circle"></div>
+          <div className="circle"></div>
+        </div>
+
+        <div className="intro">First Step:</div>
+        <div className="introsub">
+          10 Wild+Precious Things in your inbox each Monday Morning.
         </div>
         <div id="revue-embed">
           <form
@@ -19,7 +28,7 @@ const Newsletter = () => {
             target="_blank"
           >
             <div className="revue-form-group">
-              <label htmlFor="member_email">Email address</label>
+              <label htmlFor="member_email">Email address: </label>
               <input
                 className="revue-form-field"
                 placeholder="Your email address..."
@@ -30,7 +39,7 @@ const Newsletter = () => {
             </div>
             <div className="revue-form-group">
               <label htmlFor="member_first_name">
-                First name <span className="optional">(Optional)</span>
+                First name <span className="optional">(Optional): </span>
               </label>
               <input
                 className="revue-form-field"
@@ -42,7 +51,7 @@ const Newsletter = () => {
             </div>
             <div className="revue-form-group">
               <label htmlFor="member_last_name">
-                Last name <span className="optional">(Optional)</span>
+                Last name <span className="optional">(Optional): </span>
               </label>
               <input
                 className="revue-form-field"

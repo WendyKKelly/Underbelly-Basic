@@ -96,7 +96,7 @@ export const BannerContent = styled.div`
     font-size: 4rem;
     line-height: 70px;
     font-weight: 700;
-    color: ${themeGet('colors.menu', '#2b7b2f')};
+    color: ${themeGet('colors.menu', '#2c2e35')};
     margin-bottom: 24px;
     letter-spacing: -1px;
     margin-top: 0;
