@@ -3,7 +3,7 @@ import Iframe from 'react-iframe';
 import Zoom from 'react-reveal/Zoom';
 import Text from '../Text';
 import Link from '../Link';
-import Button from '../Button';
+
 import Heading from '../Heading';
 
 import Container from '../UI/ContainerTwo';
@@ -32,9 +32,6 @@ const Banner = () => {
                     content="Welcome to that space. Explore our resources  dedicated to you becoming — well."
                   />
 
-                  <Link href="/bpage/about" passHref>
-                    <Button title="BEGIN" />
-                  </Link>
                   <Heading as="h3" content="" />
 
                   <Text className="banner-caption" content="" />
