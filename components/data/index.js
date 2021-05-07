@@ -326,7 +326,7 @@ export const data = {
         {
           id: 5,
           title: 'Blog',
-          link: '/blog/tags/stories',
+          link: '/stories',
         },
       ],
     },
@@ -369,17 +369,17 @@ export const data = {
         {
           id: 1,
           title: 'Say Hello',
-          link: 'blog/bpage/connect',
+          link: 'blog/bpage/contact',
         },
         {
           id: 2,
           title: 'Instagram',
-          link: '/https://instagram.com/undrblly',
+          link: 'https://instagram.com/undrblly',
         },
         {
           id: 3,
           title: 'Bookshop',
-          link: 'https://bookshop/wild-and-precious',
+          link: 'https://bookshop.org/shop/underbelli',
         },
         {
           id: 4,
@@ -405,7 +405,7 @@ export const data = {
         {
           id: 2,
           title: 'Connect',
-          link: 'blog/pbage/connect',
+          link: 'blog/pbage/contact',
         },
         {
           id: 3,

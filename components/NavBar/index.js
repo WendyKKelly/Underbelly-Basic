@@ -78,7 +78,7 @@ const NavBar = () => {
             </li>
             <li>
               <Link href="/blog/bpage/contact" replace>
-                <a> Contact </a>
+                <a> Connect</a>
               </Link>
             </li>
             <li>
