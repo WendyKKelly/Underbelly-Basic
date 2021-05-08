@@ -37,7 +37,7 @@ export const ContentWrapper = styled.div`
     }
     @media only screen and (max-width: 480px) {
       min-height: 60vh;
-      height: 80vh;
+      height: 60vh;
       border-radius: 0%;
     }
   }
@@ -101,7 +101,7 @@ export const BannerContent = styled.div`
       margin-right: 1rem;
     }
     @media only screen and (max-width: 768px) {
-      font-size: 4rem;
+      font-size: 3.5rem;
       color: #2c2e35;
       background-color: rgba(255, 255, 255, 0.5);
       margin-left: 1rem;
@@ -204,6 +204,7 @@ export const Subscribe = styled.div`
       margin-left: 0rem;
     }
     @media only screen and (max-width: 768px) {
+      display: none;
       font-size: 2.3rem;
       color: #fff;
       margin-top: 4rem;

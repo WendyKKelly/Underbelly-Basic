@@ -9,24 +9,60 @@ import { BreatheCircle3 } from '../BreatheCircle3';
 import { BreatheCircle4 } from '../BreatheCircle4';
 import { BreatheCircle5 } from '../BreatheCircle5';
 import { BreatheCircle6 } from '../BreatheCircle6';
-const Section = styled.div`
+const Section = styled.section``;
 
-    background: #fff;
-    
-   
-    height: 50vh;
-   
-    
-  
+export const ContentWrapper = styled.div`
+  .wrap {
+    background-size: 100%;
+
+    min-height: 50vh;
+    display: flex;
+
+    @media only screen and (max-width: 1440px) {
+      min-height: auto;
+
+      padding-bottom: 1rem;
+      background-size: 100%;
+      padding-top: 1rem;
+    }
+    @media only screen and (max-width: 1024px) {
+      background-size: 100%;
+      padding-top: 5rem;
+      padding-left: 0rem;
+      padding-right: 0rem;
+      flex-direction: column;
+      background-position: top center;
+      min-height: auto;
+    }
+    @media only screen and (max-width: 999px) {
+      background-size: 100%;
+      padding-top: 5rem;
+
+      padding-left: 0rem;
+      padding-right: 0rem;
+      flex-direction: column;
+      background-position: top center;
+      padding-bottom: 0rem;
+      min-height: auto;
+    }
+  }
+`;
+export const Watch = styled.div`
+  .watch {
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    justify-content: center;
+  }
   .watch-face {
     height: 125px;
     width: 125px;
-    background-position: top right; 
-    
-    ${BreathePulse};
 
+    display: flex;
+
+    ${BreathePulse};
   }
-  
+
   .circle {
     height: 125px;
     width: 125px;
@@ -35,42 +71,41 @@ const Section = styled.div`
     mix-blend-mode: screen;
 
     ${BreatheWatch};
-    
   }
-  
+
   .circle:nth-child(odd) {
     background: #61bea2;
   }
-  
+
   .circle:nth-child(even) {
     background: #529ca0;
   }
-  
+
   .circle:nth-child(1) {
     ${BreatheCircle1};
   }
-  
+
   .circle:nth-child(2) {
     ${BreatheCircle2};
   }
-  
+
   .circle:nth-child(3) {
     ${BreatheCircle3};
   }
-  
+
   .circle:nth-child(4) {
     ${BreatheCircle4};
   }
-  
+
   .circle:nth-child(5) {
     ${BreatheCircle5};
   }
-  
+
   .circle:nth-child(6) {
     ${BreatheCircle6};
   }
-
-
+`;
+export const BannerContent = styled.div`
 .intro {
    
     font-family: Helvetica Neue;
@@ -78,10 +113,10 @@ const Section = styled.div`
     line-height: 70px;
     font-weight: 700;
     color: ${themeGet('colors.menu', '#2c2e35')};
-    margin-bottom: 24px;
+    padding-bottom 1rem;
     letter-spacing: -1px;
     margin-top: 5rem;;
-    text-align: left;
+    text-align: center;
     
     @media only screen and (max-width: 1440px) {
       font-size: 4rem;
@@ -162,18 +197,18 @@ const Section = styled.div`
    
     @media screen and (max-width: 1600px) {
         border-radius: 0%; 
-        flex-
+        
 }    
     @media screen and (max-width: 1440px) {
         border-radius: 0%; 
 }
 @media screen and (max-width: 999px) {
     border-radius: 0%; 
-    flex: 
+    
 }
 @media screen and (max-width: 768px) {
     border-radius: 0%; 
-    flex: 
+    
 }
 }
 
@@ -266,5 +301,6 @@ input[type="submit" i]:hover {
 .link {
     font-family: 'Helvetica Neue';
 }
-;`;
+`;
+
 export default Section;

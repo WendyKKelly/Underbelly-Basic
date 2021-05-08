@@ -12,7 +12,7 @@ const pulse = keyframes`
   `;
 
 const BreathePulse = css`
-  animation: ${pulse} 4s cubic-bezier(0.5, 0, 0.5, 1) alternate infinite;
+  animation: ${pulse} 4s ease-in alternate infinite;
 `;
 
 export { BreathePulse };

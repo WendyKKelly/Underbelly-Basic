@@ -27,7 +27,6 @@ export const ContentWrapper = styled.div`
       padding-right: 0rem;
       flex-direction: column;
       background-position: top center;
-      min-height: auto;
     }
     @media only screen and (max-width: 999px) {
       background-size: 100%;
