@@ -243,7 +243,7 @@ export const BannerContent = styled.div`
               font-size: 1.7rem;
             }
             @media only screen and (max-width: 1024px) {
-               
+               padding: 2rem;
               line-height: 2rem;
             }
             @media only screen and (max-width: 768px) {
@@ -253,6 +253,7 @@ export const BannerContent = styled.div`
               font-size: 4rem;
             }
             @media only screen and (max-width: 480px) {
+                padding-top: 3rem;
                margin-bottom: 1rem; 
               font-size: 4rem;
             }
