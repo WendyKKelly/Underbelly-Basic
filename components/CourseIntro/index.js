@@ -23,10 +23,19 @@ const CourseIntro = () => {
                 "
               />
 
-              <Link href="blog/bpage/courses" passHref>
+              <Link href="/wild-and-precious" passHref>
                 <a>
                   <div className="wp">
-                    <span className="w">Let's Do This!</span>
+                    <span className="w">Let's </span>
+                    <span
+                      style={{
+                        fontFamily: 'Playfair Display',
+                        fontWeight: '900',
+                        fontSize: '4rem',
+                      }}
+                    >
+                      Do This!
+                    </span>
                   </div>
                 </a>
               </Link>
