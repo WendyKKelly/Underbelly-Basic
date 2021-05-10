@@ -52,7 +52,7 @@ export const Watch = styled.div`
     color: transparent;
     position: absolute;
     top: 28%;
-    left: 50%;
+    left: 15%;
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -64,9 +64,11 @@ export const Watch = styled.div`
     }
     @media only screen and (max-width: 768px) {
       top: 15%;
+      left: 50%;
     }
     @media only screen and (max-width: 480px) {
       top: 15%;
+      left: 50%;
     }
   }
 `;
