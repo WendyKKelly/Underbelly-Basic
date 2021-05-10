@@ -2,13 +2,7 @@ import styled from 'styled-components';
 import { themeGet } from '@styled-system/theme-get';
 
 import { BreathePulse } from '../BreathePulse';
-import { BreatheWatch } from '../BreathWatch';
-import { BreatheCircle1 } from '../BreatheCircle1';
-import { BreatheCircle2 } from '../BreatheCircle2';
-import { BreatheCircle3 } from '../BreatheCircle3';
-import { BreatheCircle4 } from '../BreatheCircle4';
-import { BreatheCircle5 } from '../BreatheCircle5';
-import { BreatheCircle6 } from '../BreatheCircle6';
+
 const Section = styled.section``;
 
 export const ContentWrapper = styled.div`
@@ -55,54 +49,25 @@ export const Watch = styled.div`
     justify-content: center;
   }
   .watch-face {
-    height: 125px;
-    width: 125px;
-
-    display: flex;
-
-    ${BreathePulse};
-  }
-
-  .circle {
-    height: 125px;
-    width: 125px;
-    border-radius: 50%;
+    color: transparent;
     position: absolute;
-    mix-blend-mode: screen;
-
-    ${BreatheWatch};
-  }
-
-  .circle:nth-child(odd) {
-    background: #61bea2;
-  }
-
-  .circle:nth-child(even) {
-    background: #529ca0;
-  }
-
-  .circle:nth-child(1) {
-    ${BreatheCircle1};
-  }
-
-  .circle:nth-child(2) {
-    ${BreatheCircle2};
-  }
-
-  .circle:nth-child(3) {
-    ${BreatheCircle3};
-  }
-
-  .circle:nth-child(4) {
-    ${BreatheCircle4};
-  }
-
-  .circle:nth-child(5) {
-    ${BreatheCircle5};
-  }
-
-  .circle:nth-child(6) {
-    ${BreatheCircle6};
+    top: 28%;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: rgba(188, 237, 243, 0.889);
+    ${BreathePulse};
+    @media only screen and (max-width: 1440px) {
+      top: 15%;
+      left: 15%;
+    }
+    @media only screen and (max-width: 768px) {
+      top: 15%;
+    }
+    @media only screen and (max-width: 480px) {
+      top: 15%;
+    }
   }
 `;
 export const BannerContent = styled.div`
