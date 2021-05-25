@@ -43,7 +43,10 @@ export default function TagPage(tagData) {
                 {tagData.posts.map((post) => (
                   <li>
                     <div className="border">
-                      <Link href="/posts/[slug]" as={`/posts/${post.slug}`}>
+                      <Link
+                        href="/posts/[slug]"
+                        as={`/blog/posts/${post.slug}`}
+                      >
                         <div className="mx-10">
                           <h3 className="font-medium text-indigo-900">
                             {post.title}
