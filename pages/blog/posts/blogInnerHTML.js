@@ -97,7 +97,7 @@ const Section = styled.section`
     font-size: 1.5rem;
     color: #2b7b2f;
     @media only screen and (max-width: 999px) {
-      font-size: 0.7rem;
+      font-size: 2rem;
     }
   }
   a {
