@@ -410,7 +410,7 @@ export const data = {
         {
           id: 3,
           title: 'Patreon',
-          link: 'https://www.patreon.com/underbellyproject',
+          link: 'https://www.patreon.com/wildandprecious',
         },
         {
           id: 4,
