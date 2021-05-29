@@ -35,7 +35,7 @@ export const data = {
       image: news1,
       title: '',
       desc:
-        'Curious about your emotional wellness? Assessments are a great way to learn more about yourself, what makes you tick, and how you can best take good care of your beautiful self.',
+        'Curious abou your emotional wellness? Assessments are a great way to learn more about yourself, what makes you tick, and how you can best take good care of your beautiful self.',
       link: '#',
     },
     {
