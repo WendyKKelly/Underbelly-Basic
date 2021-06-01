@@ -9,7 +9,7 @@ import {
 } from '../../../components/AgencyDigital/agencyDigital.style';
 
 import Head from 'next/head';
-import CourseIntro from '../../components/CourseIntro';
+import CourseIntro from '../../../components/CourseIntro';
 import Footer from '../../../components/Footer';
 import { ThemeProvider } from 'styled-components';
 import { theme } from '../../../styles/theme/agencyDigital';
