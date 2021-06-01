@@ -16,7 +16,7 @@ import Service from '../components/Service';
 
 import Footer from '../components/Footer';
 
-export default function Home() {
+export default function Wild() {
   return (
     <ThemeProvider theme={theme}>
       <Fragment>
