@@ -21,22 +21,17 @@ export const ContentWrapper = styled.div`
       background-size: 59%;
     }
     @media only screen and (max-width: 1024px) {
-      background-size: 100%;
       padding-left: 0rem;
       padding-right: 0rem;
       flex-direction: column;
       background-position: top center;
-      min-height: auto;
     }
     @media only screen and (max-width: 999px) {
-      background-size: 100%;
-
       padding-left: 0rem;
       padding-right: 0rem;
       flex-direction: column;
       background-position: top center;
       padding-bottom: 0rem;
-      min-height: auto;
     }
   }
 `;
