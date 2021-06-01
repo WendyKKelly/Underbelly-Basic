@@ -9,7 +9,7 @@ import {
 } from '../../../components/AgencyDigital/agencyDigital.style';
 
 import Head from 'next/head';
-import CourseIntro from '../../../components/CourseIntro';
+import CourseIntro2 from '../../../components/CourseIntro2';
 import Footer from '../../../components/Footer';
 import { ThemeProvider } from 'styled-components';
 import { theme } from '../../../styles/theme/agencyDigital';
@@ -60,7 +60,7 @@ export default function PostPage({ post }) {
               <div dangerouslySetInnerHTML={{ __html: post.html }} />
             </div>
           </Section>
-          <CourseIntro />
+          <CourseIntro2 />
           <Footer />
         </ContentWrapper>
       </ThemeProvider>
