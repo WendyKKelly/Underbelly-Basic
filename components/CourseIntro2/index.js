@@ -23,7 +23,10 @@ const CourseIntro2 = () => {
                 "
               />
 
-              <Link href="/self-care-first-aid" passHref>
+              <Link
+                href="https://underbel.li/blog/bpage/self-care-first-aid"
+                passHref
+              >
                 <a>
                   <div className="wp">
                     <span className="w">Let's </span>
