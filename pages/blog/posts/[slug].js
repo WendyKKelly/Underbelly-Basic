@@ -56,7 +56,7 @@ export default function PostPage({ post }) {
                   </div>
                 </div>
               </div>
-              <img className="image" src={post.feature_image} />
+
               <div dangerouslySetInnerHTML={{ __html: post.html }} />
             </div>
           </Section>
