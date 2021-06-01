@@ -15,18 +15,19 @@ export const ContentWrapper = styled.div`
     display: flex;
 
     @media only screen and (max-width: 1440px) {
-      min-height: auto;
       padding-top: 1rem;
       padding-bottom: 1rem;
       background-size: 59%;
     }
     @media only screen and (max-width: 1024px) {
+      padding-top: 0rem;
       padding-left: 0rem;
       padding-right: 0rem;
       flex-direction: column;
       background-position: top center;
     }
     @media only screen and (max-width: 999px) {
+      padding-top: 0rem;
       padding-left: 0rem;
       padding-right: 0rem;
       flex-direction: column;
