@@ -55,31 +55,28 @@ export const BannerContent = styled.div`
     padding-bottom: 2rem;
   }
   @media only screen and (max-width: 1024px) {
-    padding-top: 40rem;
-    padding-bottom: 2rem;
+    
     max-width: 60%;
     background: cover;
   }
   @media only screen and (max-width: 999px) {
     max-width: 100%;
-    padding-top: 23rem;
-    padding-bottom: 30px;
+   
     margin-top: 15rem;
     flex-direction: column;
     background-position: bottom center;
   }
   @media only screen and (max-width: 768px) {
     max-width: 100%;
-    padding-top: 23rem;
-    padding-bottom: 30px;
-    margin-top: 8rem;
+   
+   
     flex-direction: column;
     background-position: bottom center;
   }
   @media only screen and (max-width: 480px) {
     width: 100%;
     margin-top: 2.5rem;
-    padding-top: 15rem;
+   
     padding-bottom: 5px;
   }
   .head {
