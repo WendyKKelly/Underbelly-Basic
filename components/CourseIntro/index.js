@@ -19,7 +19,7 @@ const CourseIntro = () => {
 
               <Text
                 className="banner-caption"
-                content="Meet yourself where you are. After a free course in self care, you'll have a tool kit designed around the best care and feeding of you. With daily practice, you become stronger, more flexible, ready for whatever comes at you in this wild and precious life. 
+                content="Meet yourself where you are. After a short course in self care, you'll have a tool kit designed around the best care and feeding of you. With daily practice, you become stronger, more flexible, ready for whatever comes at you in this wild and precious life. 
                 "
               />
 
