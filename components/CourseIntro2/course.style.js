@@ -24,14 +24,14 @@ export const ContentWrapper = styled.div`
       padding-left: 0rem;
       padding-right: 0rem;
       flex-direction: column;
-      background-position: top center;
+      min-height: 1vh;
     }
     @media only screen and (max-width: 999px) {
       padding-top: 0rem;
       padding-left: 0rem;
       padding-right: 0rem;
       flex-direction: column;
-      background-position: top center;
+      min-height: 1vh;
       padding-bottom: 0rem;
     }
   }
