@@ -13,7 +13,7 @@ const CourseIntro2 = () => {
     <Section>
       <Container>
         <ContentWrapper>
-          <div className="me">
+          <div>
             <BannerContent>
               <Heading className="head" as="h1" content="Just Start —" />
 
