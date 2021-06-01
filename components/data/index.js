@@ -101,7 +101,7 @@ export const data = {
       icon: serviceIcon5,
       title: 'Self Care Kit',
       desc:
-        'Free short course based in the latest research around burnout and self care. You will learn your special care and feed to create your own self care kit, so you will be ready the next time life gets gnarly. $0',
+        'Short course based in the latest research around burnout and self care. You will learn your special care and feed to create your own self care kit, so you will be ready the next time life gets gnarly. $14.99',
       link: 'https://wildprecious.thinkific.com/courses/self-care-kit',
     },
     {

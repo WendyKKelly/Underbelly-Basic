@@ -93,8 +93,8 @@ const Section = styled.section`
     color: #82733b;
   }
   h2 {
-    font-family: 'Sometimes Times BETA';
-    font-size: 2.5rem;
+    font-family: 'Helvetica Neue';
+    font-size: 3rem;
     color: #2c2e35;
     @media only screen and (max-width: 999px) {
       font-size: 2rem;
