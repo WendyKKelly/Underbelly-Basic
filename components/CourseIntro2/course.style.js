@@ -6,13 +6,12 @@ const Section = styled.section``;
 
 export const ContentWrapper = styled.div`
   .me {
-    background-image: url(${illustration});
     background-color: transparent;
     background-size: 60%;
     background-position: right center;
     background-repeat: no-repeat;
 
-    min-height: 70vh;
+    min-height: 5vh;
     display: flex;
 
     @media only screen and (max-width: 1440px) {
