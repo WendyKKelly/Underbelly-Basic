@@ -18,7 +18,7 @@ export default function SelfCare() {
     <ThemeProvider theme={theme}>
       <Fragment>
         <Head>
-          <title>Underbelly Project</title>
+          <title>Underbelly</title>
           <meta name="theme-color" content="#FF825C" />
           <meta name="Description" content="Underbelly project" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
