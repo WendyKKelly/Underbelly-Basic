@@ -11,7 +11,7 @@ const Newsletter = () => {
     <Section>
       <Container>
         <ContentWrapper>
-          <div className="wrap">
+          <div className="wraps">
             <Watch>
               <div className="watch">
                 <div className="watch-face">

@@ -6,7 +6,7 @@ import { BreathePulse } from '../BreathePulse';
 const Section = styled.section``;
 
 export const ContentWrapper = styled.div`
-  .wrap {
+  .wraps {
     background-size: 100%;
 
     min-height: 50vh;
