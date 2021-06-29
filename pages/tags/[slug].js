@@ -1,18 +1,18 @@
-import { getTags, getSingleTag, getPostsByTag } from '../../../api/ghost_data';
+import { getTags, getSingleTag, getPostsByTag } from '../../api/ghost_data';
 import Link from 'next/link';
-import { DrawerProvider } from '../../../components/DrawerContext';
+import { DrawerProvider } from '../../components/DrawerContext';
 import Section from './tag.style';
 import Sticky from 'react-stickynode';
-import NavBar from '../../../components/NavBar';
+import NavBar from '../../components/NavBar';
 import {
   GlobalStyle,
   ContentWrapper,
-} from '../../../components/AgencyDigital/agencyDigital.style';
+} from '../../components/AgencyDigital/agencyDigital.style';
 
 import Head from 'next/head';
-import Footer from '../../../components/Footer';
+import Footer from '../../components/Footer';
 import { ThemeProvider } from 'styled-components';
-import { theme } from '../../../styles/theme/agencyDigital';
+import { theme } from '../../styles/theme/agencyDigital';
 
 export default function TagPage(tagData) {
   let _title = tagData.tag.name + ' - My blog';
