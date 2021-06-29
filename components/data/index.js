@@ -35,7 +35,7 @@ export const data = {
       image: news1,
       title: '',
       desc:
-        'Curious abou your emotional wellness? Assessments are a great way to learn more about yourself, what makes you tick, and how you can best take good care of your beautiful self.',
+        'Curious about your emotional wellness? Assessments are a great way to learn more about yourself, what makes you tick, and how you can best take good care of your beautiful self.',
       link: '#',
     },
     {
@@ -86,7 +86,7 @@ export const data = {
       title: 'Podcast',
       desc:
         'Wild + Precious Conversations every Thursday with guests who meander and muse with me on the current weekly theme.',
-      link: '/bpage/wild-and-precious-conversations',
+      link: '/wild-and-precious-conversations',
     },
     {
       id: 4,
@@ -306,17 +306,17 @@ export const data = {
         {
           id: 1,
           title: 'About',
-          link: '/blog/bpage/about',
+          link: '/about',
         },
         {
           id: 2,
           title: 'Breathe Manifesto',
-          link: '/blog/bpage/breathe',
+          link: '/breathe',
         },
         {
           id: 3,
           title: 'Client Work',
-          link: '/blog/bpage/client-work',
+          link: '/client-work',
         },
         {
           id: 4,
@@ -342,12 +342,12 @@ export const data = {
         {
           id: 2,
           title: 'Podcast',
-          link: 'blog/tags/podcast',
+          link: '/tags/podcast',
         },
         {
           id: 3,
           title: 'Courses',
-          link: 'blog/bpage/courses',
+          link: '/courses',
         },
         {
           id: 4,
@@ -357,7 +357,7 @@ export const data = {
         {
           id: 5,
           title: 'Blog',
-          link: 'blog/tags/precious',
+          link: '/tags/precious',
         },
       ],
     },
@@ -369,7 +369,7 @@ export const data = {
         {
           id: 1,
           title: 'Say Hello',
-          link: 'blog/bpage/contact',
+          link: '/contact',
         },
         {
           id: 2,
@@ -400,12 +400,12 @@ export const data = {
         {
           id: 1,
           title: 'Share',
-          link: 'blog/bpage/how-to-share',
+          link: '/how-to-share',
         },
         {
           id: 2,
           title: 'Connect',
-          link: 'blog/pbage/contact',
+          link: '/contact',
         },
         {
           id: 3,
@@ -415,12 +415,12 @@ export const data = {
         {
           id: 4,
           title: 'Rate/Review/Subscribe',
-          link: 'blog/bpage/rate-review-subscribe',
+          link: '/rate-review-subscribe',
         },
         {
           id: 5,
           title: '',
-          link: 'blog/bpage/membership',
+          link: '/membership',
         },
       ],
     },
@@ -431,7 +431,7 @@ export const data = {
         {
           id: 1,
           title: 'Privacy',
-          link: 'blog/bpage/privacy',
+          link: '/privacy',
         },
       ],
     },
