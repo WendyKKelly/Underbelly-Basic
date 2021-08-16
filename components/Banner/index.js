@@ -21,7 +21,7 @@ const Banner = () => {
           <ContentWrapper>
             <div className="image">
               <BannerContent>
-                <Heading as="h1" content="Flourish With Me" />
+                <Heading as="h1" content="Flourish." />
                 <Heading as="h2" content="" />
                 <Subscribe>
                   <Heading as="h2" content="" />

@@ -30,15 +30,10 @@ export const ContentWrapper = styled.div`
       border-radius: 0%;
     }
     @media only screen and (max-width: 768px) {
-      max-width: 100%;
-      min-height: 80vh;
-      height: 80vh;
-      border-radius: 0%;
+      display: none;
     }
     @media only screen and (max-width: 480px) {
-      min-height: 60vh;
-      height: 60vh;
-      border-radius: 0%;
+      display: none;
     }
   }
 `;
@@ -48,14 +43,14 @@ export const Illustration = styled.div``;
 export const BannerContent = styled.div`
   max-width: 100%;
   width: 100%;
-  padding-top: 100px;
+  padding-top: 400px;
   padding-bottom: 150px;
   z-index: 5;
   @media only screen and (max-width: 1600px) {
     max-width: 100%;
   }
   @media only screen and (max-width: 1400px) {
-    padding-top: 60px;
+    padding-top: 400px;
     padding-bottom: 100px;
   }
   @media only screen and (max-width: 1024px) {
@@ -68,7 +63,6 @@ export const BannerContent = styled.div`
   }
   @media only screen and (max-width: 480px) {
     padding-top: 3rem;
-    padding-bottom: 80px;
   }
 
   h1 {
