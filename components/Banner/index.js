@@ -24,10 +24,7 @@ const Banner = () => {
                 <Heading as="h1" content="Flourish With Me" />
                 <Heading as="h2" content="" />
                 <Subscribe>
-                  <Heading
-                    as="h2"
-                    content="Welcome to Your Safe Space to Flourish and Grow."
-                  />
+                  <Heading as="h2" content="" />
 
                   <Heading as="h3" content="" />
 
