@@ -21,10 +21,7 @@ const Banner = () => {
           <ContentWrapper>
             <div className="image">
               <BannerContent>
-                <Heading
-                  as="h1"
-                  content="Fourishing (not Floundering) Requires Proper Care and Feeding"
-                />
+                <Heading as="h1" content="Flourish With Me" />
                 <Heading as="h2" content="" />
                 <Subscribe>
                   <Heading
