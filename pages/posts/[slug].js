@@ -21,8 +21,14 @@ export default function PostPage({ post }) {
       <ThemeProvider theme={theme}>
         <Head>
           <title>The Underbelly</title>
-          <meta name="theme-color" content="#2c2e35" />
+
           <meta name="Description" content="Underbelly project" />
+          <link
+            rel="stylesheet"
+            type="text/css"
+            media="screen"
+            href="./blogInnerHTML.js?<?php echo time(); ?>"
+          />
         </Head>
 
         <GlobalStyle />
