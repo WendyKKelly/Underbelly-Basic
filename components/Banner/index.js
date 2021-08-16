@@ -23,13 +23,13 @@ const Banner = () => {
               <BannerContent>
                 <Heading
                   as="h1"
-                  content="Becoming who you are — well — needs a safe space "
+                  content="Fourishing (not Floundering) Requires Proper Care and Feeding"
                 />
                 <Heading as="h2" content="" />
                 <Subscribe>
                   <Heading
                     as="h2"
-                    content="Welcome to that space. Explore our resources  dedicated to you becoming — well."
+                    content="Welcome to Your Safe Space to Flourish and Grow."
                   />
 
                   <Heading as="h3" content="" />
