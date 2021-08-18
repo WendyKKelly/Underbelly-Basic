@@ -163,7 +163,7 @@ export const BannerContent = styled.div`
         }
   }
   .banner-caption {
-      
+    font-family: Helvetica Neue;  
     color: ${themeGet('colors.paragraph', '#2c2e35')};
     font-size: 2rem;
     line-height: 33px;
