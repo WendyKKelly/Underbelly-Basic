@@ -68,7 +68,10 @@ export const BannerContent = styled.div`
     z-index: -2;
   }
   @media only screen and (max-width: 480px) {
-    padding-top: 3rem;
+    padding-top: 12.3rem;
+    margin-left: 0.7rem;
+
+    line-height: 1.5rem;
   }
 
   h1 {
@@ -76,9 +79,9 @@ export const BannerContent = styled.div`
     font-size: 4rem;
     line-height: 60px;
     font-weight: 900;
-    margin-left: 13rem;
+    margin-left: 8rem;
     margin-top: 0rem;
-    margin-right: 27rem;
+    margin-right: 50rem;
     color: ${themeGet('colors.menu', '#2c2e35')};
     margin-bottom: 24px;
     letter-spacing: 1.5px;
@@ -98,24 +101,23 @@ export const BannerContent = styled.div`
       margin-bottom: 20px;
       margin-left: 0rem;
       text-align: left;
-      margin-right: 1rem;
     }
     @media only screen and (max-width: 768px) {
       font-size: 3.5rem;
       color: #2c2e35;
-      background-color: rgba(255, 255, 255, 0.5);
+
       margin-left: 1rem;
       margin-bottom: 0.3rem;
       text-align: left;
     }
     @media only screen and (max-width: 480px) {
-      font-size: 2rem;
+      font-size: 3.4rem;
       color: #2c2e35;
-      line-height: 1.6rem;
-      margin-left: 0rem;
+      line-height: 2.8rem;
+
       margin-bottom: 0.3rem;
-      margin-right: 1rem;
-      text-align: right;
+
+      text-align: left;
     }
   }
 `;

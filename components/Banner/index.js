@@ -19,18 +19,20 @@ const Banner = () => {
       <Container>
         <Zoom>
           <ContentWrapper>
-            <div className="image">
-              <BannerContent>
-                <Heading as="h1" content="Flourish." />
-                <Heading as="h2" content="" />
-                <Subscribe>
+            <div className="wrap">
+              <div className="image">
+                <BannerContent>
+                  <Heading as="h1" content="Flourishing Yet?" />
                   <Heading as="h2" content="" />
+                  <Subscribe>
+                    <Heading as="h2" content="" />
 
-                  <Heading as="h3" content="" />
+                    <Heading as="h3" content="" />
 
-                  <Text className="banner-caption" content="" />
-                </Subscribe>
-              </BannerContent>
+                    <Text className="banner-caption" content="" />
+                  </Subscribe>
+                </BannerContent>
+              </div>
             </div>
           </ContentWrapper>
         </Zoom>
