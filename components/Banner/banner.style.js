@@ -7,6 +7,9 @@ import { AnimSpinner } from '../Animation';
 const Section = styled.section``;
 
 export const ContentWrapper = styled.div`
+  .wrap {
+    max-width: 100%;
+  }
   .image {
     background-image: url(${illustration});
     background-size: cover;
@@ -14,7 +17,7 @@ export const ContentWrapper = styled.div`
     background-repeat: no-repeat;
     min-height: 70vh;
     border-radius: 0% 70% 0% 50% / 0% 50% 0% 70%;
-    z-index: -9;
+    z-index: 1;
 
     @media only screen and (max-width: 1600px) {
       max-width: 100%;
@@ -30,10 +33,12 @@ export const ContentWrapper = styled.div`
       border-radius: 0%;
     }
     @media only screen and (max-width: 768px) {
-      display: none;
+      margin: -11.875% 0 -11% -1%;
+      display: block;
+      position: relative;
     }
     @media only screen and (max-width: 480px) {
-      display: none;
+      display: block;
     }
   }
 `;
@@ -58,8 +63,9 @@ export const BannerContent = styled.div`
   }
   @media only screen and (max-width: 999px) {
     max-width: 100%;
-    padding-top: 3px;
+    padding-top: 300px;
     padding-bottom: 80px;
+    z-index: -2;
   }
   @media only screen and (max-width: 480px) {
     padding-top: 3rem;
@@ -91,7 +97,7 @@ export const BannerContent = styled.div`
 
       margin-bottom: 20px;
       margin-left: 0rem;
-      text-align: right;
+      text-align: left;
       margin-right: 1rem;
     }
     @media only screen and (max-width: 768px) {
@@ -100,7 +106,7 @@ export const BannerContent = styled.div`
       background-color: rgba(255, 255, 255, 0.5);
       margin-left: 1rem;
       margin-bottom: 0.3rem;
-      text-align: right;
+      text-align: left;
     }
     @media only screen and (max-width: 480px) {
       font-size: 2rem;
