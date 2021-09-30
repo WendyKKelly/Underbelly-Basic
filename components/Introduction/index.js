@@ -16,7 +16,7 @@ const Introduction = () => {
           <Zoom>
             <SectionHeading2
               slogan="Breathe. You're almost home."
-              text="It's time to meet your own underbelly — your deep, authentic vulnerable self. 
+              text="It's time to meet your own underbelly — your one wild and precious self. 
             "
             />
           </Zoom>

@@ -22,12 +22,18 @@ const Banner = () => {
             <div className="wrap">
               <div className="image">
                 <BannerContent>
-                  <Heading as="h1" content="Flourishing Yet?" />
+                  <Heading
+                    as="h1"
+                    content="Make Peace with your wild and precious self"
+                  />
                   <Heading as="h2" content="" />
                   <Subscribe>
                     <Heading as="h2" content="" />
 
-                    <Heading as="h3" content="" />
+                    <Heading
+                      as="h3"
+                      content="so you can live your one Wild and Precious Life"
+                    />
 
                     <Text className="banner-caption" content="" />
                   </Subscribe>

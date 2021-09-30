@@ -81,7 +81,7 @@ export const BannerContent = styled.div`
     font-weight: 900;
     margin-left: 8rem;
     margin-top: 0rem;
-    margin-right: 50rem;
+    margin-right: 5rem;
     color: ${themeGet('colors.menu', '#2c2e35')};
     margin-bottom: 24px;
     letter-spacing: 1.5px;
@@ -176,7 +176,7 @@ export const Subscribe = styled.div`
     font-weight: 900;
     margin-left: 0rem;
     margin-top: 4rem;
-    color: ${themeGet('colors.menu', '#fff')};
+    color: ${themeGet('colors.menu', '#ccc')};
     margin-bottom: 24px;
     letter-spacing: 1.5px;
     @media only screen and (max-width: 1440px) {
@@ -232,13 +232,13 @@ export const Subscribe = styled.div`
     font-weight: 900;
     margin-left: 0rem;
     margin-top: 4rem;
-    color: ${themeGet('colors.menu', '#fff')};
+    color: ${themeGet('colors.menu', '#ec6f48')};
     margin-bottom: 24px;
     letter-spacing: 1.5px;
     @media only screen and (max-width: 1440px) {
       font-size: 2.5rem;
       font-weight: 900;
-      color: #fff;
+      color: #ccc;
       margin-top: 20rem;
       margin-bottom: 5px;
       text-align: center;
@@ -246,7 +246,7 @@ export const Subscribe = styled.div`
     }
     @media only screen and (max-width: 1024px) {
       font-size: 3rem;
-      color: #fff;
+      color: #ccc;
       margin-bottom: 20px;
       line-height: 60px;
       text-align: left;
@@ -263,7 +263,7 @@ export const Subscribe = styled.div`
     }
     @media only screen and (max-width: 768px) {
       font-size: 3rem;
-      color: #fff;
+      color: #ccc;
       margin-top: 0rem;
       margin-bottom: 10rem;
       line-height: 60px;
@@ -272,7 +272,7 @@ export const Subscribe = styled.div`
     }
     @media only screen and (max-width: 480px) {
       font-size: 3rem;
-      color: #fff;
+      color: #ccc;
       margin-top: 0rem;
       margin-bottom: 10rem;
       line-height: 60px;

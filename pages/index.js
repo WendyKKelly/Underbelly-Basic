@@ -14,6 +14,7 @@ import Banner from '../components/Banner';
 import Introduction from '../components/Introduction';
 import Explain from '../components/Explain';
 import Newsletter from '../components/Newsletter';
+import Podcast from '../components/Podcast';
 import CourseIntro from '../components/CourseIntro';
 import Footer from '../components/Footer';
 
@@ -46,7 +47,7 @@ export default function Home() {
           </Sticky>
           <Banner />
           <Newsletter />
-          <Explain />
+          <Podcast />
           <Introduction />
           <CourseIntro />
           <Footer />

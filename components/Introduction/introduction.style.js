@@ -18,7 +18,7 @@ const Section = styled.div`
     font-family: 'Helvetica Neue';
     font-size: 5rem;
     font-weight: 700;
-    color: #2b7b2f;
+    color: #ec6f48;
     padding-top: 5rem;
     padding-bottom: 5rem;
     text-align: left;
