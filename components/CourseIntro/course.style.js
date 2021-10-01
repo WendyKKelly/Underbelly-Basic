@@ -17,7 +17,7 @@ export const ContentWrapper = styled.div`
 
     @media only screen and (max-width: 1440px) {
       min-height: auto;
-      padding-top: 1rem;
+      padding-top: 1.1rem;
       padding-bottom: 1rem;
       background-size: 59%;
     }
@@ -165,6 +165,7 @@ export const BannerContent = styled.div`
   }
   .banner-caption {
       
+    font-family: Helvetica Neue;
     color: ${themeGet('colors.paragraph', '#2c2e35')};
     font-size: 2rem;
     line-height: 33px;
@@ -236,7 +237,7 @@ export const BannerContent = styled.div`
         }
     
         .p {
-            font-family: Playfair Display; 
+            font-family: Helvetica Neue; 
             font-weight: 900;
              font-size: 4rem;
             @media only screen and (max-width: 1440px) {
