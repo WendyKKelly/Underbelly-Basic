@@ -13,34 +13,21 @@ const CourseIntro = () => {
     <Section>
       <Container>
         <ContentWrapper>
-          <div className="me">
-            <BannerContent>
-              <Heading className="head" as="h1" content="Just Start —" />
+          <Link href="/courses" replace>
+            <a>
+              <div className="me">
+                <BannerContent>
+                  <Heading className="head" as="h1" content="Just Start —" />
 
-              <Text
-                className="banner-caption"
-                content="Meet yourself where you are. After a short course in self care, you'll have a tool kit designed around the best care and feeding of you. With daily practice, you become stronger, more flexible, ready for whatever comes at you in this wild and precious life. 
+                  <Text
+                    className="banner-caption"
+                    content="Meet yourself where you are. After a short course in self care, you'll have a tool kit designed around the best care and feeding of you. With daily practice, you become stronger, more flexible, ready for whatever comes at you in this wild and precious life. 
                 "
-              />
-
-              <Link href="/wild-and-precious" passHref>
-                <a>
-                  <div className="wp">
-                    <span className="w">Let's </span>
-                    <span
-                      style={{
-                        fontFamily: 'Playfair Display',
-                        fontWeight: '900',
-                        fontSize: '4rem',
-                      }}
-                    >
-                      Do This!
-                    </span>
-                  </div>
-                </a>
-              </Link>
-            </BannerContent>
-          </div>
+                  />
+                </BannerContent>
+              </div>
+            </a>
+          </Link>
         </ContentWrapper>
       </Container>
     </Section>

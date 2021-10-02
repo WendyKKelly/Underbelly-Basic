@@ -5,6 +5,15 @@ import illustration from '../../public/image/course.jpg';
 const Section = styled.section``;
 
 export const ContentWrapper = styled.div`
+a {
+  color: ${themeGet('colors.menu', '#2c2e35')};
+  font-family: 'Helvetica Neue';
+  
+  font-weight: 900;
+  transition: all 0.3s ease;
+  &:hover {
+    color: ${themeGet('colors.menu', '#ec6f48')};
+  }
   .me {
     background-image: url(${illustration});
     background-color: transparent;

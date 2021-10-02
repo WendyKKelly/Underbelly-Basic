@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'matauro';
+  src: url('fonts/matauro.eot');
+  src: url('fonts/matauro.eot') format('embedded-opentype'),
+    url('fonts/matauro.woff2') format('woff2'),
+    url('fonts/matauro.woff') format('woff'),
+    url('fonts/matauro.ttf') format('truetype'),
+    url('fonts/matauro.svg#matauro') format('svg');
+}

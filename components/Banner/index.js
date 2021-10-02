@@ -24,7 +24,7 @@ const Banner = () => {
                 <BannerContent>
                   <Heading
                     as="h1"
-                    content="Make Peace with your wild and precious self"
+                    content="Make peace with your wild and precious self"
                   />
                   <Heading as="h2" content="" />
                   <Subscribe>
@@ -32,7 +32,7 @@ const Banner = () => {
 
                     <Heading
                       as="h3"
-                      content="so you can live your one Wild and Precious Life"
+                      content="So you can live your one wild and precious life"
                     />
 
                     <Text className="banner-caption" content="" />

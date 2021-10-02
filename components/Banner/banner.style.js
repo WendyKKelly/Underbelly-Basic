@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { rgba } from 'polished';
 import { themeGet } from '@styled-system/theme-get';
+
 import Image from '../Image';
 import illustration from '../../public/image/banner.jpg';
 import { AnimSpinner } from '../Animation';
@@ -33,9 +34,10 @@ export const ContentWrapper = styled.div`
       border-radius: 0%;
     }
     @media only screen and (max-width: 768px) {
-      margin: -11.875% 0 -11% -1%;
+      min-height: 10vh;
       display: block;
       position: relative;
+      background-image: none;
     }
     @media only screen and (max-width: 480px) {
       display: block;
@@ -63,25 +65,25 @@ export const BannerContent = styled.div`
   }
   @media only screen and (max-width: 999px) {
     max-width: 100%;
-    padding-top: 300px;
-    padding-bottom: 80px;
+
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
     z-index: -2;
   }
   @media only screen and (max-width: 480px) {
-    padding-top: 12.3rem;
     margin-left: 0.7rem;
 
     line-height: 1.5rem;
   }
 
   h1 {
-    font-family: 'Helvetica Neue';
+    font-family: Helvetica Neue;
     font-size: 4rem;
     line-height: 60px;
     font-weight: 900;
     margin-left: 8rem;
     margin-top: 0rem;
-    margin-right: 5rem;
+    margin-right: 30rem;
     color: ${themeGet('colors.menu', '#2c2e35')};
     margin-bottom: 24px;
     letter-spacing: 1.5px;
@@ -107,7 +109,9 @@ export const BannerContent = styled.div`
       color: #2c2e35;
 
       margin-left: 1rem;
+
       margin-bottom: 0.3rem;
+      margin-right: 5rem;
       text-align: left;
     }
     @media only screen and (max-width: 480px) {
@@ -129,6 +133,7 @@ export const Subscribe = styled.div`
   @media only screen and (max-width: 1440px) {
     margin-top: 0rem;
     margin-left: 30rem;
+    
   }
   @media only screen and (max-width: 1024px) {
     margin-left: 2rem;
@@ -170,10 +175,11 @@ export const Subscribe = styled.div`
   }
   
   h2 {
-    font-family: 'Helvetica Neue';
-    font-size: 2.5rem;
+    font-family: Fira Sans;
+                    font-weight: 900; font-size: 4rem;
+    
     line-height: 70px;
-    font-weight: 900;
+    
     margin-left: 0rem;
     margin-top: 4rem;
     color: ${themeGet('colors.menu', '#ccc')};
@@ -226,7 +232,7 @@ export const Subscribe = styled.div`
     }
   }
   h3 {
-    font-family: 'Helvetica Neue';
+    font-family: Playfair;
     font-size: 2.5rem;
     line-height: 70px;
     font-weight: 900;
@@ -238,15 +244,15 @@ export const Subscribe = styled.div`
     @media only screen and (max-width: 1440px) {
       font-size: 2.5rem;
       font-weight: 900;
-      color: #ccc;
+      color: #ec6f48;
       margin-top: 20rem;
       margin-bottom: 5px;
-      text-align: center;
+      text-align: right;
       margin-left: 0rem;
     }
     @media only screen and (max-width: 1024px) {
       font-size: 3rem;
-      color: #ccc;
+      color: #ec6f48;
       margin-bottom: 20px;
       line-height: 60px;
       text-align: left;
@@ -254,30 +260,32 @@ export const Subscribe = styled.div`
     }
     @media only screen and (max-width: 999px) {
       font-size: 3rem;
-      color: #2c2e35;
+      color: #ec6f48;
       margin-bottom: 20px;
       margin-top: 5rem;
       line-height: 60px;
       text-align: left;
       margin-left: 0rem;
+      margin-right: 30rem;
     }
     @media only screen and (max-width: 768px) {
       font-size: 3rem;
-      color: #ccc;
+      color: #ec6f48;
       margin-top: 0rem;
       margin-bottom: 10rem;
       line-height: 60px;
-      text-align: left;
-      margin-left: 0;
+      text-align: right;
+      margin-left: 5rem;
+      margin-right: 1rem;
     }
     @media only screen and (max-width: 480px) {
       font-size: 3rem;
-      color: #ccc;
+      color: #ec6f48;
       margin-top: 0rem;
-      margin-bottom: 10rem;
+      margin-bottom: 1rem;
       line-height: 60px;
-      text-align: left;
-      margin-left: 0;
+      text-align: right;
+      margin-left: 5rem;
     }
   }
     .reusecore__input {

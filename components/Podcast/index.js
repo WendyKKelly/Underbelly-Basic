@@ -10,7 +10,7 @@ const Podcast = () => {
         <ContentWrapper>
           <div className="wraps">
             <BannerContent>
-              <div className="intro">Second Step:</div>
+              <div className="intro">&</div>
               <div className="introsub">
                 <Link href="/wild-and-precious-conversations" replace>
                   <a> Wild + Precious Conversations Podcast. </a>

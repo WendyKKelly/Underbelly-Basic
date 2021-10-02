@@ -7,7 +7,7 @@ export const ContentWrapper = styled.div`
 a {
   color: ${themeGet('colors.menu', '#2c2e35')};
   font-family: 'Helvetica Neue';
-  font-size: 40px;
+  
   font-weight: 900;
   transition: all 0.3s ease;
   &:hover {
@@ -15,6 +15,7 @@ a {
   }
   .wraps {
     background-size: 100%;
+    
 
     min-height: 50vh;
     display: flex;
@@ -53,7 +54,7 @@ export const BannerContent = styled.div`
 .intro {
    
     font-family: Helvetica Neue;
-    font-size: 4rem;
+    font-size: 2rem;
     line-height: 70px;
     font-weight: 700;
     color: ${themeGet('colors.menu', '#2c2e35')};
@@ -115,7 +116,7 @@ export const BannerContent = styled.div`
     @media only screen and (max-width: 768px) {
       font-size: 34px;
       margin-bottom: 0px;
-      text-align: center;
+      text-align: left;
     }
     @media only screen and (max-width: 480px) {
       font-size: 23px;

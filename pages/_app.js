@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import App from 'next/app';
 
 import '../styles/index.css';
+import '../styles/global.css';
 
 function MyApp({ Component, pageProps, router }) {
   return (
