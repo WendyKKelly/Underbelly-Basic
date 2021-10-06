@@ -12,7 +12,7 @@ import { DrawerProvider } from '../components/DrawerContext';
 import NavBar from '../components/NavBar';
 import Banner from '../components/Banner';
 import Introduction from '../components/Introduction';
-import Explain from '../components/Explain';
+import PeaceMaker from '../components/PeaceMaker';
 import Newsletter from '../components/Newsletter';
 import Podcast from '../components/Podcast';
 import CourseIntro from '../components/CourseIntro';
@@ -46,6 +46,7 @@ export default function Home() {
             </DrawerProvider>
           </Sticky>
           <Banner />
+          <PeaceMaker />
           <Newsletter />
           <Podcast />
           <Introduction />
