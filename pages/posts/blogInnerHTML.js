@@ -74,6 +74,11 @@ const Section = styled.section`
   }
   .read {
   }
+
+  li {
+    padding: 1rem;
+    font-size: 1.6rem;
+  }
   h1 {
     font-family: 'Helvetica Neue', sans-serif;
     font-weight: 800;
