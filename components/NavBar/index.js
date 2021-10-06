@@ -158,8 +158,8 @@ const NavBar = () => {
               </Link>
             </li>
             <li>
-              <Link href="/breathe" replace>
-                <a> Breathe </a>
+              <Link href="/stories" replace>
+                <a> Blog </a>
               </Link>
             </li>
 
