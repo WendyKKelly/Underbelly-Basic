@@ -17,7 +17,7 @@ const CourseIntro = () => {
             <a>
               <div className="me">
                 <BannerContent>
-                  <Heading className="head" as="h1" content="Just Start —" />
+                  <Heading className="head" as="h1" content="— Step Two —" />
 
                   <Text
                     className="banner-caption"

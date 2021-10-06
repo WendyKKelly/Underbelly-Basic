@@ -166,7 +166,7 @@ export const BannerContent = styled.div`
     font-family: Helvetica Neue;  
     color: ${themeGet('colors.paragraph', '#2c2e35')};
     font-size: 2rem;
-    line-height: 33px;
+    line-height: 2.5rem;
     font-weight: 400;
     margin-bottom: 0;
     margin-left: 1rem;
@@ -238,8 +238,10 @@ export const BannerContent = styled.div`
             font-family: Playfair Display; 
             font-weight: 900;
              font-size: 4rem;
+             
             @media only screen and (max-width: 1440px) {
               font-size: 1.7rem;
+              line-height: 2rem;
             }
             @media only screen and (max-width: 1024px) {
                

@@ -54,7 +54,7 @@ const PeaceMaker = () => {
               </Link>
               <Text
                 className="banner-caption"
-                content="Wild + Precious is the name for the daughter project that grew from Underbelly. It's a growing collection of resources to get us closer to our truest selves, where connection and flourishing can and do happen. 
+                content="You are wild and precious. Your life — this life you're in the midst of — is your one wild and precious life. Mary Oliver's poem The Summer Day asks What is it you plan to do with your one wild and precious life? Let's attempt to answer her, shall we? 
                 "
               />
             </BannerContent>

@@ -58,6 +58,7 @@ export const BannerContent = styled.div`
   width: 100%;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  
   display: flex;
   flex-direction: column;
   
@@ -177,7 +178,7 @@ export const BannerContent = styled.div`
     font-family: Helvetica Neue;
     color: ${themeGet('colors.paragraph', '#2c2e35')};
     font-size: 2rem;
-    line-height: 33px;
+    line-height: 3rem;
     font-weight: 400;
     margin-bottom: 0;
     margin-left: 1rem;

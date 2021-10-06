@@ -76,7 +76,7 @@ export const BannerContent = styled.div`
 .intro {
    
     font-family: Helvetica Neue;
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 70px;
     font-weight: 700;
     color: ${themeGet('colors.menu', '#2c2e35')};

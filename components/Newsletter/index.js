@@ -25,7 +25,7 @@ const Newsletter = () => {
               </div>
             </Watch>
             <BannerContent>
-              <div className="intro">First Step:</div>
+              <div className="intro">— Step One —</div>
               <div className="introsub">
                 10 Wild+Precious Things in your inbox each Monday Morning.
               </div>

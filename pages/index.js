@@ -48,7 +48,7 @@ export default function Home() {
           <Banner />
           <PeaceMaker />
           <Newsletter />
-          <Podcast />
+
           <Introduction />
           <CourseIntro />
           <Footer />
