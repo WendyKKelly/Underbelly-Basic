@@ -24,7 +24,7 @@ const PeaceMaker = () => {
               <Text
                 className="banner-caption"
                 content="
-                
+    
                 Peace Making is not ego driven. 
                 Peace Making is God - led (or, more expansively, led from your understanding of a higher power)
                 Peace Making is built on trust. 
