@@ -1,4 +1,4 @@
-import Image from '../Image';
+//import Image from 'next/image';
 import news1 from '../../public/image/news/1.png';
 import news2 from '../../public/image/news/2.png';
 import news3 from '../../public/image/news/3.png';

@@ -13,29 +13,8 @@ const PeaceMaker = () => {
     <Section>
       <Container>
         <ContentWrapper>
-          <div className="me">
+          <div className="">
             <BannerContent>
-              <Heading
-                className="head"
-                as="h1"
-                content="What is a Peace Maker?"
-              />
-
-              <Text
-                className="banner-caption"
-                content="
-    
-                Peace Making is not ego driven. 
-                Peace Making is God - led (or, more expansively, led from your understanding of a higher power)
-                Peace Making is built on trust. 
-                Peace Making calls out and addresses conflict by name.
-                Peace Making remains curious and open to being wrong - to changing one's mind.
-                Peace Making speaks truth to power.
-                Peace Making works toward resolution.
-                Peace Making is courageous.
-                "
-              />
-
               <Link href="/wild-and-precious" passHref>
                 <a>
                   <div className="wp">

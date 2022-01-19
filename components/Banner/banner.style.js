@@ -1,9 +1,8 @@
 import styled from 'styled-components';
 import { rgba } from 'polished';
 import { themeGet } from '@styled-system/theme-get';
+import Image from 'next/image';
 
-import Image from '../Image';
-import illustration from '../../public/image/banner.jpg';
 import { AnimSpinner } from '../Animation';
 const Section = styled.section``;
 
@@ -12,13 +11,13 @@ export const ContentWrapper = styled.div`
     max-width: 100%;
   }
   .image {
-    background-image: url(${illustration});
-    background-size: cover;
-    max-width: 100%;
+    position: fixed;
+    width: 100vw;
     background-repeat: no-repeat;
-    min-height: 70vh;
+    height: 100vh;
+    overflow: hidden;
     border-radius: 0% 70% 0% 50% / 0% 50% 0% 70%;
-    z-index: 1;
+    z-index: -1;
 
     @media only screen and (max-width: 1600px) {
       max-width: 100%;
@@ -35,7 +34,7 @@ export const ContentWrapper = styled.div`
     }
     @media only screen and (max-width: 768px) {
       min-height: 10vh;
-      display: block;
+      display: none;
       position: relative;
       background-image: none;
     }
@@ -48,17 +47,11 @@ export const ContentWrapper = styled.div`
 export const Illustration = styled.div``;
 
 export const BannerContent = styled.div`
-  max-width: 100%;
-  width: 100%;
-  padding-top: 400px;
-  padding-bottom: 150px;
   z-index: 5;
   @media only screen and (max-width: 1600px) {
     max-width: 100%;
   }
   @media only screen and (max-width: 1400px) {
-    padding-top: 400px;
-    padding-bottom: 100px;
   }
   @media only screen and (max-width: 1024px) {
     max-width: 100%;
@@ -87,6 +80,7 @@ export const BannerContent = styled.div`
     color: ${themeGet('colors.menu', '#2c2e35')};
     margin-bottom: 24px;
     letter-spacing: 1.5px;
+    z-index: 5;
 
     @media only screen and (max-width: 1440px) {
       font-size: 4rem;
@@ -182,7 +176,7 @@ export const Subscribe = styled.div`
     
     margin-left: 0rem;
     margin-top: 4rem;
-    color: ${themeGet('colors.menu', '#ccc')};
+    color: ${themeGet('colors.menu', '#2c2e35')};
     margin-bottom: 24px;
     letter-spacing: 1.5px;
     @media only screen and (max-width: 1440px) {
@@ -238,7 +232,7 @@ export const Subscribe = styled.div`
     font-weight: 900;
     margin-left: 0rem;
     margin-top: 4rem;
-    color: ${themeGet('colors.menu', '#ec6f48')};
+    color: ${themeGet('colors.menu', '#2c2e35')};
     margin-bottom: 24px;
     letter-spacing: 1.5px;
     @media only screen and (max-width: 1440px) {
@@ -252,7 +246,7 @@ export const Subscribe = styled.div`
     }
     @media only screen and (max-width: 1024px) {
       font-size: 3rem;
-      color: #ec6f48;
+      color: #2c2e35;
       margin-bottom: 20px;
       line-height: 60px;
       text-align: left;
@@ -260,7 +254,7 @@ export const Subscribe = styled.div`
     }
     @media only screen and (max-width: 999px) {
       font-size: 3rem;
-      color: #ec6f48;
+      color: #2c2e35;
       margin-bottom: 20px;
       margin-top: 5rem;
       line-height: 60px;
@@ -270,7 +264,7 @@ export const Subscribe = styled.div`
     }
     @media only screen and (max-width: 768px) {
       font-size: 3rem;
-      color: #ec6f48;
+      color: #2c2e35;
       margin-top: 0rem;
       margin-bottom: 10rem;
       line-height: 60px;
@@ -280,7 +274,7 @@ export const Subscribe = styled.div`
     }
     @media only screen and (max-width: 480px) {
       font-size: 3rem;
-      color: #ec6f48;
+      color: #2c2e35;
       margin-top: 0rem;
       margin-bottom: 1rem;
       line-height: 60px;

@@ -1,43 +1,11 @@
 import styled from 'styled-components';
 import { rgba } from 'polished';
 import { themeGet } from '@styled-system/theme-get';
-import illustration from '../../public/image/nine-koepfer-dandeion.jpg';
+
 const Section = styled.section``;
 
 export const ContentWrapper = styled.div`
   .me {
-    background-image: url(${illustration});
-    background-color: transparent;
-    background-size: 60%;
-    background-position: right center;
-    background-repeat: no-repeat;
-
-    min-height: 70vh;
-    display: flex;
-
-    @media only screen and (max-width: 1440px) {
-      min-height: auto;
-      padding-top: 1rem;
-      padding-bottom: 1rem;
-      background-size: 59%;
-    }
-    @media only screen and (max-width: 1024px) {
-      background-size: 100%;
-      padding-left: 0rem;
-      padding-right: 0rem;
-      flex-direction: column;
-      background-position: top center;
-    }
-    @media only screen and (max-width: 999px) {
-      background-size: 100%;
-
-      padding-left: 0rem;
-      padding-right: 0rem;
-      flex-direction: column;
-      background-position: top center;
-      padding-bottom: 0rem;
-      min-height: auto;
-    }
   }
 `;
 
@@ -55,18 +23,18 @@ export const BannerContent = styled.div`
     max-width: 38%;
   }
   @media only screen and (max-width: 1400px) {
-    padding-top: 60px;
+    padding-top: 1rem;
     padding-bottom: 2rem;
   }
   @media only screen and (max-width: 1024px) {
-    padding-top: 40rem;
+    padding-top: 1rem;
     padding-bottom: 2rem;
     max-width: 60%;
     background: cover;
   }
   @media only screen and (max-width: 999px) {
     max-width: 100%;
-    padding-top: 23rem;
+    padding-top: 1rem;
     padding-bottom: 30px;
     margin-top: 15rem;
     flex-direction: column;
@@ -74,16 +42,16 @@ export const BannerContent = styled.div`
   }
   @media only screen and (max-width: 768px) {
     max-width: 100%;
-    padding-top: 23rem;
+    padding-top: 1rem;
     padding-bottom: 30px;
-    margin-top: 8rem;
+    margin-top: 1rem;
     flex-direction: column;
     background-position: bottom center;
   }
   @media only screen and (max-width: 480px) {
     width: 100%;
-    margin-top: 2.5rem;
-    padding-top: 15rem;
+    margin-top: .1rem;
+    padding-top: 1rem;
     padding-bottom: 5px;
   }
   .head {

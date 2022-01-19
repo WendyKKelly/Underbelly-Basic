@@ -6,20 +6,40 @@ import Container from '../UI/ContainerTwo';
 import Link from '../Link';
 
 import SectionHeading2 from '../SectionHeading2';
-import Section from './introduction.style';
+import Section, {
+  ContentWrapper,
+  Watch,
+  BannerContent,
+} from './introduction.style';
 
 const Introduction = () => {
   return (
     <Section id="service">
       <div className="img">
         <Container>
-          <Zoom>
-            <SectionHeading2
-              slogan="Breathe. You're almost home."
-              text="It's time to meet your own underbelly — your one wild and precious self. 
+          <ContentWrapper>
+            <Zoom>
+              <Watch>
+                <div className="watch">
+                  <div className="watch-face">
+                    <div className="circle"></div>
+                    <div className="circle"></div>
+                    <div className="circle"></div>
+                    <div className="circle"></div>
+                    <div className="circle"></div>
+                    <div className="circle"></div>
+                  </div>
+                </div>
+              </Watch>
+              <BannerContent>
+                <SectionHeading2
+                  slogan="Stop Fighting With Yourself"
+                  text="It's time to make peace with your underbelly — your one wild and precious self. 
             "
-            />
-          </Zoom>
+                />
+              </BannerContent>
+            </Zoom>
+          </ContentWrapper>
         </Container>
       </div>
     </Section>

@@ -7,7 +7,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { Icon } from 'react-icons-kit';
 import { androidMenu } from 'react-icons-kit/ionicons/androidMenu';
 import { androidClose } from 'react-icons-kit/ionicons/androidClose';
-
+//import Image from 'next/image';
 import Button from '../Button';
 import Logo from '../UIElements/Logo';
 import Container from '../UI/ContainerTwo';
@@ -16,7 +16,7 @@ import NavbarWrapper, {
   MobileMenu,
   NavbarRight,
 } from './navbar.style';
-import Image from '../Image';
+
 import LogoImage from '../../public/image/logo.png';
 
 import { data } from '../data';
@@ -44,7 +44,7 @@ const NavBar = () => {
         <Logo
           href="/"
           logoSrc={LogoImage}
-          title="Agency Digital"
+          title="Underbelly/Wild+Precious"
           className="main-logo"
         />
         {/* end of logo */}

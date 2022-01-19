@@ -2,7 +2,7 @@ import React from 'react';
 import Container from '../UI/ContainerTwo';
 import Section, {
   ContentWrapper,
-  Watch,
+  //Watch,
   BannerContent,
 } from './newsletter.style';
 import Link from 'next/link';
@@ -12,18 +12,6 @@ const Newsletter = () => {
       <Container>
         <ContentWrapper>
           <div className="wraps">
-            <Watch>
-              <div className="watch">
-                <div className="watch-face">
-                  <div className="circle"></div>
-                  <div className="circle"></div>
-                  <div className="circle"></div>
-                  <div className="circle"></div>
-                  <div className="circle"></div>
-                  <div className="circle"></div>
-                </div>
-              </div>
-            </Watch>
             <BannerContent>
               <div className="intro">— Step One —</div>
               <div className="introsub">

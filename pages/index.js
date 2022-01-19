@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import Head from 'next/head';
+//import Image from 'next/image';
 import Link from 'next/link';
 import Sticky from 'react-stickynode';
 import { ThemeProvider } from 'styled-components';
@@ -15,7 +16,7 @@ import Introduction from '../components/Introduction';
 import PeaceMaker from '../components/PeaceMaker';
 import Newsletter from '../components/Newsletter';
 import Podcast from '../components/Podcast';
-import CourseIntro from '../components/CourseIntro';
+
 import Footer from '../components/Footer';
 
 export default function Home() {
@@ -50,7 +51,7 @@ export default function Home() {
           <Newsletter />
 
           <Introduction />
-          <CourseIntro />
+
           <Footer />
         </ContentWrapper>
       </Fragment>

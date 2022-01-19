@@ -4,7 +4,7 @@ import { Icon } from 'react-icons-kit';
 import { chevronRight } from 'react-icons-kit/feather/chevronRight';
 
 import Container from '../UI/ContainerTwo';
-import Image from '../Image';
+import Image from 'next/image';
 import Link from '../Link';
 import SectionHeading from '../SectionHeading';
 import Section, { ContentWrapper, BlogPost } from './news.style';
@@ -19,7 +19,6 @@ const News = () => {
   return (
     <Section id="blog">
       <Container>
-
         <SectionHeading
           slogan="It's time to start training and caring for your emotional health — where you are, with what you have available."
           title="What do you need, right now?"
@@ -37,7 +36,7 @@ const News = () => {
                   {news.desc && <p>{news.desc}</p>}
                   {news.link && (
                     <Link href={news.link} className="learnMore">
-                    <a>  Learn More</a> <Icon icon={chevronRight} />
+                      <a> Learn More</a> <Icon icon={chevronRight} />
                     </Link>
                   )}
                 </BlogPost>

@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Text from '../../Text';
 import Link from '../../Link';
-import Image from '../../Image';
-//import Image from 'next/image';
+//import Image from '../../Image';
+import Image from 'next/image';
 const Logo = ({
   logoWrapperStyle,
   logoStyle,

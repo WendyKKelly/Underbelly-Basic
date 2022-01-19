@@ -1,10 +1,9 @@
 import styled from 'styled-components';
 import { themeGet } from '@styled-system/theme-get';
-import navBg from '../../public/image/nav-bg.png';
 
 const NavbarWrapper = styled.header`
   width: 100%;
-  padding: 15px 0 16px;
+  padding: 1rem 0 1rem;
   background-color: #ee9b27;
   z-index: 9999;
   transition: all 0.3s ease;
@@ -79,7 +78,7 @@ export const MenuArea = styled.nav`
         }
       }
       &.is-current {
-        background: transparent url(${navBg}) no-repeat center bottom / contain;
+        no-repeat center bottom / contain;
         a {
           color: ${themeGet('colors.menu', '#ec6f48')};
         }

@@ -1,19 +1,77 @@
 import styled from 'styled-components';
 import { themeGet } from '@styled-system/theme-get';
-import introduction from '../../public/image/water.jpg';
-const Section = styled.div`
-.img {
-    background-image: linear-gradient( rgba(239, 239, 239, .3),   rgba(239, 239, 239, .8) ),url(${introduction});
-    background-size: cover;
-    max-width: 100%;
-    margin-top: 0rem;
-    padding-bottom: 2rem;
-    border-radius: 0% 60% 0% 70% / 0% 40% 0% 60%;
-    min-height: auto;
+import { BreathePulse } from '../BreathePulse';
+//import introduction from '../../public/image/water.jpg';
+const Section = styled.div``;
+export const ContentWrapper = styled.div`
+  .wraps {
+    background-size: 100%;
 
-@media screen and (max-width: 1440px) {
-  border-radius: 0%;
-}
+    min-height: 50vh;
+    display: flex;
+
+    @media only screen and (max-width: 1440px) {
+      min-height: auto;
+
+      padding-bottom: 1rem;
+      background-size: 100%;
+      padding-top: 1rem;
+    }
+    @media only screen and (max-width: 1024px) {
+      background-size: 100%;
+      padding-top: 5rem;
+      padding-left: 0rem;
+      padding-right: 0rem;
+      flex-direction: column;
+      background-position: top center;
+      min-height: auto;
+    }
+    @media only screen and (max-width: 999px) {
+      background-size: 100%;
+      padding-top: 5rem;
+
+      padding-left: 0rem;
+      padding-right: 0rem;
+      flex-direction: column;
+      background-position: top center;
+      padding-bottom: 0rem;
+      min-height: auto;
+    }
+  }
+`;
+export const Watch = styled.div`
+  .watch {
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    justify-content: center;
+  }
+  .watch-face {
+    color: transparent;
+    position: absolute;
+    top: 28%;
+    left: 15%;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: rgba(188, 237, 243, 0.889);
+    ${BreathePulse};
+    @media only screen and (max-width: 1440px) {
+      top: 15%;
+      left: 15%;
+    }
+    @media only screen and (max-width: 768px) {
+      top: 15%;
+      left: 50%;
+    }
+    @media only screen and (max-width: 480px) {
+      top: 15%;
+      left: 50%;
+    }
+  }
+`;
+export const BannerContent = styled.div`
+
   h1 {
     font-family: 'Helvetica Neue';
     font-size: 5rem;

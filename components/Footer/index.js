@@ -5,7 +5,8 @@ import { Icon } from 'react-icons-kit';
 import { chevronRight } from 'react-icons-kit/feather/chevronRight';
 
 import Container from '../UI/ContainerTwo';
-import Image from '../Image';
+//import Image from '../Image';
+import Image from 'next/image';
 import Link from '../Link';
 import {
   Section,
@@ -39,10 +40,7 @@ const Footer = () => {
           ))}
         </FooterTop>
         <FooterBottom>
-          <Copyright>
-            <Image src={Logo} alt="Agency Digital" />
-            Copyright &copy; {new Date().getFullYear()}
-          </Copyright>
+          <Copyright>Copyright &copy; {new Date().getFullYear()}</Copyright>
           <FooterNav>
             {data.footerNav.map((item) => (
               <li key={item.id}>

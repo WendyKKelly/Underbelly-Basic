@@ -64,21 +64,17 @@ export const FooterBottom = styled.div`
 
 export const Copyright = styled.p`
   color: ${rgba('#0f2137', 0.6)};
-  font-size: 14px;
+  font-size: 1.5rem;
   line-height: 18px;
-  margin: 0;
+  margin: 0rem;
+  
   display: flex;
   align-items: center;
   @media screen and (max-width: 480px) {
     flex-direction: column;
   }
-  img {
-    margin-right: 15px;
-    max-width: 130px;
-    @media screen and (max-width: 480px) {
-      margin-right: 0;
-      margin-bottom: 15px;
-    }
+
+
   }
 `;
 
