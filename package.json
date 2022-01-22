@@ -12,7 +12,7 @@
     "@glidejs/glide": "^3.4.1",
     "@mdx-js/loader": "^1.6.16",
     "@next/mdx": "^9.5.2",
-    "@next/swc-darwin-x64": "^11.1.2",
+   
     "@reach/accordion": "^0.10.4",
     "@styled-system/theme-get": "^5.1.2",
     "@tryghost/admin-api": "^1.4.1",
