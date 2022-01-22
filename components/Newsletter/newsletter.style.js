@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import { themeGet } from '@styled-system/theme-get';
-
-import { BreathePulse } from '../BreathePulse';
+//import {BreathePulse} from '../BreathePulse';
 
 const Section = styled.section``;
 
@@ -57,7 +56,7 @@ export const Watch = styled.div`
     height: 70px;
     border-radius: 50%;
     background: rgba(188, 237, 243, 0.889);
-    ${BreathePulse};
+
     @media only screen and (max-width: 1440px) {
       top: 15%;
       left: 15%;

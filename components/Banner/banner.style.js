@@ -230,8 +230,8 @@ export const Subscribe = styled.div`
     font-size: 2.5rem;
     line-height: 70px;
     font-weight: 900;
-    margin-left: 0rem;
-    margin-top: 4rem;
+    margin-left: -20rem;
+    margin-top: -7rem;
     color: ${themeGet('colors.menu', '#2c2e35')};
     margin-bottom: 24px;
     letter-spacing: 1.5px;
@@ -239,7 +239,7 @@ export const Subscribe = styled.div`
       font-size: 2.5rem;
       font-weight: 900;
       color: #ec6f48;
-      margin-top: 20rem;
+      margin-top: 1rem;
       margin-bottom: 5px;
       text-align: right;
       margin-left: 0rem;
