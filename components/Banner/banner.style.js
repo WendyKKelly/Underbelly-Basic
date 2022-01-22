@@ -231,7 +231,7 @@ export const Subscribe = styled.div`
     line-height: 70px;
     font-weight: 900;
     margin-left: -20rem;
-    margin-top: -7rem;
+    margin-top: -8rem;
     color: ${themeGet('colors.menu', '#2c2e35')};
     margin-bottom: 24px;
     letter-spacing: 1.5px;
