@@ -34,7 +34,7 @@ const Introduction = () => {
               <BannerContent>
                 <SectionHeading2
                   slogan="Stop Fighting With Yourself"
-                  text="It's time to make peace with your underbelly — your one wild and precious self. 
+                  text="It is time to make peace with your underbelly — your one wild and precious self. 
             "
                 />
               </BannerContent>
