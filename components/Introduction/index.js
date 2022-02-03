@@ -33,7 +33,7 @@ const Introduction = () => {
               </Watch>
               <BannerContent>
                 <SectionHeading2
-                  slogan="Stop Fighting With Yourself"
+                  slogan="Get Real"
                   text="It is time to make peace with your underbelly — your one wild and precious self. 
             "
                 />
